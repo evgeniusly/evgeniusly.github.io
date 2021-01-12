@@ -145,11 +145,11 @@
                 <li class="header-mobile__nav-main-item"><a class="header-mobile__nav-main-link" href="#">Новости</a></li>
                 <li class="header-mobile__nav-main-item"><a class="header-mobile__nav-main-link" href="#">Наши магазины</a></li>
                 <li class="header-mobile__nav-main-item"><a class="header-mobile__nav-main-link" href="#">Покупателям</a></li>
-                <li class="header-mobile__nav-main-item"><a class="header-mobile__nav-main-link" href="#">Личный кабинет
+                <li class="header-mobile__nav-main-item"><a class="header-mobile__nav-main-link header-mobile__nav-close-trigger header-mobile__nav-main-link_accent" href="#" data-toggle="modal" data-target="#modal-auth">
+                     Личный кабинет
                     <svg class="icon svg-profile-dims header-mobile__nav-main-link-icon">
                       <use xlink:href="sprites/sprite.svg#profile"></use>
                     </svg></a></li>
-                <li class="header-mobile__nav-main-item"><a class="header-mobile__nav-main-link header-mobile__nav-close-trigger" href="#" data-toggle="modal" data-target="#modal-auth">Войти</a></li>
               </ul>
               <div class="header-mobile__nav-footer">
                 <div class="header-mobile__nav-footer-phone"><a class="header-mobile__nav-footer-phone-link" href="tel:+74954450550">
@@ -833,7 +833,7 @@
         <div class="container">
           <div class="row pt-3 pb-5">
             <div class="col">
-              <div class="slider-cards" data-gap="80">
+              <div class="slider-cards" data-gap="80" data-columns-on-mobile="2">
                 <div class="slider-cards__head">
                   <h2 class="slider-cards__title">Оптовые клиенты</h2>
                   <div class="d-none d-lg-block">
@@ -890,6 +890,24 @@
                       </div>
                       <div class="swiper-slide slider-cards__slide">
                         <div class="card-client"><a class="card-client__link" href="#"><img class="card-client__img" src="images/thumb-client-8.png" alt="Клиент"></a></div>
+                      </div>
+                      <div class="swiper-slide slider-cards__slide">
+                        <div class="card-client"><a class="card-client__link" href="#"><img class="card-client__img" src="images/thumb-client-2.png" alt="Клиент"></a></div>
+                      </div>
+                      <div class="swiper-slide slider-cards__slide">
+                        <div class="card-client"><a class="card-client__link" href="#"><img class="card-client__img" src="images/thumb-client-3.png" alt="Клиент"></a></div>
+                      </div>
+                      <div class="swiper-slide slider-cards__slide">
+                        <div class="card-client"><a class="card-client__link" href="#"><img class="card-client__img" src="images/thumb-client-4.png" alt="Клиент"></a></div>
+                      </div>
+                      <div class="swiper-slide slider-cards__slide">
+                        <div class="card-client"><a class="card-client__link" href="#"><img class="card-client__img" src="images/thumb-client-5.png" alt="Клиент"></a></div>
+                      </div>
+                      <div class="swiper-slide slider-cards__slide">
+                        <div class="card-client"><a class="card-client__link" href="#"><img class="card-client__img" src="images/thumb-client-6.png" alt="Клиент"></a></div>
+                      </div>
+                      <div class="swiper-slide slider-cards__slide">
+                        <div class="card-client"><a class="card-client__link" href="#"><img class="card-client__img" src="images/thumb-client-7.png" alt="Клиент"></a></div>
                       </div>
                     </div>
                   </div>
@@ -2396,10 +2414,16 @@
               <form class="needs-validation" novalidate>
                 <div class="modal-auth__input-wrap">
                   <input class="form-control modal-auth__input" type="text" placeholder="Телефон" required="">
+                  <svg class="icon svg-phone-24-dims modal-auth__input-icon">
+                    <use xlink:href="sprites/sprite.svg#phone-24"></use>
+                  </svg>
                   <div class="invalid-feedback">Обязательное поле</div>
                 </div>
                 <div class="modal-auth__input-wrap">
                   <input class="form-control modal-auth__input" type="password" placeholder="Пароль" required="">
+                  <svg class="icon svg-view-24-dims modal-auth__input-icon">
+                    <use xlink:href="sprites/sprite.svg#view-24"></use>
+                  </svg>
                   <div class="invalid-feedback">Обязательное поле</div>
                 </div>
                 <div class="d-flex justify-content-between modal-auth__options">
@@ -2423,6 +2447,9 @@
               <form class="needs-validation" novalidate>
                 <div class="modal-auth__input-wrap">
                   <input class="form-control modal-auth__input" type="text" placeholder="Телефон" required="">
+                  <svg class="icon svg-phone-24-dims modal-auth__input-icon">
+                    <use xlink:href="sprites/sprite.svg#phone-24"></use>
+                  </svg>
                   <div class="invalid-feedback">Обязательное поле</div>
                 </div>
                 <button class="btn btn-primary modal-auth__submit-btn" type="submit">Отправить</button>
@@ -2436,6 +2463,9 @@
               <form class="needs-validation" novalidate>
                 <div class="modal-auth__input-wrap">
                   <input class="form-control modal-auth__input" type="text" placeholder="Код подтверждения" required="">
+                  <svg class="icon svg-view-24-dims modal-auth__input-icon">
+                    <use xlink:href="sprites/sprite.svg#view-24"></use>
+                  </svg>
                   <div class="invalid-feedback">Обязательное поле</div>
                 </div>
                 <button class="btn btn-primary modal-auth__submit-btn" type="submit">Войти</button>
@@ -2449,22 +2479,37 @@
               <form class="needs-validation" novalidate>
                 <div class="modal-auth__input-wrap">
                   <input class="form-control modal-auth__input" type="text" placeholder="Логин" required="">
+                  <svg class="icon svg-profile-24-dims modal-auth__input-icon">
+                    <use xlink:href="sprites/sprite.svg#profile-24"></use>
+                  </svg>
                   <div class="invalid-feedback">Обязательное поле</div>
                 </div>
                 <div class="modal-auth__input-wrap">
                   <input class="form-control modal-auth__input" type="text" placeholder="Email" required="">
+                  <svg class="icon svg-mail-24-dims modal-auth__input-icon">
+                    <use xlink:href="sprites/sprite.svg#mail-24"></use>
+                  </svg>
                   <div class="invalid-feedback">Обязательное поле</div>
                 </div>
                 <div class="modal-auth__input-wrap">
                   <input class="form-control modal-auth__input" type="text" placeholder="Телефон" required="">
+                  <svg class="icon svg-phone-24-dims modal-auth__input-icon">
+                    <use xlink:href="sprites/sprite.svg#phone-24"></use>
+                  </svg>
                   <div class="invalid-feedback">Обязательное поле</div>
                 </div>
                 <div class="modal-auth__input-wrap">
                   <input class="form-control modal-auth__input" type="password" placeholder="Пароль" required="">
+                  <svg class="icon svg-view-24-dims modal-auth__input-icon">
+                    <use xlink:href="sprites/sprite.svg#view-24"></use>
+                  </svg>
                   <div class="invalid-feedback">Обязательное поле</div>
                 </div>
                 <div class="modal-auth__input-wrap">
                   <input class="form-control modal-auth__input" type="password" placeholder="Подтвердите пароль" required="">
+                  <svg class="icon svg-view-24-dims modal-auth__input-icon">
+                    <use xlink:href="sprites/sprite.svg#view-24"></use>
+                  </svg>
                   <div class="invalid-feedback">Обязательное поле</div>
                 </div>
                 <button class="btn btn-primary modal-auth__submit-btn" type="submit">Регистрация</button>

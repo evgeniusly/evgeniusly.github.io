@@ -7649,6 +7649,14 @@ sprites
   width: 16px;
   height: 12px
 }
+.svg-mail-24-dims {
+  width: 24px;
+  height: 24px
+}
+.svg-phone-24-dims {
+  width: 24px;
+  height: 24px
+}
 .svg-phone-callback-dims {
   width: 14px;
   height: 18px
@@ -7665,6 +7673,10 @@ sprites
   width: 20px;
   height: 24px
 }
+.svg-profile-24-dims {
+  width: 24px;
+  height: 24px
+}
 .svg-search-dims {
   width: 16px;
   height: 16px
@@ -7674,6 +7686,10 @@ sprites
   height: 13px
 }
 .svg-timer-dims {
+  width: 24px;
+  height: 24px
+}
+.svg-view-24-dims {
   width: 24px;
   height: 24px
 }
@@ -7829,6 +7845,12 @@ blocks
 .header-mobile__nav-main-link {
   font-size: 18px;
   line-height: 24px
+}
+.header-mobile__nav-main-link_accent {
+  color: #f15526
+}
+.header-mobile__nav-main-link_accent:hover {
+  color: #a62f0b
 }
 .header-mobile__nav-main-link-icon {
   margin-left: 4px;
@@ -8449,6 +8471,8 @@ a.footer-mobile__nav-secondary-link:hover {
   align-items: center
 }
 .slider-cards__slide {
+  margin-top: 15px!important;
+  margin-bottom: 15px!important;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content
@@ -8760,6 +8784,11 @@ a.footer-mobile__nav-secondary-link:hover {
   height: 100%;
   -o-object-fit: contain;
   object-fit: contain
+}
+@media (max-width:1199.98px) {
+  .card-client__img {
+    width: 150px
+  }
 }
 .card-recipe {
   position: relative;
@@ -9634,15 +9663,37 @@ a.footer-mobile__nav-secondary-link:hover {
   line-height: 20px
 }
 .modal-auth__input-wrap {
-  margin-bottom: 24px
+  margin-bottom: 24px;
+  position: relative
+}
+.modal-auth__input-wrap .invalid-feedback {
+  text-align: left;
+  color: #f15526
 }
 .modal-auth__input {
-  padding: 18px 11px 20px;
+  padding: 6px 38px 8px 11px;
+  height: auto;
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
   border: 1px solid #bdd5f2;
   border-radius: 4px
+}
+.modal-auth__input-icon {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 24px;
+  height: 24px;
+  color: #bdd5f2
+}
+.modal-auth__input.is-invalid,
+.was-validated .modal-auth__input:invalid {
+  background-image: none;
+  border-color: #f15526
+}
+.was-validated .modal-auth__input:invalid + .modal-auth__input-icon {
+  color: #f15526
 }
 .modal-auth__options {
   margin: -2px 0 34px

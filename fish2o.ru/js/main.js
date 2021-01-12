@@ -151,11 +151,21 @@ $(function () {
     const $faderLeft = $(this).find(".slider-cards__screen-fader-left");
     const $faderRight = $(this).find(".slider-cards__screen-fader-right");
     const gap = $(this).data("gap") || 30;
+    const columnsOnMobile = $(this).data("columns-on-mobile") || 1;
   
     new Swiper($container[0], {
       loop: false,
       spaceBetween: gap,
       slidesPerView: "auto",
+  
+      // row count for mobile and descktop
+      slidesPerColumnFill: "row",
+      slidesPerColumn: columnsOnMobile,
+      breakpoints: {
+        1200: {
+          slidesPerColumn: 1,
+        },
+      },
   
       pagination: {
         el: $pagination[0],
