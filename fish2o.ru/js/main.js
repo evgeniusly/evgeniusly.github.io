@@ -383,10 +383,77 @@ $(function () {
     false
   );
   
+  // =================================================================
+  // NAVIGATION-SIDE
+  // =================================================================
+  
+  $(document)
+    .on("mouseover", ".navigation-side_extendable", function () {
+      const $container = $(this).closest(".container");
+      const $wrap = $(this).closest(".navigation-side__wrap");
+      const $fader = $wrap.find(".navigation-side__fader");
+      const $extender = $(this).find(".navigation-side__extender");
+      const $extenderContent = $(this).find(".navigation-side__extender-content");
+      const $menu = $(this).find(".navigation-side__menu");
+  
+      $menu.css({ "z-index": 1050 });
+      $extender.width($container.width()).height($menu.height());
+      $extenderContent.css({ "padding-left": $menu.width() });
+      $extender.stop().fadeIn(DEFAUILT_AMINATION_SPEED);
+      $fader.stop().fadeIn(DEFAUILT_AMINATION_SPEED);
+    })
+    .on("mouseleave", ".navigation-side_extendable", function () {
+      const $extender = $(this).find(".navigation-side__extender");
+      const $menu = $(this).find(".navigation-side__menu");
+      const $fader = $(".navigation-side__fader");
+  
+      $fader.stop().fadeOut(DEFAUILT_AMINATION_SPEED);
+      $extender.stop().fadeOut(DEFAUILT_AMINATION_SPEED, function () {
+        $menu.css({ "z-index": 1 });
+      });
+    });
+  
+  // =================================================================
+  // NAVIGATION-SUBCATEGORIES
+  // =================================================================
+  $(document)
+    // show more subcategories
+    .on("click", ".navigation-subcategories__link_more", function (e) {
+      e.preventDefault();
+      const $list = $(this).closest(".navigation-subcategories__list");
+      const $hidden = $list.find(".navigation-subcategories__hidden-items");
+      $(this).hide();
+      $hidden.fadeIn().css("display", "inline");
+    });
+  
+  // =================================================================
+  // NAVIGATION-SORT
+  // =================================================================
+  const _NAVIGATION_SORT_OPTION = ".navigation-sort__option";
+  
+  $(document)
+    // sort filter selector
+    .on("click", _NAVIGATION_SORT_OPTION, function (e) {
+      e.preventDefault();
+      const $block = $(this).closest(".navigation-sort");
+      const $selectorTitle = $block.find(".navigation-sort__selector-title");
+      const $options = $block.find(_NAVIGATION_SORT_OPTION);
+      const value = $(this).data("value");
+      const title = $(this).html();
+  
+      $selectorTitle.html(title);
+      $options.show();
+      $(this).hide();
+  
+      console.log("name:", title, "id:", value);
+    });
+  
 
   // =================================================================
   // COMMON
   // =================================================================
+  const DEFAUILT_AMINATION_SPEED = 200;
+
   // input text filter
   function setInputFilter(_target, inputFilter) {
     $(document).on(
