@@ -194,15 +194,6 @@ $(function () {
   // =================================================================
   // CARD-PRODUCT
   // =================================================================
-  const SINGLE_PRODUCT_COUNT_MAX = 1000;
-  
-  // add product to cart here
-  function applyProductCount(productID, count) {
-    console.log("productID", productID, "count", count);
-    // put AJAX here
-    // add cart update
-    // find all same product counters to update
-  }
   
   // set like status product here
   function setProductLikeStatus(productID, status) {
@@ -210,41 +201,8 @@ $(function () {
     // put AJAX here
   }
   
-  // apply input text filter
-  setInputFilter(".card-product__counter-input", function (value) {
-    return (
-      /^\d*$/.test(value) &&
-      (value === "" || parseInt(value) <= SINGLE_PRODUCT_COUNT_MAX)
-    );
-  });
-  
   // listeners
   $(document)
-    // counter
-    .on("click", ".card-product__btn-buy", function () {
-      cardProductCounterUpdate($(this).closest(".card-product__actions"), "add");
-    })
-    .on("click", ".card-product__counter-btn-minus", function () {
-      cardProductCounterUpdate(
-        $(this).closest(".card-product__actions"),
-        "minus"
-      );
-    })
-    .on("click", ".card-product__counter-btn-plus", function () {
-      cardProductCounterUpdate($(this).closest(".card-product__actions"), "plus");
-    })
-    .on(
-      "input mouseup select contextmenu drop",
-      ".card-product__counter-input",
-      function () {
-        const $block = $(this).closest(".card-product__actions");
-        const oldVal = parseInt($(this).data("old-val"));
-        const newVal = parseInt($(this).val());
-        if (oldVal == newVal) return;
-        $block.data("old-val", newVal);
-        applyProductCount($block.data("product-id"), newVal);
-      }
-    )
     // likes
     .on("click", ".card-product__like-icon", function () {
       const $card = $(this).closest(".card-product");
@@ -255,45 +213,6 @@ $(function () {
         $(this).hasClass(likedClass)
       );
     });
-  
-  // counter interface logic
-  function cardProductCounterUpdate($block, action) {
-    const $input = $block.find(".card-product__counter-input");
-    const $counter = $block.find(".card-product__cart-counter");
-    const $adder = $block.find(".card-product__btn-buy");
-    const curVal = parseInt($input.val());
-    let newVal;
-  
-    switch (action) {
-      case "add":
-        newVal = 1;
-        break;
-      case "plus":
-        newVal = curVal + 1;
-        break;
-      case "minus":
-        newVal = curVal - 1;
-        break;
-    }
-  
-    newVal = Math.max(newVal, 0);
-    newVal = Math.min(newVal, SINGLE_PRODUCT_COUNT_MAX);
-  
-    if (curVal == newVal) return;
-  
-    if (newVal > 0) {
-      $adder.fadeOut();
-      $counter.fadeIn();
-    } else {
-      $adder.fadeIn();
-      $counter.fadeOut();
-    }
-  
-    $input.data("old-val", newVal);
-    $input.val(newVal);
-  
-    applyProductCount($block.data("product-id"), newVal);
-  }
   
   // =================================================================
   // CARD-RECIPE-VIDEO
@@ -447,6 +366,100 @@ $(function () {
   
       console.log("name:", title, "id:", value);
     });
+  
+  // =================================================================
+  // ADD-TO-CART
+  // =================================================================
+  const CART_SINGLE_PRODUCT_COUNT_MAX = 1000;
+  const _ADD_TO_CART = ".add-to-cart";
+  
+  // add product to cart here
+  function applyProductCount(productID, count) {
+    console.log("productID", productID, "count", count);
+    // put AJAX here
+    // add cart update
+    // find all same product counters to update
+  }
+  
+  // apply input text filter
+  setInputFilter(".add-to-cart__counter-input", function (value) {
+    return (
+      /^\d*$/.test(value) &&
+      (value === "" || parseInt(value) <= CART_SINGLE_PRODUCT_COUNT_MAX)
+    );
+  });
+  
+  // get first state
+  $(_ADD_TO_CART).each(function () {
+    cardProductCounterUpdate($(this), "take");
+  });
+  
+  // listeners
+  $(document)
+    // counter
+    .on("click", ".add-to-cart__btn-buy", function () {
+      cardProductCounterUpdate($(this).closest(_ADD_TO_CART), "add");
+    })
+    .on("click", ".add-to-cart__counter-btn-minus", function () {
+      cardProductCounterUpdate($(this).closest(_ADD_TO_CART), "minus");
+    })
+    .on("click", ".add-to-cart__counter-btn-plus", function () {
+      cardProductCounterUpdate($(this).closest(_ADD_TO_CART), "plus");
+    })
+    .on(
+      "input mouseup select contextmenu drop",
+      ".add-to-cart__counter-input",
+      function () {
+        const $block = $(this).closest(_ADD_TO_CART);
+        const oldVal = parseInt($(this).data("old-val"));
+        const newVal = parseInt($(this).val());
+        if (oldVal == newVal) return;
+        $block.data("old-val", newVal);
+        applyProductCount($block.data("product-id"), newVal);
+      }
+    );
+  
+  // counter interface logic
+  function cardProductCounterUpdate($block, action) {
+    const $input = $block.find(".add-to-cart__counter-input");
+    const $counter = $block.find(".add-to-cart__cart-counter");
+    const $adder = $block.find(".add-to-cart__btn-buy");
+    const curVal = parseInt($input.val());
+    let newVal;
+  
+    switch (action) {
+      case "add":
+        newVal = 1;
+        break;
+      case "plus":
+        newVal = curVal + 1;
+        break;
+      case "minus":
+        newVal = curVal - 1;
+        break;
+      case "take":
+        newVal = $block.data("product-in-cart-count");
+        break;
+    }
+  
+    newVal = Math.max(newVal, 0);
+    newVal = Math.min(newVal, CART_SINGLE_PRODUCT_COUNT_MAX);
+  
+    if (curVal == newVal) return;
+  
+    if (newVal > 0) {
+      $adder.fadeOut();
+      $counter.fadeIn();
+    } else {
+      $adder.fadeIn();
+      $counter.fadeOut();
+    }
+  
+    $input.data("old-val", newVal);
+    $input.val(newVal);
+  
+    applyProductCount($block.data("product-id"), newVal);
+  }
   
 
   // =================================================================
