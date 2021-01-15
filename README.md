@@ -1,4 +1,7 @@
 ## fish2o.ru
 
-- [Home page](https://evgeniusly.github.io/fish2o.ru/)
-- [Product Catalog page](https://evgeniusly.github.io/fish2o.ru/catalog.html)
+Pages
+
+- [Home](https://evgeniusly.github.io/fish2o.ru/)
+- [Product Catalog](https://evgeniusly.github.io/fish2o.ru/catalog.html)
+- [Product](https://evgeniusly.github.io/fish2o.ru/product.html)

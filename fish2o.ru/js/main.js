@@ -192,15 +192,45 @@ $(function () {
   });
   
   // =================================================================
-  // CARD-PRODUCT
+  // SLIDER-GALLERY
   // =================================================================
   
-  // set like status product here
-  function setProductLikeStatus(productID, status) {
-    console.log("productID", productID, "status", status);
-    // put AJAX here
-  }
+  $(".slider-gallery-screen").each(function () {
+    const sliderGalleryID = $(this).data("slider-id");
+    const $pagination = $(this).find(".swiper-pagination");
+    const $sliderGalleryThumbs = sliderGalleryID
+      ? $(`.slider-gallery-thumbs[data-slider-id=${sliderGalleryID}]`)
+      : false;
+    let galleryThumbs = false;
   
+    if ($sliderGalleryThumbs.length) {
+      galleryThumbs = new Swiper(".slider-gallery-thumbs", {
+        spaceBetween: 20,
+        slidesPerView: 4,
+        // freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+      });
+    }
+  
+    new Swiper(".slider-gallery-screen", {
+      spaceBetween: 30,
+      pagination: {
+        el: $pagination[0],
+        dynamicBullets: true,
+        clickable: true,
+      },
+      thumbs: galleryThumbs
+        ? {
+            swiper: galleryThumbs,
+          }
+        : false,
+    });
+  });
+  
+  // =================================================================
+  // CARD-PRODUCT
+  // =================================================================
   // listeners
   $(document)
     // likes
@@ -260,6 +290,39 @@ $(function () {
       slidesPerView: "auto",
     });
   });
+  
+  // =================================================================
+  // WIDGET-ADDRESS-CHECK
+  // =================================================================
+  $(document)
+    // on input change
+    .on(
+      "input mouseup select contextmenu drop",
+      ".widget-address-check__search-input",
+      function () {
+        const $block = $(this).closest(".widget-address-check__search");
+        const $options = $block.find(".widget-address-check__search-options");
+        const newVal = $(this).val();
+  
+        if (newVal) {
+          $options.slideDown(DEFAUILT_AMINATION_SPEED);
+        } else {
+          $options.slideUp(DEFAUILT_AMINATION_SPEED);
+        }
+      }
+    )
+    // on input change
+    .on("click", ".widget-address-check__search-option", function () {
+      const $block = $(this).closest(".widget-address-check__search");
+      const $options = $block.find(".widget-address-check__search-options");
+      const $input = $block.find(".widget-address-check__search-input");
+      const val = $(this).html();
+  
+      $options.slideUp(DEFAUILT_AMINATION_SPEED);
+      $input.val(val);
+  
+      // accepted address here
+    });
   
   // =================================================================
   // MODAL-AUTH
@@ -391,7 +454,9 @@ $(function () {
   
   // get first state
   $(_ADD_TO_CART).each(function () {
-    cardProductCounterUpdate($(this), "take");
+    if ($(this).data("product-in-cart-count")) {
+      cardProductCounterUpdate($(this), "take");
+    }
   });
   
   // listeners
@@ -407,15 +472,24 @@ $(function () {
       cardProductCounterUpdate($(this).closest(_ADD_TO_CART), "plus");
     })
     .on(
-      "input mouseup select contextmenu drop",
+      "input mouseup select contextmenu drop change ",
       ".add-to-cart__counter-input",
       function () {
         const $block = $(this).closest(_ADD_TO_CART);
+        const $counter = $block.find(".add-to-cart__cart-counter");
+        const $adder = $block.find(".add-to-cart__btn-buy");
         const oldVal = parseInt($(this).data("old-val"));
-        const newVal = parseInt($(this).val());
+        const newVal = parseInt($(this).val()) || 0;
         if (oldVal == newVal) return;
         $block.data("old-val", newVal);
         applyProductCount($block.data("product-id"), newVal);
+        if (newVal > 0) {
+          $adder.fadeOut();
+          $counter.fadeIn();
+        } else {
+          $adder.fadeIn();
+          $counter.fadeOut();
+        }
       }
     );
   
@@ -438,7 +512,7 @@ $(function () {
         newVal = curVal - 1;
         break;
       case "take":
-        newVal = $block.data("product-in-cart-count");
+        newVal = parseInt($block.data("product-in-cart-count"));
         break;
     }
   
@@ -460,6 +534,52 @@ $(function () {
   
     applyProductCount($block.data("product-id"), newVal);
   }
+  
+  // =================================================================
+  // ADD-TO-FAVORITE
+  // =================================================================
+  // set like status product here
+  function setProductLikeStatus(id, status, type = "product") {
+    console.log("id", id, "status", status, "type", type);
+    // put AJAX here
+  }
+  
+  // listeners
+  $(document)
+    // likes
+    .on("click", ".add-to-favorite__trigger", function () {
+      const $card = $(this).closest(".card-product");
+      const likedClass = "active";
+      const id = $(this).data("product-id");
+  
+      $(this).toggleClass(likedClass);
+  
+      const liked = $(this).hasClass(likedClass);
+  
+      setProductLikeStatus(id, liked);
+  
+      // find all same
+      const $same = $(`.add-to-favorite__trigger[data-product-id="${id}"]`);
+      if (liked) {
+        $same.addClass(likedClass);
+      } else {
+        $same.removeClass(likedClass);
+      }
+    });
+  
+  // =================================================================
+  // TABS
+  // =================================================================
+  $(document).on("show.bs.tab", ".tabs", function (e) {
+    const $trigger = $(e.target);
+    const $tabContent = $(e.currentTarget).find(".tab-content");
+  
+    if ($trigger.data("nide-bg-mobile")) {
+      $tabContent.addClass("tab-content_no-bg");
+    } else {
+      $tabContent.removeClass("tab-content_no-bg");
+    }
+  });
   
 
   // =================================================================
