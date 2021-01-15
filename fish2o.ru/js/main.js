@@ -396,6 +396,27 @@ $(function () {
     });
   
   // =================================================================
+  // NAVIGATION-SIDE-BLOCKS_SLIDER
+  // =================================================================
+  $(".navigation-side-blocks_slider").each(function (index, element) {
+    const $container = $(this).find(".swiper-container");
+    const $pagination = $(this).find(".swiper-pagination");
+    const gap = $(this).data("gap") || 30;
+  
+    new Swiper($container[0], {
+      loop: false,
+      spaceBetween: gap,
+      slidesPerView: "auto",
+  
+      pagination: {
+        el: $pagination[0],
+        dynamicBullets: true,
+        clickable: true,
+      },
+    });
+  });
+  
+  // =================================================================
   // NAVIGATION-SUBCATEGORIES
   // =================================================================
   $(document)

@@ -6,3 +6,4 @@ Pages
 - [Product Catalog](https://evgeniusly.github.io/fish2o.ru/catalog.html)
 - [Product](https://evgeniusly.github.io/fish2o.ru/product.html)
 - [Recipes](https://evgeniusly.github.io/fish2o.ru/recipes.html)
+- [Promotions](https://evgeniusly.github.io/fish2o.ru/promotions.html)

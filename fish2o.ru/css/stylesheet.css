@@ -9946,6 +9946,67 @@ a.footer-mobile__nav-secondary-link:hover {
   -moz-column-fill: auto;
   column-fill: auto
 }
+.navigation-side-blocks__list {
+  margin-left: -16px;
+  padding: 0 23px 0 0;
+  list-style: none
+}
+.navigation-side-blocks__item {
+  margin-bottom: 25px;
+  padding: 5px 15px;
+  border: 1px solid transparent
+}
+.navigation-side-blocks__item-link {
+  color: #1e2833
+}
+.navigation-side-blocks__item-link:hover {
+  color: #f15526
+}
+.navigation-side-blocks__item-title {
+  margin-bottom: 3px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px
+}
+.navigation-side-blocks__item-text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px
+}
+.navigation-side-blocks__item.active {
+  background: #fff7f4;
+  border: 1px solid #ffd0c2;
+  border-radius: 8px
+}
+.navigation-side-blocks__item.active .navigation-side-blocks__item-title {
+  color: #f15526
+}
+.navigation-side-blocks_slider {
+  margin-bottom: 24px
+}
+.navigation-side-blocks_slider .navigation-side-blocks__list {
+  margin-left: 0;
+  padding: 0
+}
+.navigation-side-blocks_slider .swiper-slide {
+  width: 260px
+}
+.navigation-side-blocks_slider .navigation-side-blocks__item {
+  margin-bottom: 0;
+  background: #fff;
+  border: 1px solid #ffd0c2;
+  border-radius: 8px
+}
+.navigation-side-blocks_slider .navigation-side-blocks__item.active {
+  background: #fff7f4
+}
+.navigation-side-blocks_slider .navigation-side-blocks__item-text {
+  margin-bottom: 4px
+}
+.navigation-side-blocks_slider .navigation-side-blocks__item-more {
+  font-size: 14px;
+  line-height: 20px
+}
 .navigation-subcategories__list {
   margin-bottom: 20px;
   padding: 0;
@@ -11916,6 +11977,28 @@ a.footer-mobile__nav-secondary-link:hover {
     margin-bottom: 24px
   }
 }
+.catalog-promotions__banner {
+  margin-bottom: 33px
+}
+.catalog-promotions__info {
+  margin-bottom: 26px
+}
+.catalog-promotions__info-title {
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px
+}
+.catalog-promotions__info-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px
+}
+@media (max-width:1199.98px) {
+  .catalog-promotions__banner {
+    margin-bottom: 16px
+  }
+}
 .product__slider {
   margin-bottom: 31px
 }
@@ -12268,6 +12351,10 @@ h4 a:hover,
 h5 a:hover,
 h6 a:hover {
   color: #f15526
+}
+.btn__cont {
+  margin-left: 4px;
+  color: #ccc
 }
 .form-check {
   padding-left: 29px
