@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>fish2o.ru - Блог Fish2O</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  </head>
+  <body class="position-relative">
+    <div class="wrapper d-flex flex-column min-vh-100">
+      <div class="d-none d-lg-block">
+        <div class="header__circle-wrap">
+          <div class="container">
+            <div class="row">
+              <div class="col position-relative">
+                <div class="header__circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <header class="header">
+        <div class="d-none d-lg-block">
+          <div class="navigation-top">
+            <div class="container">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-auto">
+                  <nav class="navbar navbar-expand-lg navbar-light p-0">
+                    <ul class="navbar-nav header__navbar">
+                      <li class="nav-item"><a class="nav-link" href="#">Кто мы</a>
+                      </li>
+                      <li class="nav-item"><a class="nav-link" href="#">
+                          <svg class="icon svg-car-delivery-dims nav-icon">
+                            <use xlink:href="sprites/sprite.svg#car-delivery"></use>
+                          </svg>Доставка и оплата</a>
+                      </li>
+                      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#">Наши магазины</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Бесконтактная доставка и оплата онлайн</a><a class="dropdown-item" href="#">Как сделать заказ</a><a class="dropdown-item" href="#">Акции и скидки</a><a class="dropdown-item" href="#">Программа лояльности</a><a class="dropdown-item" href="#">Гарантия и возврат</a>
+                        </div>
+                      </li>
+                      <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#">Покупателям</a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Бесконтактная доставка и&nbsp;оплата онлайн</a><a class="dropdown-item" href="#">Как сделать заказ</a><a class="dropdown-item" href="#">Акции и скидки</a><a class="dropdown-item" href="#">Программа лояльности</a><a class="dropdown-item" href="#">Гарантия и возврат</a>
+                        </div>
+                      </li>
+                      <li class="nav-item"><a class="nav-link" href="#">Новости</a>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="col-auto">
+                  <div class="nav__communication"><a class="nav__link-phone" href="tel:+74954450550">+7 (495) 445-05-50</a><a class="nav__link-callback" href="#">
+                      <svg class="icon svg-phone-callback-dims nav__link-callback-icon">
+                        <use xlink:href="sprites/sprite.svg#phone-callback"></use>
+                      </svg><span class="nav__link-callback-text">Обратный звонок</span></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="navigation-bottom">
+            <div class="container">
+              <div class="row align-items-center pt-4 pb-2">
+                <div class="col-auto"><a class="d-inline-block header__site-logo-link" href="/"><img class="header__site-logo-img" src="images/logo.svg" alt=""></a></div>
+                <div class="col-auto">
+                  <button class="btn btn-dark menu-catalog__button-trigger" type="button">
+                    <div class="hamburger hamburger--spin align-middle mr-3"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div><span class="menu-catalog__button-trigger-text">Каталог</span>
+                  </button>
+                </div>
+                <div class="col">
+                  <div class="header__search-form">
+                    <input class="header__search-form-input" type="text" placeholder="Название рыбы или морепродукта" aria-label="">
+                    <button class="header__search-form-btn" type="button"> 
+                      <svg class="icon svg-search-dims">
+                        <use xlink:href="sprites/sprite.svg#search"></use>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="col-auto"><a class="header__user-actions-link" href="#" data-toggle="modal" data-target="#modal-auth">
+                    <svg class="icon svg-profile-dims">
+                      <use xlink:href="sprites/sprite.svg#profile"></use>
+                    </svg></a><a class="header__user-actions-link" href="#">
+                    <svg class="icon svg-heart-dims">
+                      <use xlink:href="sprites/sprite.svg#heart"></use>
+                    </svg></a><a class="header__user-actions-link" href="#">
+                    <svg class="icon svg-cart-dims">
+                      <use xlink:href="sprites/sprite.svg#cart"></use>
+                    </svg></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="d-block d-lg-none">
+        <div class="header-mobile__content-spacer"></div>
+        <div class="header-mobile__wrap">
+          <div class="container">
+            <div class="row align-items-center justify-content-between header-mobile">
+              <div class="col-auto">
+                <div class="header-mobile__logo"><a class="d-inline-block" href="/"><img class="header-mobile__logo-icon" src="images/logo.svg" alt=""></a></div>
+              </div>
+              <div class="col-auto"><a class="header-mobile__actions-link" href="#">
+                  <svg class="icon svg-search-dims header-mobile__actions-search-icon">
+                    <use xlink:href="sprites/sprite.svg#search"></use>
+                  </svg></a><a class="header-mobile__actions-link" href="#">
+                  <svg class="icon svg-cart-dims">
+                    <use xlink:href="sprites/sprite.svg#cart"></use>
+                  </svg></a>
+                <div class="hamburger hamburger--spin align-middle header-mobile__hamburger" data-toggle="modal" data-target="#header-mobile__nav-modal"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="header-mobile__nav-modal" data-keyboard="false" tabindex="-1" aria-labelledby="header-mobile__nav-modalLabel" aria-hidden="true">
+          <div class="modal-dialog header-mobile__nav">
+            <div class="modal-content header-mobile__nav-content">
+              <div class="header-mobile__nav-catalog">
+                <div class="header-mobile__nav-catalog-title"><a class="header-mobile__nav-catalog-title-link" data-toggle="collapse" href="#header-mobile__nav-catalog" role="button" aria-expanded="false" aria-controls="header-mobile__nav-catalog">
+                     Весь ассортимент
+                    <svg class="icon svg-chevron-dims header-mobile__nav-catalog-title-chevron">
+                      <use xlink:href="sprites/sprite.svg#chevron"></use>
+                    </svg></a></div>
+                <div class="collapse" id="header-mobile__nav-catalog">
+                  <ul class="header-mobile__nav-catalog-list">
+                    <li class="header-mobile__nav-catalog-item"><a class="header-mobile__nav-catalog-link" href="/test">Весь ассортимент</a></li>
+                    <li class="header-mobile__nav-catalog-item"><a class="header-mobile__nav-catalog-link" href="#">Белая рыба</a></li>
+                    <li class="header-mobile__nav-catalog-item"><a class="header-mobile__nav-catalog-link" href="#">Красная рыба</a></li>
+                    <li class="header-mobile__nav-catalog-item"><a class="header-mobile__nav-catalog-link" href="#">Морепродукты</a></li>
+                    <li class="header-mobile__nav-catalog-item"><a class="header-mobile__nav-catalog-link" href="#">Рыба целиком</a></li>
+                    <li class="header-mobile__nav-catalog-item"><a class="header-mobile__nav-catalog-link" href="#">Копченая/вяленая рыба</a></li>
+                    <li class="header-mobile__nav-catalog-item"><a class="header-mobile__nav-catalog-link" href="#">Слабосоленая рыба</a></li>
+                    <li class="header-mobile__nav-catalog-item"><a class="header-mobile__nav-catalog-link" href="#">Полуфабрикаты/Консервы</a></li>
+                    <li class="header-mobile__nav-catalog-item"><a class="header-mobile__nav-catalog-link" href="#">Бакалея</a></li>
+                    <li class="header-mobile__nav-catalog-item"><a class="header-mobile__nav-catalog-link" href="#">Специи</a></li>
+                    <li class="header-mobile__nav-catalog-item"><a class="header-mobile__nav-catalog-link" href="#">Термопакеты</a></li>
+                  </ul>
+                </div>
+              </div>
+              <ul class="header-mobile__nav-main-list">
+                <li class="header-mobile__nav-main-item"><a class="header-mobile__nav-main-link" href="test">Кто мы</a></li>
+                <li class="header-mobile__nav-main-item"><a class="header-mobile__nav-main-link" href="#">Доставка и оплата
+                    <svg class="icon svg-car-delivery-dims header-mobile__nav-main-link-icon">
+                      <use xlink:href="sprites/sprite.svg#car-delivery"></use>
+                    </svg></a></li>
+                <li class="header-mobile__nav-main-item"><a class="header-mobile__nav-main-link" href="#">Новости</a></li>
+                <li class="header-mobile__nav-main-item"><a class="header-mobile__nav-main-link" href="#">Наши магазины</a></li>
+                <li class="header-mobile__nav-main-item"><a class="header-mobile__nav-main-link" href="#">Покупателям</a></li>
+                <li class="header-mobile__nav-main-item"><a class="header-mobile__nav-main-link header-mobile__nav-close-trigger header-mobile__nav-main-link_accent" href="#" data-toggle="modal" data-target="#modal-auth">
+                     Личный кабинет
+                    <svg class="icon svg-profile-dims header-mobile__nav-main-link-icon">
+                      <use xlink:href="sprites/sprite.svg#profile"></use>
+                    </svg></a></li>
+              </ul>
+              <div class="header-mobile__nav-footer">
+                <div class="header-mobile__nav-footer-phone"><a class="header-mobile__nav-footer-phone-link" href="tel:+74954450550">
+                    <svg class="icon svg-phone-callback-dims header-mobile__nav-footer-phone-link-icon">
+                      <use xlink:href="sprites/sprite.svg#phone-callback"></use>
+                    </svg>+7 (495) 445-05-50</a></div>
+                <div class="header-mobile__nav-footer-mail"><a class="header-mobile__nav-footer-mail-link" href="mailto:info@fish2o.ru">
+                    <svg class="icon svg-mail-dims header-mobile__nav-footer-mail-link-icon">
+                      <use xlink:href="sprites/sprite.svg#mail"></use>
+                    </svg>info@fish2o.ru</a></div><a class="btn btn-outline-primary header-mobile__nav-footer-contact-link" href="#">Обратная связь</a>
+                <div class="header-mobile__nav-social"><a class="header-mobile__nav-social-link" href="https://www.facebook.com/fish2o/" target="_blank">
+                    <svg class="icon svg-social-facebook-dims header-mobile__nav-social-icon">
+                      <use xlink:href="sprites/sprite.svg#social-facebook"></use>
+                    </svg></a><a class="header-mobile__nav-social-link" href="https://vk.com/fish2o" target="_blank">
+                    <svg class="icon svg-social-vk-dims header-mobile__nav-social-icon">
+                      <use xlink:href="sprites/sprite.svg#social-vk"></use>
+                    </svg></a><a class="header-mobile__nav-social-link" href="#" target="_blank">
+                    <svg class="icon svg-social-youtube-dims header-mobile__nav-social-icon">
+                      <use xlink:href="sprites/sprite.svg#social-youtube"></use>
+                    </svg></a><a class="header-mobile__nav-social-link" href="https://www.instagram.com/fish2o.ru/" target="_blank">
+                    <svg class="icon svg-social-instagram-dims header-mobile__nav-social-icon">
+                      <use xlink:href="sprites/sprite.svg#social-instagram"></use>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="container">
+          <div class="row pt-3">
+            <div class="col"> 
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Весь ассортимент</a></li>
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Белая рыба</a></li>
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Треска</a></li>
+              </ul>
+              <h1>Блог Fish2O</h1>
+            </div>
+          </div>
+          <div class="row pt-lg-3 pb-5">
+            <div class="col">
+              <div class="d-md-flex justify-content-between">
+                <ul class="navigation-subcategories__list">
+                  <li class="navigation-subcategories__item"><a class="navigation-subcategories__link navigation-subcategories__link_active" href="test/">Все</a></li>
+                  <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Стейки</a></li>
+                  <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Филе</a></li>
+                  <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Фарш</a></li>
+                  <div class="navigation-subcategories__hidden-items">
+                    <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Треска</a></li>
+                    <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Палтус Синекорый</a></li>
+                    <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Пикша</a></li>
+                    <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Минтай</a></li>
+                    <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Сельдь</a></li>
+                    <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Сибас</a></li>
+                    <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Дорада</a></li>
+                    <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Камбала</a></li>
+                    <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Скумбрия</a></li>
+                    <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Окунь</a></li>
+                    <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Камбала-ерш</a></li>
+                  </div>
+                  <li class="navigation-subcategories__item"><a class="navigation-subcategories__link navigation-subcategories__link_more" href="#">Еще...</a></li>
+                </ul>
+                <div class="d-flex justify-content-end catalog-product__navigation-sort">
+                  <div class="dropdown navigation-sort">
+                    <div class="navigation-sort__content"><a class="navigation-sort__selector" id="navigation-sort-ID" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg class="icon svg-arrow-dims navigation-sort__selector-icon-arrow">
+                          <use xlink:href="sprites/sprite.svg#arrow"></use>
+                        </svg>
+                        <div class="navigation-sort__selector-title">По популярности</div>
+                        <svg class="icon svg-chevron-dims navigation-sort__selector-icon-chevron">
+                          <use xlink:href="sprites/sprite.svg#chevron"></use>
+                        </svg></a>
+                      <div class="dropdown-menu navigation-sort__menu" aria-labelledby="navigation-sort-ID"><a class="navigation-sort__option" href="#" data-value="0" style="display:none;">По популярности</a><a class="navigation-sort__option" href="#" data-value="1">Название</a><a class="navigation-sort__option" href="#" data-value="2">Цена</a><a class="navigation-sort__option" href="#" data-value="3">Хиты продаж</a><a class="navigation-sort__option" href="#" data-value="4">Оценка покупателей</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row catalog-product__cards justify-content-center">
+                <div class="d-none d-lg-block">
+                  <div class="col-auto catalog-product__card-product-holder">
+                    <div class="card-news-wide">
+                      <div class="card-news-wide__card"><img class="card-news-wide__img" src="images/thumb-product-1.png" alt="Самая вкусная семга здесь. Почему покупают в&amp;nbsp;FisH20?">
+                        <div class="card-news-wide__thumb-fade"></div>
+                        <div class="card-news-wide__body">
+                          <div class="card-news-wide__date">3 час назад</div>
+                          <h5 class="card-news-wide__title"><a href="#">Самая вкусная семга здесь. Почему покупают в&nbsp;FisH20?</a></h5>
+                        </div>
+                      </div><a class="card-news-wide__flag" href="#">Полезные статьи</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-auto catalog-product__card-product-holder">
+                  <div class="card-news">
+                    <div class="card-news__card">
+                      <div class="card-news__image"><img class="card-news__img" src="images/thumb-product-1.png" alt="С какими приправами готовить семгу">
+                        <div class="card-news__date">4 часа назад</div>
+                      </div>
+                      <div class="card-news__body-wrap">
+                        <div class="card-news__body">
+                          <h5 class="card-news__title"><a href="#">С какими приправами готовить семгу</a></h5>
+                          <div class="card-news__text">Этот рецепт приготовления сёмги один из моих     самых любимых, потому что он простой и проверенный     не одним десятилетием любителем рыбы.</div>
+                        </div>
+                      </div>
+                    </div><a class="card-news__flag" href="#">Блог</a>
+                  </div>
+                </div>
+                <div class="col-auto catalog-product__card-product-holder">
+                  <div class="card-news">
+                    <div class="card-news__card">
+                      <div class="card-news__image"><img class="card-news__img" src="images/thumb-product-2.png" alt="Креветки аргентинские L1 (Langostino Austral)">
+                        <div class="card-news__date">4 часа назад</div>
+                      </div>
+                      <div class="card-news__body-wrap">
+                        <div class="card-news__body">
+                          <h5 class="card-news__title"><a href="#">Креветки аргентинские L1 (Langostino Austral)</a></h5>
+                          <div class="card-news__text">Этот рецепт приготовления сёмги один из моих     самых любимых, потому что он простой и проверенный     не одним десятилетием любителем рыбы.</div>
+                        </div>
+                      </div>
+                    </div><a class="card-news__flag" href="#">Блог</a>
+                  </div>
+                </div>
+                <div class="col-auto catalog-product__card-product-holder">
+                  <div class="card-news">
+                    <div class="card-news__card">
+                      <div class="card-news__image"><img class="card-news__img" src="images/thumb-product-1.png" alt="С какими приправами готовить семгу">
+                        <div class="card-news__date">4 часа назад</div>
+                      </div>
+                      <div class="card-news__body-wrap">
+                        <div class="card-news__body">
+                          <h5 class="card-news__title"><a href="#">С какими приправами готовить семгу</a></h5>
+                          <div class="card-news__text">Этот рецепт приготовления сёмги один из моих     самых любимых, потому что он простой и проверенный     не одним десятилетием любителем рыбы.</div>
+                        </div>
+                      </div>
+                    </div><a class="card-news__flag" href="#">Блог</a>
+                  </div>
+                </div>
+                <div class="col-auto catalog-product__card-product-holder">
+                  <div class="card-news">
+                    <div class="card-news__card">
+                      <div class="card-news__image"><img class="card-news__img" src="images/thumb-product-3.png" alt="Short name">
+                        <div class="card-news__date">4 часа назад</div>
+                      </div>
+                      <div class="card-news__body-wrap">
+                        <div class="card-news__body">
+                          <h5 class="card-news__title"><a href="#">Short name</a></h5>
+                          <div class="card-news__text">Этот рецепт приготовления сёмги один из моих     самых любимых, потому что он простой и проверенный     не одним десятилетием любителем рыбы.</div>
+                        </div>
+                      </div>
+                    </div><a class="card-news__flag" href="#">Блог</a>
+                  </div>
+                </div>
+                <div class="col-auto catalog-product__card-product-holder">
+                  <div class="card-news">
+                    <div class="card-news__card">
+                      <div class="card-news__image"><img class="card-news__img" src="images/thumb-product-4.png" alt="Short name">
+                        <div class="card-news__date">4 часа назад</div>
+                      </div>
+                      <div class="card-news__body-wrap">
+                        <div class="card-news__body">
+                          <h5 class="card-news__title"><a href="#">Short name</a></h5>
+                          <div class="card-news__text">Этот рецепт приготовления сёмги один из моих     самых любимых, потому что он простой и проверенный     не одним десятилетием любителем рыбы.</div>
+                        </div>
+                      </div>
+                    </div><a class="card-news__flag" href="#">Блог</a>
+                  </div>
+                </div>
+                <div class="col-auto catalog-product__card-product-holder">
+                  <div class="card-news">
+                    <div class="card-news__card">
+                      <div class="card-news__image"><img class="card-news__img" src="images/thumb-product-5.png" alt="С какими приправами готовить семгу">
+                        <div class="card-news__date">4 часа назад</div>
+                      </div>
+                      <div class="card-news__body-wrap">
+                        <div class="card-news__body">
+                          <h5 class="card-news__title"><a href="#">С какими приправами готовить семгу</a></h5>
+                          <div class="card-news__text">Этот рецепт приготовления сёмги один из моих     самых любимых, потому что он простой и проверенный     не одним десятилетием любителем рыбы.</div>
+                        </div>
+                      </div>
+                    </div><a class="card-news__flag" href="#">Блог</a>
+                  </div>
+                </div>
+                <div class="col-auto catalog-product__card-product-holder">
+                  <div class="card-news">
+                    <div class="card-news__card">
+                      <div class="card-news__image"><img class="card-news__img" src="images/thumb-product-6.png" alt="С какими приправами готовить семгу">
+                        <div class="card-news__date">4 часа назад</div>
+                      </div>
+                      <div class="card-news__body-wrap">
+                        <div class="card-news__body">
+                          <h5 class="card-news__title"><a href="#">С какими приправами готовить семгу</a></h5>
+                          <div class="card-news__text">Этот рецепт приготовления сёмги один из моих     самых любимых, потому что он простой и проверенный     не одним десятилетием любителем рыбы.</div>
+                        </div>
+                      </div>
+                    </div><a class="card-news__flag" href="#">Блог</a>
+                  </div>
+                </div>
+                <div class="col-auto catalog-product__card-product-holder">
+                  <div class="card-news">
+                    <div class="card-news__card">
+                      <div class="card-news__image"><img class="card-news__img" src="images/thumb-product-1.png" alt="С какими приправами готовить семгу">
+                        <div class="card-news__date">4 часа назад</div>
+                      </div>
+                      <div class="card-news__body-wrap">
+                        <div class="card-news__body">
+                          <h5 class="card-news__title"><a href="#">С какими приправами готовить семгу</a></h5>
+                          <div class="card-news__text">Этот рецепт приготовления сёмги один из моих     самых любимых, потому что он простой и проверенный     не одним десятилетием любителем рыбы.</div>
+                        </div>
+                      </div>
+                    </div><a class="card-news__flag" href="#">Блог</a>
+                  </div>
+                </div>
+                <div class="d-none d-lg-block">
+                  <div class="col-auto catalog-product__card-product-holder">
+                    <div class="card-news-wide">
+                      <div class="card-news-wide__card"><img class="card-news-wide__img" src="images/thumb-product-1.png" alt="Самая вкусная семга здесь. Почему покупают в&amp;nbsp;FisH20?">
+                        <div class="card-news-wide__thumb-fade"></div>
+                        <div class="card-news-wide__body">
+                          <div class="card-news-wide__date">3 час назад</div>
+                          <h5 class="card-news-wide__title"><a href="#">Самая вкусная семга здесь. Почему покупают в&nbsp;FisH20?</a></h5>
+                        </div>
+                      </div><a class="card-news-wide__flag" href="#">Полезные статьи</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <button class="btn btn-outline-primary catalog-product__btn-more">Показать еще<span class="btn__cont">10</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="subscribe-widget">
+          <div class="subscribe-widget__container">
+            <div class="container">
+              <div class="row">
+                <div class="col subscribe-widget__content">
+                  <div class="subscribe-widget__text">Попробуй со cкидкой</div>
+                  <div class="subscribe-widget__pop">
+                    <div class="subscribe-widget__pop-tail"></div>
+                    <div class="subscribe-widget__pop-shadow"></div>
+                    <div class="subscribe-widget__pop-body">
+                      <div class="subscribe-widget__pop-text">-25%</div>
+                    </div>
+                  </div>
+                  <div class="subscribe-widget__form-wrap">
+                    <form class="subscribe-widget__form" action="#">
+                      <input class="subscribe-widget__form-input" type="email" placeholder="Введите ваш email">
+                      <svg class="icon svg-mail-dims subscribe-widget__form-icon">
+                        <use xlink:href="sprites/sprite.svg#mail"></use>
+                      </svg>
+                      <button class="btn btn-primary subscribe-widget__form-btn">Подписаться</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row pt-3 pb-5">
+            <div class="col">
+              <h2>Частые вопросы</h2>
+              <div class="d-flex flex-column flex-lg-row">
+                <div class="widget-faq__accordion order-lg-2">
+                  <div class="widget-faq__accordion-item">
+                    <div class="widget-faq__accordion-item-content">
+                      <h5 class="widget-faq__accordion-item-title collapsed" id="item-heading-0" data-toggle="collapse" data-target="#item-collapse-0" aria-expanded="false" aria-controls="item-collapse-0">А у вас точно качественная продукция?
+                        <svg class="icon svg-chevron-dims widget-faq__accordion-item-title-icon">
+                          <use xlink:href="sprites/sprite.svg#chevron"></use>
+                        </svg>
+                      </h5>
+                      <div class="widget-faq__accordion-item-text-wrap collapse" id="item-collapse-0" aria-labelledby="item-heading-0" data-parent=".widget-faq__accordion">
+                        <div class="widget-faq__accordion-item-text">Наша компания ГК «Мурмансфиш» более 20 лет на Российском рынке рыбы         и морепродуктов. Собственная фабрика в Мурманске и цех в Москве, а также         сотрудничество с крупными рыбодобывающими компаниями позволяют нам контролировать         и гарантировать качество продукции. Мы не используем консерванты,         а долгий срок хранения обеспечен шоковой заморозкой продукта.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="widget-faq__accordion-item">
+                    <div class="widget-faq__accordion-item-content">
+                      <h5 class="widget-faq__accordion-item-title collapsed" id="item-heading-1" data-toggle="collapse" data-target="#item-collapse-1" aria-expanded="false" aria-controls="item-collapse-1">А это дороже, чем покупать в магазине?
+                        <svg class="icon svg-chevron-dims widget-faq__accordion-item-title-icon">
+                          <use xlink:href="sprites/sprite.svg#chevron"></use>
+                        </svg>
+                      </h5>
+                      <div class="widget-faq__accordion-item-text-wrap collapse" id="item-collapse-1" aria-labelledby="item-heading-1" data-parent=".widget-faq__accordion">
+                        <div class="widget-faq__accordion-item-text">FisH2O не дороже, чем покупать те же продукты в магазине.         К тому же: - Не нужно ходить в магазин, доставим прямо вам домой -         Ни в одном продуктовом магазине нет настолько широкого ассортимента         рыбы и морепродуктов - Нет необходимости думать о качестве, между         вами и рыбой - только FisH2O и никаких посредников</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="widget-faq__accordion-item">
+                    <div class="widget-faq__accordion-item-content">
+                      <h5 class="widget-faq__accordion-item-title collapsed" id="item-heading-2" data-toggle="collapse" data-target="#item-collapse-2" aria-expanded="false" aria-controls="item-collapse-2">Как происходит доставка и оплата?
+                        <svg class="icon svg-chevron-dims widget-faq__accordion-item-title-icon">
+                          <use xlink:href="sprites/sprite.svg#chevron"></use>
+                        </svg>
+                      </h5>
+                      <div class="widget-faq__accordion-item-text-wrap collapse" id="item-collapse-2" aria-labelledby="item-heading-2" data-parent=".widget-faq__accordion">
+                        <div class="widget-faq__accordion-item-text"><p>Ваш заказ не покидает холодильника даже в пути! ❄</p>        <p>Мы доставляем только специальным транспортом, который оборудован         холодильными установками и поддерживает специальную температуру в кузове.</p>        <p>Вы оплачиваете заказ курьеру картой или наличными, после личной проверки заказа.</p></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="widget-faq__accordion-item">
+                    <div class="widget-faq__accordion-item-content">
+                      <h5 class="widget-faq__accordion-item-title collapsed" id="item-heading-3" data-toggle="collapse" data-target="#item-collapse-3" aria-expanded="false" aria-controls="item-collapse-3">Где и как собираются заказы?
+                        <svg class="icon svg-chevron-dims widget-faq__accordion-item-title-icon">
+                          <use xlink:href="sprites/sprite.svg#chevron"></use>
+                        </svg>
+                      </h5>
+                      <div class="widget-faq__accordion-item-text-wrap collapse" id="item-collapse-3" aria-labelledby="item-heading-3" data-parent=".widget-faq__accordion">
+                        <div class="widget-faq__accordion-item-text">В 2017 году мы открыли собственный цех по производству в Москве,         где происходит посол и разделка рыбы, ее упаковка, заморозка и хранение.         Ваш заказ собирается непосредственно перед отправкой</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="widget-faq__helper order-lg-1"><img class="widget-faq__helper-pad" src="images/faq-helper-pad.svg" alt="">
+                  <div class="widget-faq__helper-content">
+                    <div class="widget-faq__helper-title">Не знаете с&nbsp;чего&nbsp;начать?</div>
+                    <div class="widget-faq__helper-text">
+                       Всегда можете написать нам и&nbsp;мы с&nbsp;радостью ответим на&nbsp;все вопросы!</div><a class="btn btn-outline-primary widget-faq__helper-btn" href="#">Задать вопрос</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer mt-auto bg-dark">
+        <div class="d-none d-lg-block">
+          <div class="container">
+            <div class="row">
+              <div class="col-3">
+                <div class="d-flex flex-column justify-content-between h-100 footer__social">
+                  <div class="text-center"><a href="/"><img class="footer__logo-img" src="images/logo.svg" alt=""></a></div>
+                  <div><a class="footer__social-link" href="https://www.facebook.com/fish2o/" target="_blank"><img class="footer__social-icon" src="images/social-facebook-white.svg" alt=""></a><a class="footer__social-link" href="https://vk.com/fish2o" target="_blank"><img class="footer__social-icon" src="images/social-vk-white.svg" alt=""></a><a class="footer__social-link" href="#" target="_blank"><img class="footer__social-icon" src="images/social-youtube-white.svg" alt=""></a><a class="footer__social-link" href="https://www.instagram.com/fish2o.ru/" target="_blank"><img class="footer__social-icon" src="images/social-instagram-white.svg" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="footer__nav">
+                  <h6 class="footer__title">Интернет-магазин fish2o</h6>
+                  <ul class="footer__nav-list">
+                    <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="/catalog.html">Весь ассортимент</a></li>
+                    <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">О нас</a></li>
+                    <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">Оплата</a></li>
+                    <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">Условия доставки</a></li>
+                    <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">Наши магазины</a></li>
+                    <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">Программа лояльности</a></li>
+                    <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">Гарантии и возврат</a></li>
+                    <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">Отзывы</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="footer__nav">
+                  <h6 class="footer__title">Свяжитесь с нами</h6>
+                  <div class="footer__nav-phone-link"><a href="tel:+74954450550">
+                      <svg class="icon svg-phone-callback-dims footer__nav-phone-link-icon">
+                        <use xlink:href="sprites/sprite.svg#phone-callback"></use>
+                      </svg>+7 (495) 445-05-50</a></div>
+                  <div class="footer__nav-mail-link"><a href="mailto:info@fish2o.ru">
+                      <svg class="icon svg-mail-dims footer__nav-mail-link-icon">
+                        <use xlink:href="sprites/sprite.svg#mail"></use>
+                      </svg>info@fish2o.ru</a></div><a class="btn btn-outline-primary footer__nav-contact-link" href="#">Обратная связь</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="footer__hr"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-5">
+                <div class="footer__copyr">© 2020 Fish2O. Все права защищены</div>
+              </div>
+              <div class="col-2 text-center"><img class="footer__pyrobyte-copyr" src="images/pyrobyte-copyr.svg" alt=""></div>
+              <div class="col-3 text-right">
+                <div class="footer__nav-secondary"><a class="footer__nav-secondary-link" href="#">Политика конфиденциальности</a></div>
+              </div>
+              <div class="col-2 text-right">
+                <div class="footer__nav-secondary"><a class="footer__nav-secondary-link" href="#">Договор оферты</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-block d-lg-none">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="footer-mobile">
+                  <div class="footer-mobile__title"><a class="footer-mobile__title-link" href="/">Интернет-магазин fish2o</a></div>
+                  <div class="footer-mobile__nav">
+                    <div class="footer-mobile__nav-category">
+                      <div class="footer-mobile__nav-category-title collapsed" id="footer-mobile-nav-item-heading-0" data-toggle="collapse" data-target="#footer-mobile-nav-category-collapse-0" aria-expanded="false" aria-controls="footer-mobile-nav-category-collapse-0">О компании
+                        <svg class="icon svg-chevron-dims footer-mobile__nav-category-title-chevron">
+                          <use xlink:href="sprites/sprite.svg#chevron"></use>
+                        </svg>
+                      </div>
+                      <div class="footer-mobile__nav-category-list-wrap">
+                        <ul class="footer-mobile__nav-category-list collapse" id="footer-mobile-nav-category-collapse-0" aria-labelledby="footer-mobile-nav-item-heading-0" data-parent=".footer-mobile__nav">
+                          <li class="footer-mobile__nav-category-item"><a class="footer-mobile__nav-category-link" href="/catalog.html">Весь ассортимент</a></li>
+                          <li class="footer-mobile__nav-category-item"><a class="footer-mobile__nav-category-link" href="#">Условия доставки</a></li>
+                          <li class="footer-mobile__nav-category-item"><a class="footer-mobile__nav-category-link" href="#">Программа лояльности</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="footer-mobile__nav-category">
+                      <div class="footer-mobile__nav-category-title collapsed" id="footer-mobile-nav-item-heading-1" data-toggle="collapse" data-target="#footer-mobile-nav-category-collapse-1" aria-expanded="false" aria-controls="footer-mobile-nav-category-collapse-1">Клиентам
+                        <svg class="icon svg-chevron-dims footer-mobile__nav-category-title-chevron">
+                          <use xlink:href="sprites/sprite.svg#chevron"></use>
+                        </svg>
+                      </div>
+                      <div class="footer-mobile__nav-category-list-wrap">
+                        <ul class="footer-mobile__nav-category-list collapse" id="footer-mobile-nav-category-collapse-1" aria-labelledby="footer-mobile-nav-item-heading-1" data-parent=".footer-mobile__nav">
+                          <li class="footer-mobile__nav-category-item"><a class="footer-mobile__nav-category-link" href="/catalog.html">Весь ассортимент</a></li>
+                          <li class="footer-mobile__nav-category-item"><a class="footer-mobile__nav-category-link" href="#">Условия доставки</a></li>
+                          <li class="footer-mobile__nav-category-item"><a class="footer-mobile__nav-category-link" href="#">Программа лояльности</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="footer-mobile__nav-category">
+                      <div class="footer-mobile__nav-category-title collapsed" id="footer-mobile-nav-item-heading-2" data-toggle="collapse" data-target="#footer-mobile-nav-category-collapse-2" aria-expanded="false" aria-controls="footer-mobile-nav-category-collapse-2">Партнерам
+                        <svg class="icon svg-chevron-dims footer-mobile__nav-category-title-chevron">
+                          <use xlink:href="sprites/sprite.svg#chevron"></use>
+                        </svg>
+                      </div>
+                      <div class="footer-mobile__nav-category-list-wrap">
+                        <ul class="footer-mobile__nav-category-list collapse" id="footer-mobile-nav-category-collapse-2" aria-labelledby="footer-mobile-nav-item-heading-2" data-parent=".footer-mobile__nav">
+                          <li class="footer-mobile__nav-category-item"><a class="footer-mobile__nav-category-link" href="/catalog.html">Весь ассортимент</a></li>
+                          <li class="footer-mobile__nav-category-item"><a class="footer-mobile__nav-category-link" href="#">Условия доставки</a></li>
+                          <li class="footer-mobile__nav-category-item"><a class="footer-mobile__nav-category-link" href="#">Программа лояльности</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <div class="footer-mobile__phone"><a class="footer-mobile__phone-link" href="tel:+74954450550">
+                        <svg class="icon svg-phone-callback-dims footer-mobile__phone-link-icon">
+                          <use xlink:href="sprites/sprite.svg#phone-callback"></use>
+                        </svg>+7 (495) 445-05-50</a></div>
+                    <address class="footer-mobile__address-link"><a href="https://maps.google.com/?q=Моссква, Химки, ул. Заводская, 20" target="_blank">
+                        <svg class="icon svg-pin-dims footer-mobile__address-link-icon">
+                          <use xlink:href="sprites/sprite.svg#pin"></use>
+                        </svg>Химки, ул. Заводская, 20</a></address>
+                    <div class="footer-mobile__pyrobyte-copyr"><img class="footer-mobile__pyrobyte-logo" src="images/pyrobyte-copyr.svg" alt=""></div>
+                    <div class="footer-mobile__copyr">© 2020 Fish2O. Все права защищены</div><a class="footer-mobile__nav-secondary-link" href="#">Политика конфиденциальности</a><a class="footer-mobile__nav-secondary-link" href="#">Договор оферты</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="d-none d-lg-block">
+      <div class="menu-catalog">
+        <div class="menu-catalog__content-wrap bg-white">
+          <div class="menu-catalog__content">
+            <div class="container">
+              <div class="row">
+                <div class="col-3">
+                  <div class="list-group menu-catalog__nav"><a class="list-group-item list-group-item-action menu-catalog__nav-link menu-catalog__nav-link_not-empty menu-catalog__nav-link_accent" href="/catalog.html" data-category-id="all">Весь ассортимент
+                      <svg class="icon svg-chevron-dims menu-catalog__nav-link-chevron">
+                        <use xlink:href="sprites/sprite.svg#chevron"></use>
+                      </svg></a><a class="list-group-item list-group-item-action menu-catalog__nav-link" href="/catalog.html">Скидки %</a><a class="list-group-item list-group-item-action menu-catalog__nav-link" href="/catalog.html">Икра</a><a class="list-group-item list-group-item-action menu-catalog__nav-link" href="/catalog.html">Филе/Стейки</a><a class="list-group-item list-group-item-action menu-catalog__nav-link menu-catalog__nav-link_not-empty" href="/catalog.html" data-category-id="whole-fish">Рыба целиком
+                      <svg class="icon svg-chevron-dims menu-catalog__nav-link-chevron">
+                        <use xlink:href="sprites/sprite.svg#chevron"></use>
+                      </svg></a><a class="list-group-item list-group-item-action menu-catalog__nav-link menu-catalog__nav-link_not-empty" href="/catalog.html" data-category-id="seafood">Морепродукты
+                      <svg class="icon svg-chevron-dims menu-catalog__nav-link-chevron">
+                        <use xlink:href="sprites/sprite.svg#chevron"></use>
+                      </svg></a><a class="list-group-item list-group-item-action menu-catalog__nav-link" href="/catalog.html">Копченая/вяленая рыба</a><a class="list-group-item list-group-item-action menu-catalog__nav-link" href="/catalog.html">Слабосоленая рыба</a><a class="list-group-item list-group-item-action menu-catalog__nav-link" href="/catalog.html">Полуфабрикаты/Консервы</a><a class="list-group-item list-group-item-action menu-catalog__nav-link" href="/catalog.html">Бакалея</a><a class="list-group-item list-group-item-action menu-catalog__nav-link" href="/catalog.html">Специи</a><a class="list-group-item list-group-item-action menu-catalog__nav-link" href="/catalog.html">Термопакеты</a>
+                  </div>
+                </div>
+                <div class="col-9">
+                  <div class="menu-catalog__categories">
+                    <div class="menu-catalog__categories-page menu-catalog__categories-page_active" data-category-id="all">
+                      <h4 class="menu-catalog__categories-title">Весь ассортимент</h4>
+                      <div class="menu-catalog__categories-lists">
+                        <div class="menu-catalog__category">
+                          <h5 class="menu-catalog__category-title"><a class="menu-catalog__category-link" href="/catalog.html">Белая рыба</a>
+                          </h5>
+                          <ul class="menu-catalog__category-items">
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Скат</a>
+                            </li>
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Треска</a>
+                            </li>
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Палтус Синекорый</a>
+                            </li>
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Пикша</a>
+                            </li>
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Минтай</a>
+                            </li>
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Сельдь</a>
+                            </li>
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Сибас</a>
+                            </li>
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Дорада</a>
+                            </li>
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Камбала</a>
+                            </li>
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Скумбрия</a>
+                            </li>
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Окунь</a>
+                            </li>
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Камбала-ерш</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="menu-catalog__category">
+                          <h5 class="menu-catalog__category-title"><a class="menu-catalog__category-link" href="/catalog.html">Красная рыба</a>
+                          </h5>
+                          <ul class="menu-catalog__category-items">
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Форель</a>
+                            </li>
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Сёмга</a>
+                            </li>
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Тунец</a>
+                            </li>
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Горбуша</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="menu-catalog__category">
+                          <h5 class="menu-catalog__category-title"><a class="menu-catalog__category-link" href="/catalog.html">Морепродукты</a>
+                          </h5>
+                          <ul class="menu-catalog__category-items">
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Креветки Магаданские</a>
+                            </li>
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Осьминоги</a>
+                            </li>
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Креветки Северные</a>
+                            </li>
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Креветки Тигровые</a>
+                            </li>
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Креветки Аргентинские</a>
+                            </li>
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Кальмар</a>
+                            </li>
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Морской Гребешок</a>
+                            </li>
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Морская Капуста</a>
+                            </li>
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Морской Коктейль</a>
+                            </li>
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Мидии</a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="menu-catalog__category">
+                          <h5 class="menu-catalog__category-title"><a class="menu-catalog__category-link" href="/catalog.html">Бакалея</a>
+                          </h5>
+                          <ul class="menu-catalog__category-items">
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Оливки</a>
+                            </li>
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Брускетты</a>
+                            </li>
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Специи</a>
+                            </li>
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Консервация</a>
+                            </li>
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Соусы</a>
+                            </li>
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Мука</a>
+                            </li>
+                            <li class="menu-catalog__category-item"><a class="menu-catalog__subcategory-link" href="/catalog.html">Масло</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="menu-catalog__categories-page" data-category-id="whole-fish">
+                      <h4 class="menu-catalog__categories-title">Рыба целиком</h4>
+                      <div class="menu-catalog__categories-lists">
+                        <div class="menu-catalog__category">
+                          <h5 class="menu-catalog__category-title"><a class="menu-catalog__category-link" href="/catalog.html">Сибас</a>
+                          </h5>
+                        </div>
+                        <div class="menu-catalog__category">
+                          <h5 class="menu-catalog__category-title"><a class="menu-catalog__category-link" href="/catalog.html">Камбала</a>
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="menu-catalog__categories-page" data-category-id="seafood">
+                      <h4 class="menu-catalog__categories-title">Морепродукты</h4>
+                      <div class="menu-catalog__categories-lists">
+                        <div class="menu-catalog__category">
+                          <h5 class="menu-catalog__category-title"><a class="menu-catalog__category-link" href="/catalog.html">Креветки</a>
+                          </h5>
+                        </div>
+                        <div class="menu-catalog__category">
+                          <h5 class="menu-catalog__category-title"><a class="menu-catalog__category-link" href="/catalog.html">Осьминоги</a>
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-auth modal fade" id="modal-auth" tabindex="-1" aria-labelledby="modal-auth-label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-auth-dialog">
+        <div class="modal-content modal-auth__content text-center">
+          <div class="modal-auth__close" type="button" data-dismiss="modal" aria-label="Close"></div>
+          <div class="modal-auth__page modal-auth__page-by-password">
+            <div class="modal-auth__title">Вход в личный кабинет</div>
+            <div class="modal-auth__page-content"><a class="modal-auth__link-small modal-auth__action-change-page" href="#" data-page-target="by-phone">Авторизоваться через СМС-пароль</a>
+              <form class="needs-validation" novalidate>
+                <div class="modal-auth__input-wrap">
+                  <input class="form-control modal-auth__input" type="text" placeholder="Телефон" required="">
+                  <svg class="icon svg-phone-24-dims modal-auth__input-icon">
+                    <use xlink:href="sprites/sprite.svg#phone-24"></use>
+                  </svg>
+                  <div class="invalid-feedback">Обязательное поле</div>
+                </div>
+                <div class="modal-auth__input-wrap">
+                  <input class="form-control modal-auth__input" type="password" placeholder="Пароль" required="">
+                  <svg class="icon svg-view-24-dims modal-auth__input-icon">
+                    <use xlink:href="sprites/sprite.svg#view-24"></use>
+                  </svg>
+                  <div class="invalid-feedback">Обязательное поле</div>
+                </div>
+                <div class="d-flex justify-content-between modal-auth__options">
+                  <div>
+                    <div class="form-check">
+                      <input class="form-check-input" id="modal-auth__opt-rem" type="checkbox" value="">
+                      <label class="form-check-label" for="modal-auth__opt-rem">Запомнить меня</label>
+                    </div>
+                  </div>
+                  <div><a class="modal-auth__link modal-auth__action-change-page" href="#" data-page-target="restore">Забыли пароль?</a></div>
+                </div>
+                <button class="btn btn-primary modal-auth__submit-btn" type="submit">Войти</button>
+              </form>
+              <div class="btn btn-outline-primary modal-auth__action-change-page modal-auth__secondary-btn" data-page-target="registration">Регистрация</div>
+              <div class="modal-auth__info">Нажимая кнопку, вы соглашаетесь с нашей <br/><a href="#">политикой конфиденциальности</a></div>
+            </div>
+          </div>
+          <div class="modal-auth__page modal-auth__page-by-phone">
+            <div class="modal-auth__title">Вход в личный кабинет</div>
+            <div class="modal-auth__page-content"><a class="modal-auth__link-small modal-auth__action-change-page" href="#" data-page-target="by-password">Авторизоваться через пароль</a>
+              <form class="needs-validation" novalidate>
+                <div class="modal-auth__input-wrap">
+                  <input class="form-control modal-auth__input" type="text" placeholder="Телефон" required="">
+                  <svg class="icon svg-phone-24-dims modal-auth__input-icon">
+                    <use xlink:href="sprites/sprite.svg#phone-24"></use>
+                  </svg>
+                  <div class="invalid-feedback">Обязательное поле</div>
+                </div>
+                <button class="btn btn-primary modal-auth__submit-btn" type="submit">Отправить</button>
+              </form>
+              <div class="modal-auth__info">Нажимая кнопку, вы соглашаетесь с нашей <br/><a href="#">политикой конфиденциальности</a></div>
+            </div>
+          </div>
+          <div class="modal-auth__page modal-auth__page-by-phone-code">
+            <div class="modal-auth__title">Вход в личный кабинет</div>
+            <div class="modal-auth__page-content"><a class="modal-auth__link-small modal-auth__action-change-page" href="#" data-page-target="by-password">Авторизоваться через пароль</a>
+              <form class="needs-validation" novalidate>
+                <div class="modal-auth__input-wrap">
+                  <input class="form-control modal-auth__input" type="text" placeholder="Код подтверждения" required="">
+                  <svg class="icon svg-view-24-dims modal-auth__input-icon">
+                    <use xlink:href="sprites/sprite.svg#view-24"></use>
+                  </svg>
+                  <div class="invalid-feedback">Обязательное поле</div>
+                </div>
+                <button class="btn btn-primary modal-auth__submit-btn" type="submit">Войти</button>
+              </form>
+              <div class="modal-auth__info">Нажимая кнопку, вы соглашаетесь с нашей <br/><a href="#">политикой конфиденциальности</a></div>
+            </div>
+          </div>
+          <div class="modal-auth__page modal-auth__page-registration">
+            <div class="modal-auth__title">Регистрация</div>
+            <div class="modal-auth__page-content">
+              <form class="needs-validation" novalidate>
+                <div class="modal-auth__input-wrap">
+                  <input class="form-control modal-auth__input" type="text" placeholder="Логин" required="">
+                  <svg class="icon svg-profile-24-dims modal-auth__input-icon">
+                    <use xlink:href="sprites/sprite.svg#profile-24"></use>
+                  </svg>
+                  <div class="invalid-feedback">Обязательное поле</div>
+                </div>
+                <div class="modal-auth__input-wrap">
+                  <input class="form-control modal-auth__input" type="text" placeholder="Email" required="">
+                  <svg class="icon svg-mail-24-dims modal-auth__input-icon">
+                    <use xlink:href="sprites/sprite.svg#mail-24"></use>
+                  </svg>
+                  <div class="invalid-feedback">Обязательное поле</div>
+                </div>
+                <div class="modal-auth__input-wrap">
+                  <input class="form-control modal-auth__input" type="text" placeholder="Телефон" required="">
+                  <svg class="icon svg-phone-24-dims modal-auth__input-icon">
+                    <use xlink:href="sprites/sprite.svg#phone-24"></use>
+                  </svg>
+                  <div class="invalid-feedback">Обязательное поле</div>
+                </div>
+                <div class="modal-auth__input-wrap">
+                  <input class="form-control modal-auth__input" type="password" placeholder="Пароль" required="">
+                  <svg class="icon svg-view-24-dims modal-auth__input-icon">
+                    <use xlink:href="sprites/sprite.svg#view-24"></use>
+                  </svg>
+                  <div class="invalid-feedback">Обязательное поле</div>
+                </div>
+                <div class="modal-auth__input-wrap">
+                  <input class="form-control modal-auth__input" type="password" placeholder="Подтвердите пароль" required="">
+                  <svg class="icon svg-view-24-dims modal-auth__input-icon">
+                    <use xlink:href="sprites/sprite.svg#view-24"></use>
+                  </svg>
+                  <div class="invalid-feedback">Обязательное поле</div>
+                </div>
+                <button class="btn btn-primary modal-auth__submit-btn" type="submit">Регистрация</button>
+              </form>
+              <div class="btn btn-outline-primary modal-auth__action-change-page modal-auth__secondary-btn" data-page-target="by-password">Вход на сайт</div>
+              <div class="modal-auth__info">Нажимая кнопку, вы соглашаетесь с нашей <br/><a href="#">политикой конфиденциальности</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/vendors.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
