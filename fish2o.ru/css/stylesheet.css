@@ -11909,6 +11909,121 @@ a.footer-mobile__nav-secondary-link:hover {
     background: 0 0
   }
 }
+.widget-leave-review {
+  position: relative;
+  padding: 33px 40px 20px 500px;
+  min-height: 304px;
+  background: -o-radial-gradient(100% 50%,100% 284.31%,#fcaa17 22.84%,#f15526 100%);
+  background: radial-gradient(100% 284.31% at 100% 50%,#fcaa17 22.84%,#f15526 100%);
+  border-radius: 16px;
+  overflow: hidden
+}
+.widget-leave-review__preview {
+  position: absolute;
+  top: -104px;
+  left: -52px;
+  width: 512px;
+  height: 512px
+}
+.widget-leave-review__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 50%
+}
+.widget-leave-review__preview-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 8px;
+  top: 8px;
+  background: #1e2833;
+  opacity: .16;
+  border-radius: 50%
+}
+.widget-leave-review__title {
+  margin-bottom: 12px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px
+}
+.widget-leave-review__text {
+  margin-bottom: 27px;
+  padding-right: 28px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px
+}
+.widget-leave-review__add-btn {
+  margin-right: 16px;
+  padding: 12px 35px;
+  font-size: 24px;
+  line-height: 32px;
+  background: #fcca17
+}
+.widget-leave-review__add-btn:hover {
+  background: #fddb63
+}
+.widget-leave-review__issue-btn {
+  padding: 12px 35px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  border-color: rgba(255,255,255,.32)
+}
+.widget-leave-review__issue-btn:hover {
+  background: rgba(0,0,0,.05);
+  color: #fff
+}
+@media (max-width:1199.98px) {
+  .widget-leave-review {
+    padding: 28px 40px 20px 410px;
+    min-height: 196px
+  }
+  .widget-leave-review__preview {
+    position: absolute;
+    top: -94px;
+    left: -42px;
+    width: 400px;
+    height: 400px
+  }
+  .widget-leave-review__title {
+    margin-bottom: 2px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px
+  }
+  .widget-leave-review__text {
+    margin-bottom: 12px;
+    padding-right: 0;
+    max-width: 386px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px
+  }
+  .widget-leave-review__add-btn,
+  .widget-leave-review__issue-btn {
+    padding: 4px 12px 5px;
+    font-size: 12px;
+    line-height: 17px
+  }
+}
+@media (max-width:849.98px) {
+  .widget-leave-review {
+    padding: 14px 16px 16px;
+    min-height: auto
+  }
+  .widget-leave-review__preview {
+    display: none
+  }
+}
 .text-about__image {
   margin: -16px 0 -64px -29px
 }
@@ -12213,6 +12328,40 @@ a.footer-mobile__nav-secondary-link:hover {
 @media (max-width:1199.98px) {
   .catalog-promotions__banner {
     margin-bottom: 16px
+  }
+}
+.catalog-reviews__navigation-subcategories {
+  margin-bottom: -8px
+}
+.catalog-reviews__widget-leave-review {
+  margin-bottom: 24px
+}
+.catalog-reviews__title {
+  margin-bottom: 22px
+}
+.catalog-reviews__tab-reviews {
+  background: #fff;
+  -webkit-box-shadow: 0 8px 16px rgba(0,0,0,.04);
+  box-shadow: 0 8px 16px rgba(0,0,0,.04);
+  border-radius: 8px
+}
+@media (max-width:1199.98px) {
+  .catalog-reviews__navigation-subcategories {
+    margin-bottom: 8px
+  }
+  .catalog-reviews__widget-leave-review {
+    margin-bottom: 30px
+  }
+  .catalog-reviews__title {
+    margin-bottom: -6px;
+    font-size: 18px;
+    line-height: 24px
+  }
+  .catalog-reviews__tab-reviews {
+    margin: 0 -15px;
+    background: 0 0;
+    -webkit-box-shadow: none;
+    box-shadow: none
   }
 }
 .product__slider {
@@ -12635,5 +12784,8 @@ h6 a:hover {
     margin-bottom: 18px;
     font-size: 24px;
     line-height: 32px
+  }
+  .bg-mobile-white {
+    background: #fff
   }
 }
