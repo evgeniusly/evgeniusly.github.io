@@ -10710,6 +10710,11 @@ a.footer-mobile__nav-secondary-link:hover {
   box-shadow: 0 8px 16px rgba(0,0,0,.04);
   overflow: hidden
 }
+@media (min-width:1318px) {
+  .card-recipe-video {
+    height: 402px
+  }
+}
 .card-recipe-video__thumb-link {
   position: relative;
   display: block;
