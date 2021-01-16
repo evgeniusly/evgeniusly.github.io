@@ -67,13 +67,19 @@
                   </button>
                 </div>
                 <div class="col">
-                  <div class="header__search-form">
+                  <div class="header__search-form search-block">
                     <input class="header__search-form-input" type="text" placeholder="Название рыбы или морепродукта" aria-label="">
                     <button class="header__search-form-btn" type="button"> 
                       <svg class="icon svg-search-dims">
                         <use xlink:href="sprites/sprite.svg#search"></use>
                       </svg>
                     </button>
+                    <div class="header__search-form-options">
+                      <div class="header__search-form-option">Стейки форели морской охлажденные</div>
+                      <div class="header__search-form-option">Креветки аргентинские L1 (Langostino Austral)</div>
+                      <div class="header__search-form-option">Семга дикая свежемороженая</div>
+                      <div class="header__search-form-option">Филе семги слабосоленое</div>
+                    </div>
                   </div>
                 </div>
                 <div class="col-auto"><a class="header__user-actions-link" href="#" data-toggle="modal" data-target="#modal-auth">
@@ -82,10 +88,43 @@
                     </svg></a><a class="header__user-actions-link" href="#">
                     <svg class="icon svg-heart-dims">
                       <use xlink:href="sprites/sprite.svg#heart"></use>
-                    </svg></a><a class="header__user-actions-link" href="#">
-                    <svg class="icon svg-cart-dims">
-                      <use xlink:href="sprites/sprite.svg#cart"></use>
-                    </svg></a></div>
+                    </svg>
+                    <div class="header__user-actions-link-count">12</div></a>
+                  <div class="header__cart modal-cart__trigger"><a class="header__user-actions-link" href="#">
+                      <svg class="icon svg-cart-dims">
+                        <use xlink:href="sprites/sprite.svg#cart"></use>
+                      </svg>
+                      <div class="header__user-actions-link-count">4</div></a>
+                    <div class="header__modal-cart">
+                      <div class="modal-cart">
+                        <div class="modal-cart__body">
+                          <div class="modal-cart__title">Корзина</div>
+                          <ul class="modal-cart__list">
+                            <li class="modal-cart__item cart__item"><img class="modal-cart__item-img" src="images/thumb-product-1.png" alt=""><a class="modal-cart__item-title" href="/product.html">Стейки форели морской охлажденные<span class="modal-cart__item-weight">~0,5 кг</span></a>
+                              <div class="modal-cart__item-count">6 шт.</div>
+                              <div class="modal-cart__item-price">1 740 ₽</div>
+                              <div class="modal-cart__item-remove cart__remove-trigger" data-product-id="1234"></div>
+                            </li>
+                            <li class="modal-cart__item cart__item"><img class="modal-cart__item-img" src="images/thumb-product-2.png" alt=""><a class="modal-cart__item-title" href="/product.html">Палтус холодного копчения<span class="modal-cart__item-weight">~0,7 кг</span></a>
+                              <div class="modal-cart__item-count">1 шт.</div>
+                              <div class="modal-cart__item-price">275 ₽</div>
+                              <div class="modal-cart__item-remove cart__remove-trigger" data-product-id="1234"></div>
+                            </li>
+                            <li class="modal-cart__item cart__item"><img class="modal-cart__item-img" src="images/thumb-product-3.png" alt=""><a class="modal-cart__item-title" href="/product.html">Крылья ската<span class="modal-cart__item-weight">~0,2 кг</span></a>
+                              <div class="modal-cart__item-count">1 шт.</div>
+                              <div class="modal-cart__item-price">170 ₽</div>
+                              <div class="modal-cart__item-remove cart__remove-trigger" data-product-id="1234"></div>
+                            </li>
+                          </ul>
+                          <div class="modal-cart__summary">
+                            <div class="modal-cart__summary-text">Итоговая сумма:</div>
+                            <div class="modal-cart__summary-value">2 185 ₽</div>
+                          </div><a class="btn btn-primary modal-cart__btn" href="/cart.html">Оформить заказ</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -99,14 +138,31 @@
               <div class="col-auto">
                 <div class="header-mobile__logo"><a class="d-inline-block" href="/"><img class="header-mobile__logo-icon" src="images/logo.svg" alt=""></a></div>
               </div>
-              <div class="col-auto"><a class="header-mobile__actions-link" href="#">
+              <div class="col-auto"><a class="header-mobile__actions-link header-mobile__search-trigger" href="#">
                   <svg class="icon svg-search-dims header-mobile__actions-search-icon">
                     <use xlink:href="sprites/sprite.svg#search"></use>
                   </svg></a><a class="header-mobile__actions-link" href="#">
                   <svg class="icon svg-cart-dims">
                     <use xlink:href="sprites/sprite.svg#cart"></use>
-                  </svg></a>
+                  </svg>
+                  <div class="header-mobile__user-actions-link-count">4</div></a>
                 <div class="hamburger hamburger--spin align-middle header-mobile__hamburger" data-toggle="modal" data-target="#header-mobile__nav-modal"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="header-mobile__search-wrap">
+            <div class="header-mobile__search search-block">
+              <input class="header__search-form-input" type="text" placeholder="Название рыбы или морепродукта" aria-label="">
+              <button class="header__search-form-btn" type="button"> 
+                <svg class="icon svg-search-dims">
+                  <use xlink:href="sprites/sprite.svg#search"></use>
+                </svg>
+              </button>
+              <div class="header__search-form-options">
+                <div class="header__search-form-option">Стейки форели морской охлажденные</div>
+                <div class="header__search-form-option">Креветки аргентинские L1 (Langostino Austral)</div>
+                <div class="header__search-form-option">Семга дикая свежемороженая</div>
+                <div class="header__search-form-option">Филе семги слабосоленое</div>
               </div>
             </div>
           </div>
@@ -1525,6 +1581,7 @@
         </div>
       </div>
     </div>
+    <script src="js/jquery.min.js"></script>
     <script src="js/vendors.min.js"></script>
     <script src="js/main.js"></script>
   </body>

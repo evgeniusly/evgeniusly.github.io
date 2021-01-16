@@ -46,6 +46,58 @@ $(function () {
     .on("click", _HEADER_MOBILE_NAV_CLOSE_TRIGGER, function (e) {
       $(_HEADER_MOBILE_MENU_TRIGGER).removeClass("is-active");
       $(__HEADER_MOBILE_NAV_MODAL).modal("hide");
+    })
+  
+    // search on input change
+    .on(
+      "input mouseup select contextmenu drop",
+      ".header__search-form-input",
+      function () {
+        const $block = $(this).closest(".search-block");
+        const $options = $block.find(".header__search-form-options");
+        const newVal = $(this).val();
+  
+        if (newVal) {
+          $options.slideDown(DEFAUILT_AMINATION_SPEED);
+        } else {
+          $options.slideUp(DEFAUILT_AMINATION_SPEED);
+        }
+      }
+    )
+    // search on focusout
+    .on("focusout", ".header__search-form-input", function () {
+      const $block = $(this).closest(".search-block");
+      const $options = $block.find(".header__search-form-options");
+  
+      $options.slideUp(DEFAUILT_AMINATION_SPEED);
+    })
+    // search on input change
+    .on("click", ".header__search-form-option", function () {
+      const $block = $(this).closest(".search-block");
+      const $options = $block.find(".header__search-form-options");
+      const $input = $block.find(".header__search-form-input");
+      const val = $(this).html();
+  
+      $options.slideUp(DEFAUILT_AMINATION_SPEED);
+      $input.val(val);
+  
+      // accepted address here
+    })
+  
+    // search mobile
+    .on("click", ".header-mobile__search-trigger", function (e) {
+      e.preventDefault();
+      const $block = $(".header-mobile__search-wrap");
+      $block.fadeToggle(DEFAUILT_AMINATION_SPEED, function () {
+        if ($block.is(":visible")) {
+          $block.find("input").focus();
+        }
+      });
+    })
+    // search mobile close if show any modal
+    .on("show.bs.modal", function (e) {
+      const $block = $(".header-mobile__search-wrap");
+      $block.fadeOut(DEFAUILT_AMINATION_SPEED);
     });
   
   // =================================================================
@@ -364,6 +416,38 @@ $(function () {
     },
     false
   );
+  
+  // =================================================================
+  // modal-cart
+  // =================================================================
+  $(document)
+    // show modal cart
+    .on("mouseenter", ".modal-cart__trigger", function () {
+      $(this)
+        .find(".modal-cart")
+        .stop(true, true)
+        .delay(400)
+        .fadeIn(DEFAUILT_AMINATION_SPEED);
+    })
+    // hide modal cart
+    .on("mouseleave", ".modal-cart__trigger", function () {
+      $(this)
+        .find(".modal-cart")
+        .stop(true, true)
+        .delay(200)
+        .fadeOut(DEFAUILT_AMINATION_SPEED);
+    })
+    // remove item from cart
+    .on("click", ".cart__remove-trigger", function () {
+      $(this).closest(".cart__item").fadeOut(DEFAUILT_AMINATION_SPEED);
+      removeItemFromCart($(this).data("product-id"));
+    });
+  
+  function removeItemFromCart(id) {
+    console.log("remove product from cart:", id);
+    // update all same product cart counters
+    // update cart
+  }
   
   // =================================================================
   // NAVIGATION-SIDE
