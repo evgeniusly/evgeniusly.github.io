@@ -8546,9 +8546,17 @@ sprites
   width: 12px;
   height: 12px
 }
+.svg-clocks-24-dims {
+  width: 24px;
+  height: 24px
+}
 .svg-clocks-32-dims {
   width: 32px;
   height: 32px
+}
+.svg-download-24-dims {
+  width: 24px;
+  height: 24px
 }
 .svg-filter-24-dims {
   width: 24px;
@@ -8570,6 +8578,14 @@ sprites
   width: 16px;
   height: 16px
 }
+.svg-logo-moscow-24-dims {
+  width: 24px;
+  height: 24px
+}
+.svg-logo-murmansk-24-dims {
+  width: 24px;
+  height: 24px
+}
 .svg-mail-dims {
   width: 16px;
   height: 12px
@@ -8586,6 +8602,10 @@ sprites
   width: 14px;
   height: 18px
 }
+.svg-phone-callback-24-dims {
+  width: 24px;
+  height: 24px
+}
 .svg-pin-dims {
   width: 12px;
   height: 16px
@@ -8599,6 +8619,10 @@ sprites
   height: 24px
 }
 .svg-profile-24-dims {
+  width: 24px;
+  height: 24px
+}
+.svg-requisites-24-dims {
   width: 24px;
   height: 24px
 }
@@ -8648,6 +8672,10 @@ sprites
 }
 .svg-waves-dims {
   width: 32px;
+  height: 24px
+}
+.svg-wholesaler-24-dims {
+  width: 24px;
   height: 24px
 }
 /*!
@@ -9144,6 +9172,7 @@ blocks
 .menu-catalog__nav-link_accent:hover {
   color: #a62f0b
 }
+.menu-catalog__nav-link-active-chevron,
 .menu-catalog__nav-link-chevron {
   position: absolute;
   right: 13px;
@@ -9153,6 +9182,19 @@ blocks
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg)
+}
+.menu-catalog__nav-link-active-chevron {
+  display: none
+}
+.menu-catalog__nav-link_active {
+  background: #fff6f3;
+  color: #f15526
+}
+.menu-catalog__nav-link_active:hover {
+  color: #a62f0b
+}
+.menu-catalog__nav-link_active .menu-catalog__nav-link-active-chevron {
+  display: block
 }
 .menu-catalog__categories {
   padding: 9px 34px 0
@@ -9946,6 +9988,117 @@ a.footer-mobile__nav-secondary-link:hover {
   .tabs-link.active:hover {
     background-color: #e2400f
   }
+}
+.form-contact {
+  padding: 16px 16px 23px;
+  max-width: 460px;
+  background: #fff;
+  -webkit-box-shadow: 0 8px 16px rgba(0,0,0,.04);
+  box-shadow: 0 8px 16px rgba(0,0,0,.04);
+  border-radius: 8px
+}
+.form-contact__input-wrap {
+  margin-bottom: 24px
+}
+.form-contact__input {
+  padding: 6px 38px 8px 11px;
+  height: auto;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  border: 1px solid #bdd5f2;
+  border-radius: 4px
+}
+.form-contact__input-select-warp {
+  position: relative
+}
+.form-contact__input-select {
+  padding-left: 7px;
+  height: 40px;
+  cursor: pointer
+}
+.form-contact__input-select option:disabled {
+  color: #666
+}
+.form-contact__input-select-btn {
+  content: "";
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  height: 34px;
+  width: 37px;
+  background: #fff;
+  border-left: 1px solid #bdd5f2;
+  pointer-events: none
+}
+.form-contact__input-select-btn::after {
+  content: "";
+  position: absolute;
+  right: 13px;
+  top: 15px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 4px 0 4px;
+  border-color: #aec2d9 transparent transparent transparent
+}
+.form-contact__input-textarea {
+  resize: none
+}
+.form-contact__input-file-wrap {
+  margin-bottom: 22px
+}
+.form-contact__input-file {
+  display: none
+}
+.form-contact__input-file-label {
+  margin-bottom: 0;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  color: #f15526
+}
+.form-contact__input-file-label:hover {
+  color: #1e2833
+}
+.form-contact__input-file-label-text {
+  position: relative;
+  display: inline-block
+}
+.form-contact__input-file-label-text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  border-bottom: 1px dashed #f15526;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out
+}
+.form-contact__input-file-label:hover .form-contact__input-file-label-text::after {
+  border-bottom: 1px dashed #1e2833
+}
+.form-contact__input-file-data {
+  padding-left: 28px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px
+}
+.form-contact__submit-btn {
+  padding: 11px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 24px
+}
+.form-contact__text {
+  margin: 25px auto 0;
+  width: 305px;
+  color: #999;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center
 }
 .add-to-cart {
   position: relative;
@@ -12790,6 +12943,134 @@ img.modal-cart__item-img {
 .product__purchase_mobile-add-to-cart {
   width: 176px;
   height: 40px
+}
+.contacts__title {
+  margin-bottom: 37px
+}
+.contacts__info {
+  margin-bottom: 26px
+}
+.contacts__info-item {
+  position: relative;
+  margin-bottom: 16px;
+  padding-left: 40px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px
+}
+.contacts__info-item p {
+  margin: 0
+}
+.contacts__info-item-title {
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 400
+}
+.contacts__info-item-icon {
+  position: absolute;
+  left: 0;
+  top: 1px
+}
+.contacts__info-phone-link {
+  color: #333;
+  font-weight: 400
+}
+.contacts__info-phone-link:hover {
+  color: #f15526
+}
+.contacts__social-title {
+  margin-bottom: 14px;
+  font-size: 16px;
+  line-height: 24px
+}
+.contacts__social-link:not(:last-child) {
+  margin-right: 22px
+}
+.contacts__form-contact-wrap {
+  margin-bottom: 49px
+}
+.contacts__form-contact {
+  width: 460px
+}
+.contacts__text {
+  max-width: 370px;
+  font-size: 24px;
+  line-height: 32px
+}
+.contacts__locations-text {
+  margin-bottom: 13px;
+  font-size: 24px;
+  line-height: 32px
+}
+.contacts__locations-offices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 26px
+}
+.contacts__locations-office {
+  position: relative;
+  margin-right: 48px;
+  padding-left: 40px;
+  width: 352px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px
+}
+.contacts__locations-office-icon {
+  position: absolute;
+  left: 0;
+  top: 0
+}
+.contacts__locations-map {
+  margin-bottom: 26px;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 545px
+}
+@media (max-width:1199.98px) {
+  .contacts__title {
+    margin-bottom: 13px
+  }
+  .contacts__social-links,
+  .contacts__social-title {
+    padding-left: 40px
+  }
+  .contacts__social-link {
+    margin-right: 16px!important
+  }
+  .contacts__social-link img {
+    height: 36px
+  }
+  .contacts__text {
+    margin-bottom: 27px;
+    font-size: 18px;
+    line-height: 24px
+  }
+  .contacts__form-contact {
+    margin: 0 -15px;
+    width: auto
+  }
+  .contacts__locations-text {
+    font-size: 18px;
+    line-height: 24px
+  }
+  .contacts__form-contact-wrap {
+    margin-bottom: 30px
+  }
+  .contacts__locations-map {
+    margin-bottom: 24px;
+    height: 372px
+  }
+  .contacts__locations-offices {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+  }
+  .contacts__locations-office {
+    margin-bottom: 12px
+  }
 }
 .tab-reviews__header {
   padding: 24px 16px

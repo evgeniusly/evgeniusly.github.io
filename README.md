@@ -9,3 +9,4 @@ Pages
 - [Promotions](https://evgeniusly.github.io/fish2o.ru/promotions.html)
 - [Blog](https://evgeniusly.github.io/fish2o.ru/blog.html)
 - [Reviews](https://evgeniusly.github.io/fish2o.ru/reviews.html)
+- [Сontacts](https://evgeniusly.github.io/fish2o.ru/contacts.html)
