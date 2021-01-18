@@ -693,6 +693,28 @@ $(function () {
     $(this).siblings(".form-contact__input-file-data").html($(this).val());
   });
   
+  // =================================================================
+  // BLOG-WIDGET
+  // =================================================================
+  $(".news__other-list").each(function (index, element) {
+    const $container = $(this).find(".swiper-container");
+    const gap = $(this).data("gap") || 48;
+  
+    new Swiper($container[0], {
+      loop: false,
+      spaceBetween: gap,
+      slidesPerView: "auto",
+      direction: "horizontal",
+  
+      breakpoints: {
+        1200: {
+          spaceBetween: 0,
+          direction: "vertical",
+        },
+      },
+    });
+  });
+  
 
   // =================================================================
   // COMMON
