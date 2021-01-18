@@ -239,33 +239,58 @@
         <div class="container">
           <div class="row pt-3 pb-5">
             <div class="col-3 d-none d-lg-block">
-              <div class="navigation-side__wrap">
-                <div class="navigation-side">
-                  <div class="list-group menu-catalog__nav navigation-side__menu"><a class="list-group-item list-group-item-action menu-catalog__nav-link" href="#">Информация
-                      <svg class="icon svg-chevron-dims menu-catalog__nav-link-active-chevron">
-                        <use xlink:href="sprites/sprite.svg#chevron"></use>
-                      </svg></a><a class="list-group-item list-group-item-action menu-catalog__nav-link" href="#">Кто мы?
-                      <svg class="icon svg-chevron-dims menu-catalog__nav-link-active-chevron">
-                        <use xlink:href="sprites/sprite.svg#chevron"></use>
-                      </svg></a><a class="list-group-item list-group-item-action menu-catalog__nav-link" href="#">Условия доставки
-                      <svg class="icon svg-chevron-dims menu-catalog__nav-link-active-chevron">
-                        <use xlink:href="sprites/sprite.svg#chevron"></use>
-                      </svg></a><a class="list-group-item list-group-item-action menu-catalog__nav-link" href="#">Акции и скидки
-                      <svg class="icon svg-chevron-dims menu-catalog__nav-link-active-chevron">
-                        <use xlink:href="sprites/sprite.svg#chevron"></use>
-                      </svg></a><a class="list-group-item list-group-item-action menu-catalog__nav-link" href="#">Покупателям
-                      <svg class="icon svg-chevron-dims menu-catalog__nav-link-active-chevron">
-                        <use xlink:href="sprites/sprite.svg#chevron"></use>
-                      </svg></a><a class="list-group-item list-group-item-action menu-catalog__nav-link menu-catalog__nav-link_active" href="#">Контакты
-                      <svg class="icon svg-chevron-dims menu-catalog__nav-link-active-chevron">
-                        <use xlink:href="sprites/sprite.svg#chevron"></use>
-                      </svg></a><a class="list-group-item list-group-item-action menu-catalog__nav-link" href="#">Наши магазины
-                      <svg class="icon svg-chevron-dims menu-catalog__nav-link-active-chevron">
-                        <use xlink:href="sprites/sprite.svg#chevron"></use>
-                      </svg></a>
+              <div class="contacts__navigation-side">
+                <div class="navigation-side__wrap">
+                  <div class="navigation-side">
+                    <div class="list-group menu-catalog__nav navigation-side__menu"><a class="list-group-item list-group-item-action menu-catalog__nav-link" href="#">Информация
+                        <svg class="icon svg-chevron-dims menu-catalog__nav-link-active-chevron">
+                          <use xlink:href="sprites/sprite.svg#chevron"></use>
+                        </svg></a><a class="list-group-item list-group-item-action menu-catalog__nav-link" href="#">Кто мы?
+                        <svg class="icon svg-chevron-dims menu-catalog__nav-link-active-chevron">
+                          <use xlink:href="sprites/sprite.svg#chevron"></use>
+                        </svg></a><a class="list-group-item list-group-item-action menu-catalog__nav-link" href="#">Условия доставки
+                        <svg class="icon svg-chevron-dims menu-catalog__nav-link-active-chevron">
+                          <use xlink:href="sprites/sprite.svg#chevron"></use>
+                        </svg></a><a class="list-group-item list-group-item-action menu-catalog__nav-link" href="#">Акции и скидки
+                        <svg class="icon svg-chevron-dims menu-catalog__nav-link-active-chevron">
+                          <use xlink:href="sprites/sprite.svg#chevron"></use>
+                        </svg></a><a class="list-group-item list-group-item-action menu-catalog__nav-link" href="#">Покупателям
+                        <svg class="icon svg-chevron-dims menu-catalog__nav-link-active-chevron">
+                          <use xlink:href="sprites/sprite.svg#chevron"></use>
+                        </svg></a><a class="list-group-item list-group-item-action menu-catalog__nav-link menu-catalog__nav-link_active" href="#">Контакты
+                        <svg class="icon svg-chevron-dims menu-catalog__nav-link-active-chevron">
+                          <use xlink:href="sprites/sprite.svg#chevron"></use>
+                        </svg></a><a class="list-group-item list-group-item-action menu-catalog__nav-link" href="#">Наши магазины
+                        <svg class="icon svg-chevron-dims menu-catalog__nav-link-active-chevron">
+                          <use xlink:href="sprites/sprite.svg#chevron"></use>
+                        </svg></a>
+                    </div>
                   </div>
                 </div>
               </div>
+              <div class="widget-insagram-embed" id="averin_widget"></div>
+              <script src="https://averin.pro/widget_js/widget.js"></script>
+              <script>
+                let widget = new myWidget('#averin_widget', {
+                  login: 'fish2o.ru',
+                  style: 1,
+                  width: 'auto',
+                  background: '#f1f7ff',
+                  border_color: '#bdd5f2',
+                  header: 1,
+                  title: 1,
+                  title_text: 'Мы в Инстаграм',
+                  title_background: '#DAEEFF',
+                  title_text_color: '#1e2833',
+                  submit: 1,
+                  submit_background: '#f15526',
+                  submit_text_color: '#FFFFFF',
+                  submit_text: 'Подписаться',
+                  gallery: 1,
+                  amount: 9,
+                  flex: '33.3%',
+                });
+              </script>
             </div>
             <div class="col col-lg-9">
               <ul class="breadcrumbs__list">

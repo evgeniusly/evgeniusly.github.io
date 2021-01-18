@@ -9155,7 +9155,7 @@ blocks
   padding: 16px 0 0
 }
 .menu-catalog__nav {
-  margin: 0 8px 30px 0
+  margin: 0 0 30px 0
 }
 .menu-catalog__nav-link {
   position: relative;
@@ -12256,6 +12256,9 @@ a.footer-mobile__nav-secondary-link:hover {
     display: none
   }
 }
+.widget-insagram-embed iframe {
+  width: 100%
+}
 .text-about__image {
   margin: -16px 0 -64px -29px
 }
@@ -12945,6 +12948,9 @@ img.modal-cart__item-img {
 .product__purchase_mobile-add-to-cart {
   width: 176px;
   height: 40px
+}
+.contacts__navigation-side {
+  margin-bottom: 46px
 }
 .contacts__title {
   margin-bottom: 37px
