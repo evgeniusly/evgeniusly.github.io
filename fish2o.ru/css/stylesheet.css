@@ -13313,7 +13313,20 @@ img.modal-cart__item-img {
   top: 16px
 }
 .news__banner img {
-  max-width: 100%
+  max-width: 100%;
+  -webkit-box-shadow: 0 14px 26px rgba(0,0,0,.04);
+  box-shadow: 0 14px 26px rgba(0,0,0,.04);
+  border-radius: 8px;
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out
+}
+.news__banner img:hover {
+  -webkit-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  transform: translateY(-2px);
+  -webkit-box-shadow: 0 24px 36px rgba(0,0,0,.11);
+  box-shadow: 0 24px 36px rgba(0,0,0,.11)
 }
 @media (max-width:1199.98px) {
   .news__body {
