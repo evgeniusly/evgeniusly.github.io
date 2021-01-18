@@ -241,31 +241,14 @@
             <div class="row pt-3">
               <div class="col"> 
                 <ul class="breadcrumbs__list">
-                  <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
-                  <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Весь ассортимент</a></li>
-                  <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Белая рыба</a></li>
-                  <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Треска</a></li>
+                  <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+                  <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Отзывы</a></li>
                 </ul>
                 <div class="catalog-reviews__navigation-subcategories">
                   <ul class="navigation-subcategories__list">
-                    <li class="navigation-subcategories__item"><a class="navigation-subcategories__link navigation-subcategories__link_active" href="test/">Все</a></li>
-                    <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Стейки</a></li>
-                    <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Филе</a></li>
-                    <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Фарш</a></li>
-                    <div class="navigation-subcategories__hidden-items">
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Треска</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Палтус Синекорый</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Пикша</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Минтай</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Сельдь</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Сибас</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Дорада</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Камбала</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Скумбрия</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Окунь</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Камбала-ерш</a></li>
-                    </div>
-                    <li class="navigation-subcategories__item"><a class="navigation-subcategories__link navigation-subcategories__link_more" href="#">Еще...</a></li>
+                    <li class="navigation-subcategories__item"><a class="navigation-subcategories__link navigation-subcategories__link_active" href="#">Все</a></li>
+                    <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#site-reviews">Отзывы на сайте</a></li>
+                    <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#instagram-reviews">Отзывы из Instagram</a></li>
                   </ul>
                 </div>
                 <div class="catalog-reviews__widget-leave-review">
@@ -287,7 +270,7 @@
             </div>
             <div class="row pt-lg-3 pb-5">
               <div class="col">
-                <h2 class="catalog-reviews__title">Отзывы на сайте</h2>
+                <h2 class="catalog-reviews__title" id="site-reviews">Отзывы на сайте</h2>
                 <div class="catalog-reviews__tab-reviews">
                   <div class="tab-reviews">
                     <div class="tab-reviews__header row align-items-center">
@@ -515,73 +498,155 @@
                 </div>
               </div>
             </div>
+            <!-- reviews for desktop only-->
+            <div class="d-none d-lg-block">
+              <div class="row pt-lg-3 pb-5">
+                <div class="col">
+                  <h2 class="catalog-reviews__title" id="instagram-reviews">Отзывы из инстаграма<a class="slider-cards__title-icon-link" href="https://www.instagram.com/fish2o.ru/" target="_blank"><img src="images/social-instagram-colored.svg" alt=""></a></h2>
+                  <div class="row catalog-product__cards justify-content-center">
+                    <div class="col-auto catalog-product__card-product-holder">
+                      <div class="card-review-instagram">
+                        <div class="card-review-instagram__image"><img class="card-review-instagram__img" src="images/thumb-review-instagram-1.png"></div>
+                        <div class="card-review-instagram__name"><a href="#">@olga_chug</a></div>
+                        <div class="card-review-instagram__text"><p>Приехала первая доставка - рыбка мороженая смотрится на 10 из 10,     обязательно отпишусь как приготовим!</p>    <p>Пока только спасибо:)</p></div>
+                      </div>
+                    </div>
+                    <div class="col-auto catalog-product__card-product-holder">
+                      <div class="card-review-instagram">
+                        <div class="card-review-instagram__image"><img class="card-review-instagram__img" src="images/thumb-product-5.png"></div>
+                        <div class="card-review-instagram__name"><a href="#">@olga_chug</a></div>
+                        <div class="card-review-instagram__text"><p>Приехала первая доставка - рыбка мороженая смотрится на 10 из 10,     обязательно отпишусь как приготовим!</p>    <p>Пока только спасибо:)</p></div>
+                      </div>
+                    </div>
+                    <div class="col-auto catalog-product__card-product-holder">
+                      <div class="card-review-instagram">
+                        <div class="card-review-instagram__image"><img class="card-review-instagram__img" src="images/thumb-product-6.png"></div>
+                        <div class="card-review-instagram__name"><a href="#">@olga_chug</a></div>
+                        <div class="card-review-instagram__text"><p>Приехала первая доставка - рыбка мороженая смотрится на 10 из 10,     обязательно отпишусь как приготовим!</p>    <p>Пока только спасибо:)</p></div>
+                      </div>
+                    </div>
+                    <div class="col-auto catalog-product__card-product-holder">
+                      <div class="card-review-instagram">
+                        <div class="card-review-instagram__image"><img class="card-review-instagram__img" src="images/thumb-product-1.png"></div>
+                        <div class="card-review-instagram__name"><a href="#">@olga_chug</a></div>
+                        <div class="card-review-instagram__text"><p>Приехала первая доставка - рыбка мороженая смотрится на 10 из 10,     обязательно отпишусь как приготовим!</p>    <p>Пока только спасибо:)</p></div>
+                      </div>
+                    </div>
+                    <div class="col-auto catalog-product__card-product-holder">
+                      <div class="card-review-instagram">
+                        <div class="card-review-instagram__image"><img class="card-review-instagram__img" src="images/thumb-product-2.png"></div>
+                        <div class="card-review-instagram__name"><a href="#">@olga_chug</a></div>
+                        <div class="card-review-instagram__text"><p>Приехала первая доставка - рыбка мороженая смотрится на 10 из 10,     обязательно отпишусь как приготовим!</p>    <p>Пока только спасибо:)</p></div>
+                      </div>
+                    </div>
+                    <div class="col-auto catalog-product__card-product-holder">
+                      <div class="card-review-instagram">
+                        <div class="card-review-instagram__image"><img class="card-review-instagram__img" src="images/thumb-product-4.png"></div>
+                        <div class="card-review-instagram__name"><a href="#">@olga_chug</a></div>
+                        <div class="card-review-instagram__text"><p>Приехала первая доставка - рыбка мороженая смотрится на 10 из 10,     обязательно отпишусь как приготовим!</p>    <p>Пока только спасибо:)</p></div>
+                      </div>
+                    </div>
+                    <div class="col-auto catalog-product__card-product-holder">
+                      <div class="card-review-instagram">
+                        <div class="card-review-instagram__image"><img class="card-review-instagram__img" src="images/thumb-product-6.png"></div>
+                        <div class="card-review-instagram__name"><a href="#">@olga_chug</a></div>
+                        <div class="card-review-instagram__text"><p>Приехала первая доставка - рыбка мороженая смотрится на 10 из 10,     обязательно отпишусь как приготовим!</p>    <p>Пока только спасибо:)</p></div>
+                      </div>
+                    </div>
+                    <div class="col-auto catalog-product__card-product-holder">
+                      <div class="card-review-instagram">
+                        <div class="card-review-instagram__image"><img class="card-review-instagram__img" src="images/thumb-product-1.png"></div>
+                        <div class="card-review-instagram__name"><a href="#">@olga_chug</a></div>
+                        <div class="card-review-instagram__text"><p>Приехала первая доставка - рыбка мороженая смотрится на 10 из 10,     обязательно отпишусь как приготовим!</p>    <p>Пока только спасибо:)</p></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="text-center catalog-product__loader">
+                    <div class="loader_wawes">
+                      <svg class="icon svg-wave-dims loader_wawes__wave">
+                        <use xlink:href="sprites/sprite.svg#wave"></use>
+                      </svg>
+                      <svg class="icon svg-wave-dims loader_wawes__wave">
+                        <use xlink:href="sprites/sprite.svg#wave"></use>
+                      </svg>
+                      <svg class="icon svg-wave-dims loader_wawes__wave">
+                        <use xlink:href="sprites/sprite.svg#wave"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="container">
-            <div class="row pt-3 pb-5">
-              <div class="col">
-                <div class="slider-cards">
-                  <div class="slider-cards__head">
-                    <h2 class="slider-cards__title">
-                       Отзывы о нас<a class="slider-cards__title-icon-link" href="https://www.instagram.com/fish2o.ru/" target="_blank"><img src="images/social-instagram-colored.svg" alt=""></a></h2>
-                    <div class="d-none d-lg-block">
-                      <div class="slider-cards__nav">
-                        <div class="swiper-button-prev slider-cards__nav-prev"></div>
-                        <div class="swiper-button-next slider-cards__nav-next"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="slider-cards__screen">
-                    <div class="swiper-container">
-                      <div class="swiper-wrapper slider-cards__wrapper">
-                        <div class="swiper-slide slider-cards__slide">
-                          <div class="card-review-instagram">
-                            <div class="card-review-instagram__image"><img class="card-review-instagram__img" src="images/thumb-review-instagram-1.png"></div>
-                            <div class="card-review-instagram__name"><a href="#">@olga_chug</a></div>
-                            <div class="card-review-instagram__text"><p>Приехала первая доставка - рыбка мороженая смотрится на 10 из 10,     обязательно отпишусь как приготовим!</p>    <p>Пока только спасибо:)</p></div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide slider-cards__slide">
-                          <div class="card-review-instagram">
-                            <div class="card-review-instagram__image"><img class="card-review-instagram__img" src="images/thumb-review-instagram-2.png"></div>
-                            <div class="card-review-instagram__name"><a href="#">@sofi_gelfand</a></div>
-                            <div class="card-review-instagram__text">Очень вкусный лосось, просто сделала в духовке с лимоном       и специями - рыба очень свежая, сочная. Креветки тоже огонь. Буду ещё заказывать!</div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide slider-cards__slide">
-                          <div class="card-review-instagram">
-                            <div class="card-review-instagram__image"><img class="card-review-instagram__img" src="images/thumb-review-instagram-3.png"></div>
-                            <div class="card-review-instagram__name"><a href="#">@olga_chug</a></div>
-                            <div class="card-review-instagram__text">Пробовала ваши креветки они очень вкусные которые не нужно варить.       Хочу заказать медальены, креветки, вашу селедку и фарш.</div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide slider-cards__slide">
-                          <div class="card-review-instagram">
-                            <div class="card-review-instagram__image"><img class="card-review-instagram__img" src="images/thumb-review-instagram-4.png"></div>
-                            <div class="card-review-instagram__name"><a href="#">@olga_chug</a></div>
-                            <div class="card-review-instagram__text"><p>Приехала первая доставка - рыбка мороженая смотрится на 10 из 10,     обязательно отпишусь как приготовим!</p>    <p>Пока только спасибо:)</p></div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide slider-cards__slide">
-                          <div class="card-review-instagram">
-                            <div class="card-review-instagram__image"><img class="card-review-instagram__img" src="images/thumb-review-instagram-5.png"></div>
-                            <div class="card-review-instagram__name"><a href="#">@olga_chug</a></div>
-                            <div class="card-review-instagram__text"><p>Приехала первая доставка - рыбка мороженая смотрится на 10 из 10,     обязательно отпишусь как приготовим!</p>    <p>Пока только спасибо:)</p></div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide slider-cards__slide">
-                          <div class="card-review-instagram">
-                            <div class="card-review-instagram__image"><img class="card-review-instagram__img" src="images/thumb-review-instagram-6.png"></div>
-                            <div class="card-review-instagram__name"><a href="#">@olga_chug</a></div>
-                            <div class="card-review-instagram__text"><p>Приехала первая доставка - рыбка мороженая смотрится на 10 из 10,     обязательно отпишусь как приготовим!</p>    <p>Пока только спасибо:)</p></div>
-                          </div>
+          <!-- reviews for mobile only-->
+          <div class="d-block d-lg-none">
+            <div class="container">
+              <div class="row pt-3 pb-5">
+                <div class="col">
+                  <div class="slider-cards">
+                    <div class="slider-cards__head">
+                      <h2 class="slider-cards__title">
+                         Отзывы о нас<a class="slider-cards__title-icon-link" href="https://www.instagram.com/fish2o.ru/" target="_blank"><img src="images/social-instagram-colored.svg" alt=""></a></h2>
+                      <div class="d-none d-lg-block">
+                        <div class="slider-cards__nav">
+                          <div class="swiper-button-prev slider-cards__nav-prev"></div>
+                          <div class="swiper-button-next slider-cards__nav-next"></div>
                         </div>
                       </div>
                     </div>
-                    <div class="slider-cards__screen-fader-left"></div>
-                    <div class="slider-cards__screen-fader-right"></div>
-                  </div>
-                  <div class="d-block d-lg-none">
-                    <div class="swiper-pagination"></div>
+                    <div class="slider-cards__screen">
+                      <div class="swiper-container">
+                        <div class="swiper-wrapper slider-cards__wrapper">
+                          <div class="swiper-slide slider-cards__slide">
+                            <div class="card-review-instagram">
+                              <div class="card-review-instagram__image"><img class="card-review-instagram__img" src="images/thumb-review-instagram-1.png"></div>
+                              <div class="card-review-instagram__name"><a href="#">@olga_chug</a></div>
+                              <div class="card-review-instagram__text"><p>Приехала первая доставка - рыбка мороженая смотрится на 10 из 10,     обязательно отпишусь как приготовим!</p>    <p>Пока только спасибо:)</p></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-cards__slide">
+                            <div class="card-review-instagram">
+                              <div class="card-review-instagram__image"><img class="card-review-instagram__img" src="images/thumb-review-instagram-2.png"></div>
+                              <div class="card-review-instagram__name"><a href="#">@sofi_gelfand</a></div>
+                              <div class="card-review-instagram__text">Очень вкусный лосось, просто сделала в духовке с лимоном       и специями - рыба очень свежая, сочная. Креветки тоже огонь. Буду ещё заказывать!</div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-cards__slide">
+                            <div class="card-review-instagram">
+                              <div class="card-review-instagram__image"><img class="card-review-instagram__img" src="images/thumb-review-instagram-3.png"></div>
+                              <div class="card-review-instagram__name"><a href="#">@olga_chug</a></div>
+                              <div class="card-review-instagram__text">Пробовала ваши креветки они очень вкусные которые не нужно варить.       Хочу заказать медальены, креветки, вашу селедку и фарш.</div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-cards__slide">
+                            <div class="card-review-instagram">
+                              <div class="card-review-instagram__image"><img class="card-review-instagram__img" src="images/thumb-review-instagram-4.png"></div>
+                              <div class="card-review-instagram__name"><a href="#">@olga_chug</a></div>
+                              <div class="card-review-instagram__text"><p>Приехала первая доставка - рыбка мороженая смотрится на 10 из 10,     обязательно отпишусь как приготовим!</p>    <p>Пока только спасибо:)</p></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-cards__slide">
+                            <div class="card-review-instagram">
+                              <div class="card-review-instagram__image"><img class="card-review-instagram__img" src="images/thumb-review-instagram-5.png"></div>
+                              <div class="card-review-instagram__name"><a href="#">@olga_chug</a></div>
+                              <div class="card-review-instagram__text"><p>Приехала первая доставка - рыбка мороженая смотрится на 10 из 10,     обязательно отпишусь как приготовим!</p>    <p>Пока только спасибо:)</p></div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slider-cards__slide">
+                            <div class="card-review-instagram">
+                              <div class="card-review-instagram__image"><img class="card-review-instagram__img" src="images/thumb-review-instagram-6.png"></div>
+                              <div class="card-review-instagram__name"><a href="#">@olga_chug</a></div>
+                              <div class="card-review-instagram__text"><p>Приехала первая доставка - рыбка мороженая смотрится на 10 из 10,     обязательно отпишусь как приготовим!</p>    <p>Пока только спасибо:)</p></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="slider-cards__screen-fader-left"></div>
+                      <div class="slider-cards__screen-fader-right"></div>
+                    </div>
+                    <div class="d-block d-lg-none">
+                      <div class="swiper-pagination"></div>
+                    </div>
                   </div>
                 </div>
               </div>
