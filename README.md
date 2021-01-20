@@ -11,3 +11,4 @@ Pages
 - [Reviews](https://evgeniusly.github.io/fish2o.ru/reviews.html)
 - [Сontacts](https://evgeniusly.github.io/fish2o.ru/contacts.html)
 - [News](https://evgeniusly.github.io/fish2o.ru/news.html)
+- [Cart](https://evgeniusly.github.io/fish2o.ru/cart.html)

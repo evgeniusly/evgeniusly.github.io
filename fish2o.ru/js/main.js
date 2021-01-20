@@ -207,7 +207,7 @@ $(function () {
   
     new Swiper($container[0], {
       loop: false,
-      spaceBetween: gap,
+      spaceBetween: 24,
       slidesPerView: "auto",
   
       // row count for mobile and descktop
@@ -216,6 +216,12 @@ $(function () {
       breakpoints: {
         1200: {
           slidesPerColumn: 1,
+        },
+      },
+  
+      breakpoints: {
+        1200: {
+          spaceBetween: gap,
         },
       },
   
@@ -294,6 +300,25 @@ $(function () {
         $card.data("product-id"),
         $(this).hasClass(likedClass)
       );
+    })
+    // remove from cart
+    .on("click", ".cart__product-remove", function () {
+      const prodictID = parseInt($(this).data("prodict-id"));
+      const $cardProductInCart = $(this).closest(".card-product-in-cart");
+      $cardProductInCart.fadeOut(function () {
+        $cardProductInCart.remove();
+      });
+  
+      removeItemFromCart(prodictID);
+    })
+    // clear cart
+    .on("click", ".cart__clear", function (e) {
+      e.preventDefault();
+      $(".card-product-in-cart").fadeOut(DEFAUILT_AMINATION_SPEED, function () {
+        $(this).remove();
+      });
+  
+      console.log("clear cart");
     });
   
   // =================================================================
@@ -439,7 +464,11 @@ $(function () {
     })
     // remove item from cart
     .on("click", ".cart__remove-trigger", function () {
-      $(this).closest(".cart__item").fadeOut(DEFAUILT_AMINATION_SPEED);
+      $(this)
+        .closest(".cart__item")
+        .fadeOut(DEFAUILT_AMINATION_SPEED, function () {
+          $(this).remove();
+        });
       removeItemFromCart($(this).data("product-id"));
     });
   
@@ -585,6 +614,9 @@ $(function () {
         const $adder = $block.find(".add-to-cart__btn-buy");
         const oldVal = parseInt($(this).data("old-val"));
         const newVal = parseInt($(this).val()) || 0;
+        const isSmall = $block.hasClass("add-to-cart_small");
+  
+        if (isSmall && newVal < 1) return $(this).val(1);
         if (oldVal == newVal) return;
         $block.data("old-val", newVal);
         applyProductCount($block.data("product-id"), newVal);
@@ -604,6 +636,7 @@ $(function () {
     const $counter = $block.find(".add-to-cart__cart-counter");
     const $adder = $block.find(".add-to-cart__btn-buy");
     const curVal = parseInt($input.val());
+    const isSmall = $block.hasClass("add-to-cart_small");
     let newVal;
   
     switch (action) {
@@ -620,6 +653,8 @@ $(function () {
         newVal = parseInt($block.data("product-in-cart-count"));
         break;
     }
+  
+    if (isSmall && newVal < 1) return;
   
     newVal = Math.max(newVal, 0);
     newVal = Math.min(newVal, CART_SINGLE_PRODUCT_COUNT_MAX);
@@ -714,6 +749,54 @@ $(function () {
       },
     });
   });
+  
+  // =================================================================
+  // INPUT-SEARCH
+  // =================================================================
+  $(document)
+    // on input change
+    .on(
+      "input mouseup select contextmenu drop",
+      ".input-search__input",
+      function () {
+        const $block = $(this).closest(".input-search");
+        const $options = $block.find(".input-search__options");
+        const newVal = $(this).val();
+  
+        if (newVal) {
+          $options.slideDown(DEFAUILT_AMINATION_SPEED);
+        } else {
+          $options.slideUp(DEFAUILT_AMINATION_SPEED);
+        }
+      }
+    )
+    // on input change
+    .on("click", ".input-search__option", function () {
+      const $block = $(this).closest(".input-search");
+      const $options = $block.find(".input-search__options");
+      const $input = $block.find(".input-search__input");
+      const val = $(this).html();
+  
+      $options.slideUp(DEFAUILT_AMINATION_SPEED);
+      $input.val(val);
+  
+      // accepted address here
+    });
+  
+  // =================================================================
+  // CART
+  // =================================================================
+  // listeners
+  $(document)
+    // likes
+    .on("click", "input[name='address-type']", function () {
+      var $target = $(
+        `.cart__checkout-collapsible[data-address-type="${$(this).val()}"]`
+      );
+  
+      $(".cart__checkout-collapsible").not($target).slideUp();
+      $target.slideDown();
+    });
   
 
   // =================================================================
