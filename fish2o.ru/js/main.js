@@ -303,13 +303,13 @@ $(function () {
     })
     // remove from cart
     .on("click", ".cart__product-remove", function () {
-      const prodictID = parseInt($(this).data("prodict-id"));
+      const productID = parseInt($(this).data("product-id"));
       const $cardProductInCart = $(this).closest(".card-product-in-cart");
       $cardProductInCart.fadeOut(function () {
         $cardProductInCart.remove();
       });
   
-      removeItemFromCart(prodictID);
+      removeItemFromCart(productID);
     })
     // clear cart
     .on("click", ".cart__clear", function (e) {
@@ -571,11 +571,32 @@ $(function () {
   const _ADD_TO_CART = ".add-to-cart";
   
   // add product to cart here
-  function applyProductCount(productID, count) {
+  function applyProductCount(productID, count, action) {
     console.log("productID", productID, "count", count);
+  
     // put AJAX here
-    // add cart update
-    // find all same product counters to update
+    if (action == "add") {
+      // add new product to cart
+      console.log("add new product to cart");
+    } else {
+      // update product in cart
+      console.log("update product in cart");
+    }
+  
+    // find all same product to update
+    const $sameAddToCart = $(`.add-to-cart[data-product-id="${productID}"]`);
+    $sameAddToCart.each(function (index, element) {
+      cardProductCounterUpdate($(this), "set", count);
+    });
+  
+    // update cost
+    const $sameCardsProductInCart = $(
+      `.card-product-in-cart[data-product-id="${productID}"]`
+    );
+    const price = $sameCardsProductInCart.data("product-price");
+    $sameCardsProductInCart
+      .find(".card-product-in-cart__summary")
+      .html(`${count * price} ₽`);
   }
   
   // apply input text filter
@@ -586,12 +607,17 @@ $(function () {
     );
   });
   
+  function applyCountersByDataCount() {
+    console.log("fire");
+    $(_ADD_TO_CART).each(function () {
+      if ($(this).data("product-in-cart-count")) {
+        cardProductCounterUpdate($(this), "take");
+      }
+    });
+  }
+  
   // get first state
-  $(_ADD_TO_CART).each(function () {
-    if ($(this).data("product-in-cart-count")) {
-      cardProductCounterUpdate($(this), "take");
-    }
-  });
+  applyCountersByDataCount();
   
   // listeners
   $(document)
@@ -614,9 +640,9 @@ $(function () {
         const $adder = $block.find(".add-to-cart__btn-buy");
         const oldVal = parseInt($(this).data("old-val"));
         const newVal = parseInt($(this).val()) || 0;
-        const isSmall = $block.hasClass("add-to-cart_small");
+        const isCantZero = $block.data("product-is-cant-zero");
   
-        if (isSmall && newVal < 1) return $(this).val(1);
+        if (isCantZero && newVal < 1) return $(this).val(1);
         if (oldVal == newVal) return;
         $block.data("old-val", newVal);
         applyProductCount($block.data("product-id"), newVal);
@@ -631,12 +657,12 @@ $(function () {
     );
   
   // counter interface logic
-  function cardProductCounterUpdate($block, action) {
+  function cardProductCounterUpdate($block, action, param = false) {
     const $input = $block.find(".add-to-cart__counter-input");
     const $counter = $block.find(".add-to-cart__cart-counter");
     const $adder = $block.find(".add-to-cart__btn-buy");
     const curVal = parseInt($input.val());
-    const isSmall = $block.hasClass("add-to-cart_small");
+    const isCantZero = $block.data("product-is-cant-zero");
     let newVal;
   
     switch (action) {
@@ -652,9 +678,12 @@ $(function () {
       case "take":
         newVal = parseInt($block.data("product-in-cart-count"));
         break;
+      case "set":
+        newVal = param;
+        break;
     }
   
-    if (isSmall && newVal < 1) return;
+    if (isCantZero && newVal < 1) return;
   
     newVal = Math.max(newVal, 0);
     newVal = Math.min(newVal, CART_SINGLE_PRODUCT_COUNT_MAX);
@@ -672,7 +701,7 @@ $(function () {
     $input.data("old-val", newVal);
     $input.val(newVal);
   
-    applyProductCount($block.data("product-id"), newVal);
+    applyProductCount($block.data("product-id"), newVal, action);
   }
   
   // =================================================================
@@ -720,6 +749,42 @@ $(function () {
       $tabContent.removeClass("tab-content_no-bg");
     }
   });
+  
+  // =================================================================
+  // TAB-ACCOUNT-SETTINGS
+  // =================================================================
+  function checkAccountSettingsAddressIsEmpty() {
+    if (!$(".account-settings__address").length) {
+      $(".account-settings__new-address").slideDown();
+    }
+  }
+  
+  // if "account-settings__addresses" is empty
+  // then show add address form
+  checkAccountSettingsAddressIsEmpty();
+  
+  $(document)
+    // remove address
+    .on("click", ".account-settings__address-remove", function () {
+      $(this)
+        .closest(".account-settings__address")
+        .slideUp(function () {
+          $(this).remove();
+          checkAccountSettingsAddressIsEmpty();
+        });
+  
+      // remove address here
+    })
+    // show add address form
+    .on("click", ".account-settings__address-add", function () {
+      $(".account-settings__new-address").slideDown();
+    })
+    // hide add address form
+    .on("click", ".account-settings__new-address-decline", function () {
+      if ($(".account-settings__address").length) {
+        $(".account-settings__new-address").slideUp();
+      }
+    });
   
   // =================================================================
   // FORM-CONTACT
@@ -824,3 +889,28 @@ $(function () {
     );
   }
 });
+
+// =================================================================
+// favorites
+// =================================================================
+$(document)
+  // remove from favorites product
+  .on("click", ".favorite__product-remove", function () {
+    const productID = parseInt($(this).data("product-id"));
+    const $cardProductInCart = $(this).closest(".card-product-in-cart");
+    $cardProductInCart.fadeOut(function () {
+      $cardProductInCart.remove();
+    });
+
+    console.log("remove from favorites product", productID);
+  })
+  // remove from favorites recipe
+  .on("click", ".favorite__recipe-remove", function () {
+    const recipeID = parseInt($(this).data("recipe-id"));
+    const $cardRecipeInCart = $(this).closest(".card-recipe_in-favorites");
+    $cardRecipeInCart.fadeOut(function () {
+      $cardRecipeInCart.remove();
+    });
+
+    console.log("remove from favorites recipe", recipeID);
+  });
