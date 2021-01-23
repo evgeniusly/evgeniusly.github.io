@@ -271,7 +271,7 @@ $(function () {
       });
     }
   
-    new Swiper(".slider-gallery-screen", {
+    new Swiper(this, {
       spaceBetween: 30,
       pagination: {
         el: $pagination[0],
@@ -708,8 +708,13 @@ $(function () {
   // ADD-TO-FAVORITE
   // =================================================================
   // set like status product here
-  function setProductLikeStatus(id, status, type = "product") {
-    console.log("id", id, "status", status, "type", type);
+  function setProductLikeStatus(id, status) {
+    console.log("id", id, "status", status);
+    // put AJAX here
+  }
+  // set like status recipe here
+  function setRecipeLikeStatus(id, status) {
+    console.log("id", id, "status", status);
     // put AJAX here
   }
   
@@ -717,18 +722,25 @@ $(function () {
   $(document)
     // likes
     .on("click", ".add-to-favorite__trigger", function () {
-      const $card = $(this).closest(".card-product");
       const likedClass = "active";
-      const id = $(this).data("product-id");
+      const productID = $(this).data("product-id");
+      const recipeID = $(this).data("recipe-id");
   
       $(this).toggleClass(likedClass);
   
       const liked = $(this).hasClass(likedClass);
   
-      setProductLikeStatus(id, liked);
+      if (productID) setProductLikeStatus(productID, liked);
+      if (recipeID) setRecipeLikeStatus(recipeID, liked);
   
       // find all same
-      const $same = $(`.add-to-favorite__trigger[data-product-id="${id}"]`);
+      let $same = false;
+      if (productID) {
+        $same = $(`.add-to-favorite__trigger[data-product-id="${productID}"]`);
+      } else if (recipeID) {
+        $same = $(`.add-to-favorite__trigger[data-recipe-id="${recipeID}"]`);
+      }
+  
       if (liked) {
         $same.addClass(likedClass);
       } else {
@@ -894,6 +906,10 @@ $(function () {
 // favorites
 // =================================================================
 $(document)
+  // remove from favorites product
+  .on("click", ".print-action", function () {
+    window.print();
+  })
   // remove from favorites product
   .on("click", ".favorite__product-remove", function () {
     const productID = parseInt($(this).data("product-id"));

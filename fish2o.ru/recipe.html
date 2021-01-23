@@ -2,7 +2,7 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>fish2o.ru - Каталог рецептов</title><!--[if IE]>
+    <title>fish2o.ru - Рецепт</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
@@ -237,784 +237,501 @@
       </div>
       <div class="content">
         <div class="container">
-          <div class="row pt-3">
-            <div class="col"> 
+          <div class="row">
+            <div class="col-12 pt-3">
               <ul class="breadcrumbs__list">
                 <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Главная</a></li>
                 <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Весь ассортимент</a></li>
                 <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Белая рыба</a></li>
                 <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Треска</a></li>
               </ul>
-              <h1>Каталог рецептов</h1>
-              <div class="d-block d-lg-none">
-                <div class="catalog-recipe__mobile-subcategories">
-                  <ul class="navigation-subcategories__list">
-                    <li class="navigation-subcategories__item"><a class="navigation-subcategories__link navigation-subcategories__link_active" href="test/">Все</a></li>
-                    <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Стейки</a></li>
-                    <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Филе</a></li>
-                    <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Фарш</a></li>
-                    <div class="navigation-subcategories__hidden-items">
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Треска</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Палтус Синекорый</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Пикша</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Минтай</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Сельдь</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Сибас</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Дорада</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Камбала</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Скумбрия</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Окунь</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Камбала-ерш</a></li>
+            </div>
+          </div>
+          <div class="row pt-2">
+            <div class="col-12 col-md-5 col-lg-5">
+              <h1 class="recipe__title">Семга, запечённая в духовке</h1>
+              <div class="recipe__actions">
+                <div class="recipe__action recipe__action-favorite add-to-favorite__trigger" data-recipe-id="1234">
+                  <svg class="icon svg-heart-24-dims recipe__action-icon">
+                    <use xlink:href="sprites/sprite.svg#heart-24"></use>
+                  </svg>
+                </div>
+                <div class="recipe__action print-action">
+                  <svg class="icon svg-print-24-dims">
+                    <use xlink:href="sprites/sprite.svg#print-24"></use>
+                  </svg>
+                </div>
+                <div class="recipe__action" data-toggle="collapse" href="#recipe__actions-shares" role="button" aria-expanded="false" aria-controls="recipe__actions-shares">
+                  <svg class="icon svg-share-24-dims">
+                    <use xlink:href="sprites/sprite.svg#share-24"></use>
+                  </svg>
+                </div>
+                <div class="collapse recipe__actions-shares" id="recipe__actions-shares">
+                  <script src="https://yastatic.net/share2/share.js"></script>
+                  <div class="ya-share2" data-curtain="" data-shape="round" data-services="vkontakte,facebook,odnoklassniki,telegram,twitter,viber,whatsapp"></div>
+                </div>
+              </div>
+              <div class="recipe__metas">
+                <div class="recipe__meta">
+                  <svg class="icon svg-rate-24-dims recipe__meta-icon">
+                    <use xlink:href="sprites/sprite.svg#rate-24"></use>
+                  </svg>
+                  <div class="recipe__meta-text">Средняя</div>
+                </div>
+                <div class="recipe__meta">
+                  <svg class="icon svg-clocks-24-dims recipe__meta-icon">
+                    <use xlink:href="sprites/sprite.svg#clocks-24"></use>
+                  </svg>
+                  <div class="recipe__meta-text">10 мин</div>
+                </div>
+                <div class="recipe__meta">
+                  <svg class="icon svg-calories-dims recipe__meta-icon">
+                    <use xlink:href="sprites/sprite.svg#calories"></use>
+                  </svg>
+                  <div class="recipe__meta-text">387 ккал</div>
+                </div>
+              </div>
+              <!-- gallery for mobile only-->
+              <!-- set uniq "data-slider-id" attr-->
+              <div class="recipe__slider-mobile d-block d-md-none">
+                <div class="swiper-container slider-gallery-screen" data-slider-id="1">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="slider-gallery-screen__img-wrap"><img class="slider-gallery-screen__img" src="images/thumb-product-1.png" alt=""></div>
                     </div>
-                    <li class="navigation-subcategories__item"><a class="navigation-subcategories__link navigation-subcategories__link_more" href="#">Еще...</a></li>
-                  </ul>
+                    <div class="swiper-slide">
+                      <div class="slider-gallery-screen__img-wrap"><img class="slider-gallery-screen__img" src="images/thumb-product-2.png" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-gallery-screen__img-wrap"><img class="slider-gallery-screen__img" src="images/thumb-product-3.png" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-gallery-screen__img-wrap"><img class="slider-gallery-screen__img" src="images/thumb-product-4.png" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-gallery-screen__img-wrap"><img class="slider-gallery-screen__img" src="images/thumb-product-5.png" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="slider-gallery-screen__img-wrap"><img class="slider-gallery-screen__img" src="images/thumb-product-6.png" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="d-md-none">
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="recipe__describe">
+                <div class="recipe__describe-title">Описание</div>Популярность красной рыбы, и в частности лосося,
+                растет с каждым днем. Из-за своего восхитительного вкуса
+                и богатого витаминного состава она по праву считается деликатесом.
+              </div>
+              <div class="recipe__ingridients">
+                <h2 class="recipe__ingridients-title">Ингредиенты</h2>
+                <div class="recipe__ingridients-list">
+                  <div class="card-product-in-recipe"><img class="card-product-in-recipe__img" src="images/thumb-product-2.png" alt="Филе семги без кожи">
+                    <h5 class="card-product-in-recipe__title"><a href="#">Филе семги без кожи</a></h5>
+                    <div class="card-product-in-recipe__count">150&nbsp;г</div>
+                    <div class="card-product-in-recipe__counter">
+                      <div class="add-to-cart add-to-cart_small add-to-cart_small-btn" data-product-id="0" data-product-in-cart-count="0">
+                        <button class="btn btn-primary add-to-cart__btn-buy">
+                          <svg class="icon svg-cart-small-dims add-to-cart__btn-buy-icon">
+                            <use xlink:href="sprites/sprite.svg#cart-small"></use>
+                          </svg>Купить
+                        </button>
+                        <div class="add-to-cart__cart-counter">
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <button class="btn btn-primary add-to-cart__counter-btn-minus" type="button">-</button>
+                            </div>
+                            <input class="form-control add-to-cart__counter-input" type="text">
+                            <div class="input-group-append">
+                              <button class="btn btn-primary add-to-cart__counter-btn-plus" type="button">+</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="recipe__ingridients-item">
+                    <div class="recipe__ingridients-item-name">Руккола</div>
+                    <div class="recipe__ingridients-item-count">30&nbsp;г</div>
+                  </div>
+                  <div class="recipe__ingridients-item">
+                    <div class="recipe__ingridients-item-name">Авокадо</div>
+                    <div class="recipe__ingridients-item-count">0.5&nbsp;шт</div>
+                  </div>
+                  <div class="recipe__ingridients-item">
+                    <div class="recipe__ingridients-item-name">Перец черный молотый</div>
+                    <div class="recipe__ingridients-item-count">По&nbsp;вкусу</div>
+                  </div>
+                  <div class="recipe__ingridients-item">
+                    <div class="recipe__ingridients-item-name">Соль</div>
+                    <div class="recipe__ingridients-item-count">По&nbsp;вкусу</div>
+                  </div>
+                  <div class="recipe__ingridients-item">
+                    <div class="recipe__ingridients-item-name">Яйцо куриное</div>
+                    <div class="recipe__ingridients-item-count">2&nbsp;шт.</div>
+                  </div>
+                  <div class="recipe__ingridients-item">
+                    <div class="recipe__ingridients-item-name">Песто</div>
+                    <div class="recipe__ingridients-item-count">1&nbsp;ст.&nbsp;л</div>
+                  </div>
+                  <div class="recipe__ingridients-item">
+                    <div class="recipe__ingridients-item-name">Хлеб зерновой</div>
+                    <div class="recipe__ingridients-item-count">2&nbsp;ломтика</div>
+                  </div>
+                  <div class="recipe__ingridients-item">
+                    <div class="recipe__ingridients-item-name">Сыр Arla Natura Сливочный Лёгкий</div>
+                    <div class="recipe__ingridients-item-count">1&nbsp;ломтик</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-7 col-lg-7">
+              <div class="recipe__slider d-none d-md-block">
+                <!-- gallery for desktop only-->
+                <!-- set uniq "data-slider-id" attr-->
+                <div class="recipe__slider-screen">
+                  <div class="swiper-container slider-gallery-screen" data-slider-id="2">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="slider-gallery-screen__img-wrap"><img class="slider-gallery-screen__img" src="images/thumb-product-1.png" alt=""></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slider-gallery-screen__img-wrap"><img class="slider-gallery-screen__img" src="images/thumb-product-2.png" alt=""></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slider-gallery-screen__img-wrap"><img class="slider-gallery-screen__img" src="images/thumb-product-3.png" alt=""></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slider-gallery-screen__img-wrap"><img class="slider-gallery-screen__img" src="images/thumb-product-4.png" alt=""></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slider-gallery-screen__img-wrap"><img class="slider-gallery-screen__img" src="images/thumb-product-5.png" alt=""></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slider-gallery-screen__img-wrap"><img class="slider-gallery-screen__img" src="images/thumb-product-6.png" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="d-md-none">
+                      <div class="swiper-pagination"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="recipe__slider-thumbs d-none d-md-block">
+                  <div class="swiper-container slider-gallery-thumbs" data-slider-id="2">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="slider-gallery-thumbs__img-wrap"><img class="slider-gallery-thumbs__img" src="images/thumb-product-1.png" alt=""></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slider-gallery-thumbs__img-wrap"><img class="slider-gallery-thumbs__img" src="images/thumb-product-2.png" alt=""></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slider-gallery-thumbs__img-wrap"><img class="slider-gallery-thumbs__img" src="images/thumb-product-3.png" alt=""></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slider-gallery-thumbs__img-wrap"><img class="slider-gallery-thumbs__img" src="images/thumb-product-4.png" alt=""></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slider-gallery-thumbs__img-wrap"><img class="slider-gallery-thumbs__img" src="images/thumb-product-5.png" alt=""></div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="slider-gallery-thumbs__img-wrap"><img class="slider-gallery-thumbs__img" src="images/thumb-product-6.png" alt=""></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="recipe__nutritionals-title">Пищевая ценность</div>
+              <div class="recipe__nutritionals-wrap">
+                <div class="recipe__nutritionals">
+                  <div class="recipe__nutritional-item">
+                    <svg class="icon svg-meat-40-dims recipe__nutritional-icon">
+                      <use xlink:href="sprites/sprite.svg#meat-40"></use>
+                    </svg>
+                    <div class="recipe__nutritional-name">белки</div>
+                    <div class="recipe__nutritional-value">120 г</div>
+                    <div class="recipe__nutritional-measure">грамм</div>
+                  </div>
+                  <div class="recipe__nutritional-item">
+                    <svg class="icon svg-pizza-40-dims recipe__nutritional-icon">
+                      <use xlink:href="sprites/sprite.svg#pizza-40"></use>
+                    </svg>
+                    <div class="recipe__nutritional-name">жиры</div>
+                    <div class="recipe__nutritional-value">12</div>
+                    <div class="recipe__nutritional-measure">грамм</div>
+                  </div>
+                  <div class="recipe__nutritional-item">
+                    <svg class="icon svg-rice-40-dims recipe__nutritional-icon">
+                      <use xlink:href="sprites/sprite.svg#rice-40"></use>
+                    </svg>
+                    <div class="recipe__nutritional-name">углеводы</div>
+                    <div class="recipe__nutritional-value">230</div>
+                    <div class="recipe__nutritional-measure">грамм</div>
+                  </div>
+                  <div class="recipe__nutritional-item">
+                    <svg class="icon svg-fire-40-dims recipe__nutritional-icon">
+                      <use xlink:href="sprites/sprite.svg#fire-40"></use>
+                    </svg>
+                    <div class="recipe__nutritional-name">калорийность</div>
+                    <div class="recipe__nutritional-value">387</div>
+                    <div class="recipe__nutritional-measure">ккал</div>
+                  </div>
+                </div>
+              </div>
+              <div class="recipe__steps">
+                <div class="recipe__step">
+                  <div class="recipe__step-title">Шаг 1</div>
+                  <div class="recipe__step-text">Для начала приготовим смесь из пряных трав и соли. Помещаем их в чашку.   Добавляем соль, 1 ст. ложку оливкового масла и перец. Перемешиваем.</div>
+                </div>
+                <div class="recipe__step">
+                  <div class="recipe__step-title">Шаг 2</div>
+                  <div class="recipe__step-text">Разогреваем духовку до 180 °C. Готовим блюдо, в котором будем запекать   нашу сёмгу. Наливаем 1 ст. ложку оливкового масла, аккуратно распределяем   по дну всей формы. Выкладываем рыбку.</div>
+                </div>
+                <div class="recipe__step">
+                  <div class="recipe__step-title">Шаг 3</div>
+                  <div class="recipe__step-text">Наливаем 1 ст. ложку оливкового масла, аккуратно распределяем по дну   всей формы. Добавляем соль, 1 ст. ложку оливкового масла и перец. Перемешиваем.   Выкладываем рыбку.</div>
+                </div>
+                <div class="recipe__step">
+                  <div class="recipe__step-title">Шаг 4</div>
+                  <div class="recipe__step-text">Наливаем 1 ст. ложку оливкового масла, аккуратно распределяем по дну всей формы.   Добавляем соль, 1 ст. ложку оливкового масла и перец. Перемешиваем. Выкладываем рыбку.</div>
+                </div>
+                <div class="recipe__step">
+                  <div class="recipe__step-title">Шаг 5</div>
+                  <div class="recipe__step-text">Отправляем в духовой шкаф на 30 минут. И наслаждаемся прекрасным ароматом   тимьяна или розмарина и нашей готовящейся в духовке сёмги. Через полчаса   всё готово к подаче на стол.</div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row pt-lg-3 pb-5">
-            <div class="col-12 col-lg-3">
-              <div class="catalog-recipe__search">
-                <div class="search-small">
-                  <input class="search-small__input" type="text" placeholder="Поиск по рецептам">
-                  <svg class="icon svg-search-dims search-small__input-icon">
-                    <use xlink:href="sprites/sprite.svg#search"></use>
-                  </svg>
-                </div>
-              </div>
-              <div class="d-flex justify-content-end d-lg-none catalog-recipe__mobile-sort">
-                <div class="dropdown navigation-sort navigation-sort_no-bg">
-                  <div class="navigation-sort__content"><a class="navigation-sort__selector" id="navigation-sort-ID" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <svg class="icon svg-arrow-dims navigation-sort__selector-icon-arrow">
-                        <use xlink:href="sprites/sprite.svg#arrow"></use>
-                      </svg>
-                      <div class="navigation-sort__selector-title">По популярности</div>
-                      <svg class="icon svg-chevron-dims navigation-sort__selector-icon-chevron">
-                        <use xlink:href="sprites/sprite.svg#chevron"></use>
-                      </svg></a>
-                    <div class="dropdown-menu navigation-sort__menu" aria-labelledby="navigation-sort-ID"><a class="navigation-sort__option" href="#" data-value="0" style="display:none;">По популярности</a><a class="navigation-sort__option" href="#" data-value="1">Название</a><a class="navigation-sort__option" href="#" data-value="2">Цена</a><a class="navigation-sort__option" href="#" data-value="3">Хиты продаж</a><a class="navigation-sort__option" href="#" data-value="4">Оценка покупателей</a>
+          <div class="row pt-lg-3 pb-5 no-print">
+            <div class="col">
+              <h2 class="recipe__tab-reviews-title d-none d-md-block">Отзывы о рецепте</h2>
+              <div class="recipe__tab-reviews">
+                <h2 class="recipe__tab-reviews-title-mobile d-block d-md-none">Отзывы</h2>
+                <div class="tab-reviews">
+                  <div class="tab-reviews__header row align-items-center">
+                    <div class="tab-reviews__raiting col-6 col-lg-4 d-block d-md-flex align-items-center">
+                      <div class="tab-reviews__raiting-text">Общий рейтинг</div>
+                      <div class="raiting raiting_big">
+                        <div class="raiting__stars">
+                          <div class="raiting__stars-back">
+                            <svg class="icon svg-star-dims raiting__star">
+                              <use xlink:href="sprites/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="icon svg-star-dims raiting__star">
+                              <use xlink:href="sprites/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="icon svg-star-dims raiting__star">
+                              <use xlink:href="sprites/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="icon svg-star-dims raiting__star">
+                              <use xlink:href="sprites/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="icon svg-star-dims raiting__star">
+                              <use xlink:href="sprites/sprite.svg#star"></use>
+                            </svg>
+                          </div>
+                          <div class="raiting__stars-fill" style="width: 72%">
+                            <svg class="icon svg-star-dims raiting__star">
+                              <use xlink:href="sprites/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="icon svg-star-dims raiting__star">
+                              <use xlink:href="sprites/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="icon svg-star-dims raiting__star">
+                              <use xlink:href="sprites/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="icon svg-star-dims raiting__star">
+                              <use xlink:href="sprites/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="icon svg-star-dims raiting__star">
+                              <use xlink:href="sprites/sprite.svg#star"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="raiting__count">12</div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div class="navigation-filters">
-                <div class="navigation-filters__trigger d-block d-lg-none"><a class="navigation-filters__trigger-link" data-toggle="collapse" href="#navigation-filters" role="button" aria-expanded="false" aria-controls="navigation-filters">
-                    <svg class="icon svg-filter-24-dims navigation-filters__trigger-link-icon">
-                      <use xlink:href="sprites/sprite.svg#filter-24"></use>
-                    </svg>Фильтры</a></div>
-                <div class="collapse d-lg-block" id="navigation-filters">
-                  <div class="card card-body">
-                    <div class="navigation-filters__title">Что будем готовить?</div>
-                    <ul class="navigation-filters__list">
-                      <li class="navigation-filters__list-item">
-                        <div class="form-check">
-                          <input class="form-check-input" id="navigation-filter-0-0" type="checkbox" value="">
-                          <label class="form-check-label" for="navigation-filter-0-0">Треска</label>
-                        </div>
-                      </li>
-                      <li class="navigation-filters__list-item">
-                        <div class="form-check">
-                          <input class="form-check-input" id="navigation-filter-0-1" type="checkbox" value="">
-                          <label class="form-check-label" for="navigation-filter-0-1">Семга</label>
-                        </div>
-                      </li>
-                      <li class="navigation-filters__list-item">
-                        <div class="form-check">
-                          <input class="form-check-input" id="navigation-filter-0-2" type="checkbox" value="">
-                          <label class="form-check-label" for="navigation-filter-0-2">Омуль</label>
-                        </div>
-                      </li>
-                      <li class="navigation-filters__list-item">
-                        <div class="form-check">
-                          <input class="form-check-input" id="navigation-filter-0-3" type="checkbox" value="">
-                          <label class="form-check-label" for="navigation-filter-0-3">Форель</label>
-                        </div>
-                      </li>
-                      <li class="navigation-filters__list-item">
-                        <div class="form-check">
-                          <input class="form-check-input" id="navigation-filter-0-4" type="checkbox" value="">
-                          <label class="form-check-label" for="navigation-filter-0-4">Омуль</label>
-                        </div>
-                      </li>
-                      <li class="navigation-filters__list-item">
-                        <div class="form-check">
-                          <input class="form-check-input" id="navigation-filter-0-5" type="checkbox" value="">
-                          <label class="form-check-label" for="navigation-filter-0-5">Форель</label>
-                        </div>
-                      </li>
-                    </ul>
-                    <div class="navigation-filters__title">По времени готовки</div>
-                    <ul class="navigation-filters__list">
-                      <li class="navigation-filters__list-item">
-                        <div class="form-check">
-                          <input class="form-check-input" id="navigation-filter-1-0" type="checkbox" value="">
-                          <label class="form-check-label" for="navigation-filter-1-0">10-20 мин</label>
-                        </div>
-                      </li>
-                      <li class="navigation-filters__list-item">
-                        <div class="form-check">
-                          <input class="form-check-input" id="navigation-filter-1-1" type="checkbox" value="">
-                          <label class="form-check-label" for="navigation-filter-1-1">20-40 мин</label>
-                        </div>
-                      </li>
-                      <li class="navigation-filters__list-item">
-                        <div class="form-check">
-                          <input class="form-check-input" id="navigation-filter-1-2" type="checkbox" value="">
-                          <label class="form-check-label" for="navigation-filter-1-2">40-80 мин</label>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-lg-9">
-              <div class="d-none d-lg-block">
-                <div class="d-md-flex justify-content-between">
-                  <ul class="navigation-subcategories__list">
-                    <li class="navigation-subcategories__item"><a class="navigation-subcategories__link navigation-subcategories__link_active" href="test/">Все</a></li>
-                    <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Стейки</a></li>
-                    <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Филе</a></li>
-                    <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Фарш</a></li>
-                    <div class="navigation-subcategories__hidden-items">
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Треска</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Палтус Синекорый</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Пикша</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Минтай</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Сельдь</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Сибас</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Дорада</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Камбала</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Скумбрия</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Окунь</a></li>
-                      <li class="navigation-subcategories__item"><a class="navigation-subcategories__link" href="#">Камбала-ерш</a></li>
-                    </div>
-                    <li class="navigation-subcategories__item"><a class="navigation-subcategories__link navigation-subcategories__link_more" href="#">Еще...</a></li>
-                  </ul>
-                  <div class="d-flex justify-content-end catalog-recipe__navigation-sort">
-                    <div class="dropdown navigation-sort">
-                      <div class="navigation-sort__content"><a class="navigation-sort__selector" id="navigation-sort-ID" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <svg class="icon svg-arrow-dims navigation-sort__selector-icon-arrow">
-                            <use xlink:href="sprites/sprite.svg#arrow"></use>
-                          </svg>
-                          <div class="navigation-sort__selector-title">По популярности</div>
-                          <svg class="icon svg-chevron-dims navigation-sort__selector-icon-chevron">
-                            <use xlink:href="sprites/sprite.svg#chevron"></use>
-                          </svg></a>
-                        <div class="dropdown-menu navigation-sort__menu" aria-labelledby="navigation-sort-ID"><a class="navigation-sort__option" href="#" data-value="0" style="display:none;">По популярности</a><a class="navigation-sort__option" href="#" data-value="1">Название</a><a class="navigation-sort__option" href="#" data-value="2">Цена</a><a class="navigation-sort__option" href="#" data-value="3">Хиты продаж</a><a class="navigation-sort__option" href="#" data-value="4">Оценка покупателей</a>
+                    <div class="tab-reviews__comment-button col-4 text-center d-none d-lg-block"><a class="btn btn-outline-primary tab-reviews__comment-btn" href="#">Написать комментарий</a></div>
+                    <div class="tab-reviews__sort col-6 col-lg-4 d-flex justify-content-end align-items-center">
+                      <div class="dropdown navigation-sort navigation-sort_no-shadow">
+                        <div class="navigation-sort__content"><a class="navigation-sort__selector" id="navigation-sort-ID" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg class="icon svg-arrow-dims navigation-sort__selector-icon-arrow">
+                              <use xlink:href="sprites/sprite.svg#arrow"></use>
+                            </svg>
+                            <div class="navigation-sort__selector-title">По популярности</div>
+                            <svg class="icon svg-chevron-dims navigation-sort__selector-icon-chevron">
+                              <use xlink:href="sprites/sprite.svg#chevron"></use>
+                            </svg></a>
+                          <div class="dropdown-menu navigation-sort__menu" aria-labelledby="navigation-sort-ID"><a class="navigation-sort__option" href="#" data-value="0" style="display:none;">По популярности</a><a class="navigation-sort__option" href="#" data-value="1">Название</a><a class="navigation-sort__option" href="#" data-value="2">Цена</a><a class="navigation-sort__option" href="#" data-value="3">Хиты продаж</a><a class="navigation-sort__option" href="#" data-value="4">Оценка покупателей</a>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="row catalog-recipe__cards justify-content-center">
-                <div class="col-auto catalog-recipe__card-product-holder">
-                  <div class="card-recipe">
-                    <div class="card-recipe__card">
-                      <div class="card-recipe__image"><img class="card-recipe__img" src="images/thumb-product-1.png" alt="Мидии на створке"></div>
-                      <div class="card-recipe__body-wrap">
-                        <div class="card-recipe__body">
-                          <div class="card-recipe__raiting">
-                            <div class="card-recipe__raiting-stars">
-                              <div class="card-recipe__raiting-stars-back">
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                              </div>
-                              <div class="card-recipe__raiting-stars-fill" style="width: 72%">
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                              </div>
+                  <div class="tab-reviews__list">
+                    <div class="card-review"><img class="card-review__avatar" src="images/thumb-review-instagram-1.png" alt="">
+                      <div class="card-review__title">
+                        <div class="card-review__from">Виктор Рыбин</div>
+                        <div class="card-review__date">03.11.2020</div>
+                      </div>
+                      <div class="card-review__rate">
+                        <div class="raiting raiting_small">
+                          <div class="raiting__stars">
+                            <div class="raiting__stars-back">
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
                             </div>
-                            <div class="card-recipe__raiting-count">12</div>
-                          </div>
-                          <div class="card-recipe__text">
-                            <h5 class="card-recipe__title"><a href="#">Мидии на створке</a></h5>
-                            <div class="card-recipe__describe">Особенно вкусны мидии с середины июня до февраля,    так как в мае они недостаточнно жирны.</div>
-                          </div>
-                          <div class="card-recipe__time">
-                            <svg class="icon svg-timer-dims card-recipe__meta-icon">
-                              <use xlink:href="sprites/sprite.svg#timer"></use>
-                            </svg>30–40 мин
-                          </div>
-                          <div class="card-recipe__calories">
-                            <svg class="icon svg-calories-dims card-recipe__meta-icon">
-                              <use xlink:href="sprites/sprite.svg#calories"></use>
-                            </svg>384 ккал
-                          </div>
-                          <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="44">
-                            <use xlink:href="sprites/sprite.svg#trash-24"></use>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-auto catalog-recipe__card-product-holder">
-                  <div class="card-recipe">
-                    <div class="card-recipe__card">
-                      <div class="card-recipe__image"><img class="card-recipe__img" src="images/thumb-product-2.png" alt="Мидии на створке"></div>
-                      <div class="card-recipe__body-wrap">
-                        <div class="card-recipe__body">
-                          <div class="card-recipe__raiting">
-                            <div class="card-recipe__raiting-stars">
-                              <div class="card-recipe__raiting-stars-back">
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                              </div>
-                              <div class="card-recipe__raiting-stars-fill" style="width: 72%">
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                              </div>
+                            <div class="raiting__stars-fill" style="width: 80%">
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
                             </div>
-                            <div class="card-recipe__raiting-count">12</div>
                           </div>
-                          <div class="card-recipe__text">
-                            <h5 class="card-recipe__title"><a href="#">Мидии на створке</a></h5>
-                            <div class="card-recipe__describe">Особенно вкусны мидии с середины июня до февраля,    так как в мае они недостаточнно жирны.</div>
-                          </div>
-                          <div class="card-recipe__time">
-                            <svg class="icon svg-timer-dims card-recipe__meta-icon">
-                              <use xlink:href="sprites/sprite.svg#timer"></use>
-                            </svg>30–40 мин
-                          </div>
-                          <div class="card-recipe__calories">
-                            <svg class="icon svg-calories-dims card-recipe__meta-icon">
-                              <use xlink:href="sprites/sprite.svg#calories"></use>
-                            </svg>384 ккал
-                          </div>
-                          <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="22">
-                            <use xlink:href="sprites/sprite.svg#trash-24"></use>
-                          </svg>
+                          <div class="raiting__count">12</div>
                         </div>
                       </div>
+                      <div class="card-review__text"><p>Отличная модель в таком ценовом диапазоне!     Заряд держит отлично, при интенсивной нагрузке.     Игры поддерживает просто на высоте, не вылетает.     Огромный по величине экран. </p></div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-auto catalog-recipe__card-product-holder">
-                  <div class="card-recipe">
-                    <div class="card-recipe__card">
-                      <div class="card-recipe__image"><img class="card-recipe__img" src="images/thumb-product-3.png" alt="Мидии на створке"></div>
-                      <div class="card-recipe__body-wrap">
-                        <div class="card-recipe__body">
-                          <div class="card-recipe__raiting">
-                            <div class="card-recipe__raiting-stars">
-                              <div class="card-recipe__raiting-stars-back">
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                              </div>
-                              <div class="card-recipe__raiting-stars-fill" style="width: 72%">
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                              </div>
+                    <div class="card-review"><img class="card-review__avatar" src="images/thumb-review-instagram-1.png" alt="">
+                      <div class="card-review__title">
+                        <div class="card-review__from">Виктор Рыбин</div>
+                        <div class="card-review__date">03.11.2020</div>
+                      </div>
+                      <div class="card-review__rate">
+                        <div class="raiting raiting_small">
+                          <div class="raiting__stars">
+                            <div class="raiting__stars-back">
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
                             </div>
-                            <div class="card-recipe__raiting-count">12</div>
-                          </div>
-                          <div class="card-recipe__text">
-                            <h5 class="card-recipe__title"><a href="#">Мидии на створке</a></h5>
-                            <div class="card-recipe__describe">Особенно вкусны мидии с середины июня до февраля,    так как в мае они недостаточнно жирны.</div>
-                          </div>
-                          <div class="card-recipe__time">
-                            <svg class="icon svg-timer-dims card-recipe__meta-icon">
-                              <use xlink:href="sprites/sprite.svg#timer"></use>
-                            </svg>30–40 мин
-                          </div>
-                          <div class="card-recipe__calories">
-                            <svg class="icon svg-calories-dims card-recipe__meta-icon">
-                              <use xlink:href="sprites/sprite.svg#calories"></use>
-                            </svg>384 ккал
-                          </div>
-                          <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="57">
-                            <use xlink:href="sprites/sprite.svg#trash-24"></use>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-auto catalog-recipe__card-product-holder">
-                  <div class="card-recipe">
-                    <div class="card-recipe__card">
-                      <div class="card-recipe__image"><img class="card-recipe__img" src="images/thumb-product-4.png" alt="Мидии на створке"></div>
-                      <div class="card-recipe__body-wrap">
-                        <div class="card-recipe__body">
-                          <div class="card-recipe__raiting">
-                            <div class="card-recipe__raiting-stars">
-                              <div class="card-recipe__raiting-stars-back">
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                              </div>
-                              <div class="card-recipe__raiting-stars-fill" style="width: 72%">
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                              </div>
+                            <div class="raiting__stars-fill" style="width: 80%">
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
                             </div>
-                            <div class="card-recipe__raiting-count">12</div>
                           </div>
-                          <div class="card-recipe__text">
-                            <h5 class="card-recipe__title"><a href="#">Мидии на створке</a></h5>
-                            <div class="card-recipe__describe">Особенно вкусны мидии с середины июня до февраля,    так как в мае они недостаточнно жирны.</div>
-                          </div>
-                          <div class="card-recipe__time">
-                            <svg class="icon svg-timer-dims card-recipe__meta-icon">
-                              <use xlink:href="sprites/sprite.svg#timer"></use>
-                            </svg>30–40 мин
-                          </div>
-                          <div class="card-recipe__calories">
-                            <svg class="icon svg-calories-dims card-recipe__meta-icon">
-                              <use xlink:href="sprites/sprite.svg#calories"></use>
-                            </svg>384 ккал
-                          </div>
-                          <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="72">
-                            <use xlink:href="sprites/sprite.svg#trash-24"></use>
-                          </svg>
+                          <div class="raiting__count">12</div>
                         </div>
                       </div>
+                      <div class="card-review__text"><p>Отличная модель в таком ценовом диапазоне!       Заряд держит отлично, при интенсивной нагрузке.       Игры поддерживает просто на высоте, не вылетает.       Огромный по величине экран. </p>      <p><img src='images/thumb-review-instagram-1.png' /></p></div>
+                      <ul class="card-review__answers">
+                        <li class="card-review__answer"><img class="card-review__avatar" src="images/thumb-review-instagram-1.png" alt="">
+                          <div class="card-review__title">
+                            <div class="card-review__from card-review__from_accent">Администратор</div>
+                            <div class="card-review__date">04.11.2020</div>
+                          </div>
+                          <div class="card-review__text">Спасибо большое за отзыв. Приятного аппетита!</div>
+                        </li>
+                      </ul>
                     </div>
-                  </div>
-                </div>
-                <div class="col-auto catalog-recipe__card-product-holder">
-                  <div class="card-recipe">
-                    <div class="card-recipe__card">
-                      <div class="card-recipe__image"><img class="card-recipe__img" src="images/thumb-product-5.png" alt="Мидии на створке"></div>
-                      <div class="card-recipe__body-wrap">
-                        <div class="card-recipe__body">
-                          <div class="card-recipe__raiting">
-                            <div class="card-recipe__raiting-stars">
-                              <div class="card-recipe__raiting-stars-back">
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                              </div>
-                              <div class="card-recipe__raiting-stars-fill" style="width: 72%">
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                              </div>
+                    <div class="card-review"><img class="card-review__avatar" src="images/thumb-review-instagram-1.png" alt="">
+                      <div class="card-review__title">
+                        <div class="card-review__from">Виктор Рыбин</div>
+                        <div class="card-review__date">03.11.2020</div>
+                      </div>
+                      <div class="card-review__rate">
+                        <div class="raiting raiting_small">
+                          <div class="raiting__stars">
+                            <div class="raiting__stars-back">
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
                             </div>
-                            <div class="card-recipe__raiting-count">12</div>
-                          </div>
-                          <div class="card-recipe__text">
-                            <h5 class="card-recipe__title"><a href="#">Мидии на створке</a></h5>
-                            <div class="card-recipe__describe">Особенно вкусны мидии с середины июня до февраля,    так как в мае они недостаточнно жирны.</div>
-                          </div>
-                          <div class="card-recipe__time">
-                            <svg class="icon svg-timer-dims card-recipe__meta-icon">
-                              <use xlink:href="sprites/sprite.svg#timer"></use>
-                            </svg>30–40 мин
-                          </div>
-                          <div class="card-recipe__calories">
-                            <svg class="icon svg-calories-dims card-recipe__meta-icon">
-                              <use xlink:href="sprites/sprite.svg#calories"></use>
-                            </svg>384 ккал
-                          </div>
-                          <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="49">
-                            <use xlink:href="sprites/sprite.svg#trash-24"></use>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-auto catalog-recipe__card-product-holder">
-                  <div class="card-recipe">
-                    <div class="card-recipe__card">
-                      <div class="card-recipe__image"><img class="card-recipe__img" src="images/thumb-product-6.png" alt="Long title very very very very very long"></div>
-                      <div class="card-recipe__body-wrap">
-                        <div class="card-recipe__body">
-                          <div class="card-recipe__raiting">
-                            <div class="card-recipe__raiting-stars">
-                              <div class="card-recipe__raiting-stars-back">
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                              </div>
-                              <div class="card-recipe__raiting-stars-fill" style="width: 72%">
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                              </div>
+                            <div class="raiting__stars-fill" style="width: 80%">
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
+                              <svg class="icon svg-star-dims raiting__star">
+                                <use xlink:href="sprites/sprite.svg#star"></use>
+                              </svg>
                             </div>
-                            <div class="card-recipe__raiting-count">12</div>
                           </div>
-                          <div class="card-recipe__text">
-                            <h5 class="card-recipe__title"><a href="#">Long title very very very very very long</a></h5>
-                            <div class="card-recipe__describe">Особенно вкусны мидии с середины июня до февраля,    так как в мае они недостаточнно жирны.</div>
-                          </div>
-                          <div class="card-recipe__time">
-                            <svg class="icon svg-timer-dims card-recipe__meta-icon">
-                              <use xlink:href="sprites/sprite.svg#timer"></use>
-                            </svg>30–40 мин
-                          </div>
-                          <div class="card-recipe__calories">
-                            <svg class="icon svg-calories-dims card-recipe__meta-icon">
-                              <use xlink:href="sprites/sprite.svg#calories"></use>
-                            </svg>384 ккал
-                          </div>
-                          <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="2">
-                            <use xlink:href="sprites/sprite.svg#trash-24"></use>
-                          </svg>
+                          <div class="raiting__count">12</div>
                         </div>
                       </div>
+                      <div class="card-review__text"><p>Отличная модель в таком ценовом диапазоне!     Заряд держит отлично, при интенсивной нагрузке.     Игры поддерживает просто на высоте, не вылетает.     Огромный по величине экран. </p></div>
                     </div>
                   </div>
-                </div>
-                <div class="col-auto catalog-recipe__card-product-holder">
-                  <div class="card-recipe">
-                    <div class="card-recipe__card">
-                      <div class="card-recipe__image"><img class="card-recipe__img" src="images/thumb-product-1.png" alt="Мидии на створке"></div>
-                      <div class="card-recipe__body-wrap">
-                        <div class="card-recipe__body">
-                          <div class="card-recipe__raiting">
-                            <div class="card-recipe__raiting-stars">
-                              <div class="card-recipe__raiting-stars-back">
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                              </div>
-                              <div class="card-recipe__raiting-stars-fill" style="width: 72%">
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                              </div>
-                            </div>
-                            <div class="card-recipe__raiting-count">12</div>
-                          </div>
-                          <div class="card-recipe__text">
-                            <h5 class="card-recipe__title"><a href="#">Мидии на створке</a></h5>
-                            <div class="card-recipe__describe">Особенно вкусны мидии с середины июня до февраля,    так как в мае они недостаточнно жирны.</div>
-                          </div>
-                          <div class="card-recipe__time">
-                            <svg class="icon svg-timer-dims card-recipe__meta-icon">
-                              <use xlink:href="sprites/sprite.svg#timer"></use>
-                            </svg>30–40 мин
-                          </div>
-                          <div class="card-recipe__calories">
-                            <svg class="icon svg-calories-dims card-recipe__meta-icon">
-                              <use xlink:href="sprites/sprite.svg#calories"></use>
-                            </svg>384 ккал
-                          </div>
-                          <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="45">
-                            <use xlink:href="sprites/sprite.svg#trash-24"></use>
-                          </svg>
-                        </div>
-                      </div>
+                  <div class="tab-reviews__footer text-center">
+                    <div class="d-none d-lg-block">
+                      <button class="btn btn-outline-primary tab-reviews__more-btn" href="#">Показать еще</button>
                     </div>
+                    <div class="d-block d-lg-none"><a class="btn btn-outline-primary tab-reviews__comment-btn" href="#">Написать комментарий</a></div>
                   </div>
                 </div>
-                <div class="col-auto catalog-recipe__card-product-holder">
-                  <div class="card-recipe">
-                    <div class="card-recipe__card">
-                      <div class="card-recipe__image"><img class="card-recipe__img" src="images/thumb-product-2.png" alt="Мидии на створке"></div>
-                      <div class="card-recipe__body-wrap">
-                        <div class="card-recipe__body">
-                          <div class="card-recipe__raiting">
-                            <div class="card-recipe__raiting-stars">
-                              <div class="card-recipe__raiting-stars-back">
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                              </div>
-                              <div class="card-recipe__raiting-stars-fill" style="width: 72%">
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                              </div>
-                            </div>
-                            <div class="card-recipe__raiting-count">12</div>
-                          </div>
-                          <div class="card-recipe__text">
-                            <h5 class="card-recipe__title"><a href="#">Мидии на створке</a></h5>
-                            <div class="card-recipe__describe">Особенно вкусны мидии с середины июня до февраля,    так как в мае они недостаточнно жирны.</div>
-                          </div>
-                          <div class="card-recipe__time">
-                            <svg class="icon svg-timer-dims card-recipe__meta-icon">
-                              <use xlink:href="sprites/sprite.svg#timer"></use>
-                            </svg>30–40 мин
-                          </div>
-                          <div class="card-recipe__calories">
-                            <svg class="icon svg-calories-dims card-recipe__meta-icon">
-                              <use xlink:href="sprites/sprite.svg#calories"></use>
-                            </svg>384 ккал
-                          </div>
-                          <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="94">
-                            <use xlink:href="sprites/sprite.svg#trash-24"></use>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-auto catalog-recipe__card-product-holder">
-                  <div class="card-recipe">
-                    <div class="card-recipe__card">
-                      <div class="card-recipe__image"><img class="card-recipe__img" src="images/thumb-product-3.png" alt="Мидии на створке"></div>
-                      <div class="card-recipe__body-wrap">
-                        <div class="card-recipe__body">
-                          <div class="card-recipe__raiting">
-                            <div class="card-recipe__raiting-stars">
-                              <div class="card-recipe__raiting-stars-back">
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                              </div>
-                              <div class="card-recipe__raiting-stars-fill" style="width: 72%">
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                                <svg class="icon svg-star-dims card-recipe__raiting-star">
-                                  <use xlink:href="sprites/sprite.svg#star"></use>
-                                </svg>
-                              </div>
-                            </div>
-                            <div class="card-recipe__raiting-count">12</div>
-                          </div>
-                          <div class="card-recipe__text">
-                            <h5 class="card-recipe__title"><a href="#">Мидии на створке</a></h5>
-                            <div class="card-recipe__describe">Особенно вкусны мидии с середины июня до февраля,    так как в мае они недостаточнно жирны.</div>
-                          </div>
-                          <div class="card-recipe__time">
-                            <svg class="icon svg-timer-dims card-recipe__meta-icon">
-                              <use xlink:href="sprites/sprite.svg#timer"></use>
-                            </svg>30–40 мин
-                          </div>
-                          <div class="card-recipe__calories">
-                            <svg class="icon svg-calories-dims card-recipe__meta-icon">
-                              <use xlink:href="sprites/sprite.svg#calories"></use>
-                            </svg>384 ккал
-                          </div>
-                          <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="51">
-                            <use xlink:href="sprites/sprite.svg#trash-24"></use>
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="text-center">
-                <button class="btn btn-outline-primary catalog-recipe__btn-more">Показать еще</button>
               </div>
             </div>
           </div>
@@ -1117,7 +834,7 @@
                                       <use xlink:href="sprites/sprite.svg#calories"></use>
                                     </svg>384 ккал
                                   </div>
-                                  <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="82">
+                                  <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="22">
                                     <use xlink:href="sprites/sprite.svg#trash-24"></use>
                                   </svg>
                                 </div>
@@ -1185,7 +902,7 @@
                                     <use xlink:href="sprites/sprite.svg#calories"></use>
                                   </svg>384 ккал
                                 </div>
-                                <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="14">
+                                <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="22">
                                   <use xlink:href="sprites/sprite.svg#trash-24"></use>
                                 </svg>
                               </div>
@@ -1252,7 +969,7 @@
                                     <use xlink:href="sprites/sprite.svg#calories"></use>
                                   </svg>384 ккал
                                 </div>
-                                <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="48">
+                                <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="56">
                                   <use xlink:href="sprites/sprite.svg#trash-24"></use>
                                 </svg>
                               </div>
@@ -1319,7 +1036,7 @@
                                     <use xlink:href="sprites/sprite.svg#calories"></use>
                                   </svg>384 ккал
                                 </div>
-                                <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="0">
+                                <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="66">
                                   <use xlink:href="sprites/sprite.svg#trash-24"></use>
                                 </svg>
                               </div>
@@ -1386,7 +1103,7 @@
                                     <use xlink:href="sprites/sprite.svg#calories"></use>
                                   </svg>384 ккал
                                 </div>
-                                <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="94">
+                                <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="49">
                                   <use xlink:href="sprites/sprite.svg#trash-24"></use>
                                 </svg>
                               </div>
@@ -1453,7 +1170,7 @@
                                     <use xlink:href="sprites/sprite.svg#calories"></use>
                                   </svg>384 ккал
                                 </div>
-                                <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="56">
+                                <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="29">
                                   <use xlink:href="sprites/sprite.svg#trash-24"></use>
                                 </svg>
                               </div>
@@ -1520,7 +1237,7 @@
                                     <use xlink:href="sprites/sprite.svg#calories"></use>
                                   </svg>384 ккал
                                 </div>
-                                <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="76">
+                                <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="45">
                                   <use xlink:href="sprites/sprite.svg#trash-24"></use>
                                 </svg>
                               </div>

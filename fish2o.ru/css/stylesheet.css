@@ -8566,6 +8566,10 @@ sprites
   width: 24px;
   height: 24px
 }
+.svg-fire-40-dims {
+  width: 40px;
+  height: 40px
+}
 .svg-flag-32-dims {
   width: 32px;
   height: 32px
@@ -8573,6 +8577,10 @@ sprites
 .svg-heart-dims {
   width: 27px;
   height: 23px
+}
+.svg-heart-24-dims {
+  width: 24px;
+  height: 24px
 }
 .svg-heart-small-dims {
   width: 18px;
@@ -8602,6 +8610,10 @@ sprites
   width: 24px;
   height: 24px
 }
+.svg-meat-40-dims {
+  width: 40px;
+  height: 40px
+}
 .svg-phone-24-dims {
   width: 24px;
   height: 24px
@@ -8618,15 +8630,27 @@ sprites
   width: 12px;
   height: 16px
 }
+.svg-pizza-40-dims {
+  width: 40px;
+  height: 40px
+}
 .svg-play-dims {
   width: 30px;
   height: 39px
+}
+.svg-print-24-dims {
+  width: 24px;
+  height: 24px
 }
 .svg-profile-dims {
   width: 20px;
   height: 24px
 }
 .svg-profile-24-dims {
+  width: 24px;
+  height: 24px
+}
+.svg-rate-24-dims {
   width: 24px;
   height: 24px
 }
@@ -8638,11 +8662,19 @@ sprites
   width: 24px;
   height: 24px
 }
+.svg-rice-40-dims {
+  width: 40px;
+  height: 40px
+}
 .svg-search-dims {
   width: 16px;
   height: 16px
 }
 .svg-search-24-dims {
+  width: 24px;
+  height: 24px
+}
+.svg-share-24-dims {
   width: 24px;
   height: 24px
 }
@@ -10425,13 +10457,8 @@ a.footer-mobile__nav-secondary-link:hover {
   text-align: center
 }
 .add-to-cart_small .add-to-cart__btn-buy {
-  position: absolute;
-  right: 0;
-  top: -4px;
-  padding: 0;
-  font-size: 14px;
-  height: 40px;
-  width: 182px
+  margin: -4px 0;
+  padding: 0
 }
 .add-to-cart_small .add-to-cart__btn-buy-icon {
   margin: 0 4px 1px 0;
@@ -10454,6 +10481,15 @@ a.footer-mobile__nav-secondary-link:hover {
   font-size: 16px;
   font-weight: 300;
   border-color: #bdd5f2
+}
+.add-to-cart_small:not(.add-to-cart_small-btn) .add-to-cart__btn-buy {
+  position: absolute;
+  right: 0;
+  top: -4px;
+  padding: 0;
+  font-size: 14px;
+  height: 40px;
+  width: 182px
 }
 .navigation-side_extendable {
   position: relative
@@ -11153,6 +11189,48 @@ a.footer-mobile__nav-secondary-link:hover {
     right: 16px;
     top: 16px
   }
+}
+.card-product-in-recipe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 17px 0 18px;
+  border-bottom: 1px solid #bdd5f2
+}
+.card-product-in-recipe__img {
+  margin-right: 16px;
+  width: 40px;
+  height: 40px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 50%
+}
+.card-product-in-recipe__title {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 40%;
+  flex: 1 0 40%;
+  margin: 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px
+}
+.card-product-in-recipe__count {
+  max-width: 75%;
+  font-size: 16px;
+  line-height: 20px
+}
+.card-product-in-recipe__counter {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 102px;
+  flex: 0 0 102px;
+  margin-left: 16px;
+  height: 32px
 }
 .card-client__link {
   display: inline-block;
@@ -14359,6 +14437,336 @@ img.modal-cart__item-img {
   .cart__checkout-payment-item-label::after {
     top: 17px;
     left: 20px
+  }
+}
+.recipe__title {
+  margin-bottom: 24px
+}
+.recipe__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 24px
+}
+.recipe__action {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  margin-right: 16px;
+  width: 40px;
+  height: 40px;
+  line-height: 36px;
+  text-align: center;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out
+}
+.recipe__action:hover {
+  color: #f15526
+}
+.recipe__action-favorite {
+  fill: transparent
+}
+.recipe__action-favorite.active .recipe__action-icon {
+  fill: #f15526
+}
+.recipe__actions-shares {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  margin: 4px 0
+}
+.recipe__metas {
+  margin-bottom: 8px
+}
+.recipe__meta {
+  display: inline-block;
+  margin-right: 16px;
+  white-space: nowrap
+}
+.recipe__meta-icon {
+  display: inline-block
+}
+.recipe__meta-text {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 24px
+}
+.recipe__describe {
+  margin-bottom: 40px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px
+}
+.recipe__describe-title {
+  display: none;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px
+}
+.recipe__ingridients {
+  margin-bottom: 24px
+}
+.recipe__ingridients-title {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px
+}
+.recipe__ingridients-list {
+  margin-bottom: 24px
+}
+.recipe__ingridients-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 17px 0 18px;
+  border-bottom: 1px solid #bdd5f2
+}
+.recipe__ingridients-item-name {
+  max-width: 75%;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px
+}
+.recipe__ingridients-item-count {
+  max-width: 75%;
+  font-size: 16px;
+  line-height: 20px
+}
+.recipe__slider {
+  margin-bottom: 40px
+}
+.recipe__slider-screen {
+  margin-bottom: 16px
+}
+.recipe__nutritionals-title {
+  display: none;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px
+}
+.recipe__nutritionals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 24px
+}
+.recipe__nutritional-item {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  padding-top: 16px;
+  width: 136px;
+  height: 136px;
+  text-align: center;
+  background: #fff;
+  border-radius: 50%;
+  overflow: hidden
+}
+.recipe__nutritional-name {
+  color: #999;
+  font-size: 14px;
+  line-height: 24px
+}
+.recipe__nutritional-value {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  white-space: nowrap
+}
+.recipe__nutritional-measure {
+  margin-top: -3px;
+  color: #999;
+  font-size: 14px;
+  line-height: 14px
+}
+.recipe__steps {
+  padding-left: 17px
+}
+.recipe__step {
+  position: relative;
+  padding: 0 0 34px 39px;
+  border-left: 2px solid rgba(241,85,38,.16)
+}
+.recipe__step::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -17px;
+  width: 32px;
+  height: 32px;
+  border: 2px solid rgba(241,85,38,.16);
+  background: #f1f7ff;
+  border-radius: 50%
+}
+.recipe__step:first-of-type::before,
+.recipe__step:last-of-type::before {
+  border: 2px solid #f15526
+}
+.recipe__step:first-of-type::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: -6px;
+  width: 8px;
+  height: 8px;
+  background: #f15526;
+  border-radius: 2px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-clip-path: polygon(85% 0,100% 0,100% 100%,0 100%,0 85%);
+  clip-path: polygon(85% 0,100% 0,100% 100%,0 100%,0 85%)
+}
+.recipe__step:last-of-type {
+  border-left: 2px solid transparent
+}
+.recipe__step:last-of-type::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 11px;
+  left: -6px;
+  width: 10px;
+  height: 10px;
+  background: #f15526;
+  border-radius: 2px
+}
+.recipe__step-title {
+  margin-bottom: 6px;
+  font-size: 24px;
+  line-height: 32px
+}
+.recipe__step-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px
+}
+.recipe__tab-reviews {
+  background: #fff;
+  -webkit-box-shadow: 0 8px 16px rgba(0,0,0,.04);
+  box-shadow: 0 8px 16px rgba(0,0,0,.04);
+  border-radius: 8px
+}
+.recipe__tab-reviews-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px
+}
+@media (max-width:849.98px) {
+  .recipe__title {
+    margin-bottom: 15px
+  }
+  .recipe__metas {
+    margin-bottom: 15px
+  }
+  .recipe__describe-title {
+    display: block;
+    margin-bottom: 22px
+  }
+  .recipe__describe {
+    margin-bottom: 24px
+  }
+  .recipe__slider-mobile {
+    margin-bottom: 25px
+  }
+  .recipe__ingridients {
+    margin: 0 -15px;
+    padding: 18px 15px 0;
+    background: #fff;
+    -webkit-box-shadow: 0 8px 16px rgba(0,0,0,.04);
+    box-shadow: 0 8px 16px rgba(0,0,0,.04);
+    border-radius: 8px
+  }
+  .recipe__ingridients-title {
+    margin-bottom: 5px;
+    font-size: 18px;
+    line-height: 24px
+  }
+  .recipe__ingridients-item:last-of-type {
+    border: none
+  }
+  .recipe__nutritionals-title {
+    display: block;
+    margin-bottom: 23px
+  }
+  .recipe__nutritionals-wrap {
+    overflow-x: auto;
+    margin-bottom: 36px
+  }
+  .recipe__nutritionals {
+    width: 392px;
+    margin: 0 auto 12px
+  }
+  .recipe__nutritional-item {
+    padding-top: 8px;
+    width: 80px;
+    height: 80px
+  }
+  .recipe__nutritional-item:not(:last-of-type) {
+    margin-right: 24px
+  }
+  .recipe__nutritional-icon {
+    width: 24px;
+    height: 24px
+  }
+  .recipe__nutritional-name {
+    font-size: 10px;
+    line-height: 10px
+  }
+  .recipe__nutritional-value {
+    font-size: 14px;
+    line-height: 14px
+  }
+  .recipe__nutritional-measure {
+    margin: 0;
+    font-size: 10px;
+    line-height: 10px
+  }
+  .recipe__steps {
+    padding-left: 24px
+  }
+  .recipe__step {
+    padding: 0 0 27px 39px
+  }
+  .recipe__tab-reviews-title-mobile {
+    margin-bottom: 0;
+    padding: 0 16px;
+    font-size: 24px;
+    line-height: 40px
+  }
+  .recipe__tab-reviews {
+    margin: 0 -15px;
+    padding: 16px 0
+  }
+}
+@media print {
+  .breadcrumbs__list,
+  .no-print,
+  .recipe__actions,
+  .recipe__slider,
+  .recipe__slider-mobile {
+    display: none!important
   }
 }
 .tab-reviews__header {
