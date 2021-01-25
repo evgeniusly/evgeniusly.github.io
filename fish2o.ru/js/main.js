@@ -216,11 +216,6 @@ $(function () {
       breakpoints: {
         1200: {
           slidesPerColumn: 1,
-        },
-      },
-  
-      breakpoints: {
-        1200: {
           spaceBetween: gap,
         },
       },
@@ -388,15 +383,37 @@ $(function () {
         }
       }
     )
-    // on input change
+    // on input click
     .on("click", ".widget-address-check__search-option", function () {
-      const $block = $(this).closest(".widget-address-check__search");
+      const $block = $(this).closest(".widget-address-check");
       const $options = $block.find(".widget-address-check__search-options");
+      const $result = $block.find(".widget-address-check__result");
       const $input = $block.find(".widget-address-check__search-input");
       const val = $(this).html();
+      const isHider = $block.hasClass("widget-address-check_hider");
   
       $options.slideUp(DEFAUILT_AMINATION_SPEED);
       $input.val(val);
+  
+      if (isHider) {
+        $result.slideDown(DEFAUILT_AMINATION_SPEED);
+      }
+  
+      // accepted address here
+    })
+    // on input search-icon click
+    .on("click", ".widget-address-check__search-icon", function () {
+      const $block = $(this).closest(".widget-address-check");
+      const $result = $block.find(".widget-address-check__result");
+      const $input = $block.find(".widget-address-check__search-input");
+      const isHider = $block.hasClass("widget-address-check_hider");
+      const val = $input.val();
+  
+      console.log("search", val);
+  
+      if (isHider) {
+        $result.slideDown(DEFAUILT_AMINATION_SPEED);
+      }
   
       // accepted address here
     });
@@ -538,8 +555,13 @@ $(function () {
       e.preventDefault();
       const $list = $(this).closest(".navigation-subcategories__list");
       const $hidden = $list.find(".navigation-subcategories__hidden-items");
-      $(this).hide();
-      $hidden.fadeIn().css("display", "inline");
+      if ($(this).hasClass("active")) {
+        $(this).html("Ещё...").removeClass("active");
+        $hidden.fadeOut();
+      } else {
+        $(this).html("Скрыть").addClass("active");
+        $hidden.fadeIn().css("display", "inline");
+      }
     });
   
   // =================================================================
@@ -608,7 +630,6 @@ $(function () {
   });
   
   function applyCountersByDataCount() {
-    console.log("fire");
     $(_ADD_TO_CART).each(function () {
       if ($(this).data("product-in-cart-count")) {
         cardProductCounterUpdate($(this), "take");
