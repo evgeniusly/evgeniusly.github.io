@@ -11212,13 +11212,23 @@ a.footer-mobile__nav-secondary-link:hover {
   border-radius: 50%
 }
 .card-product-in-recipe__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-flex: 1;
   -ms-flex: 1 0 40%;
   flex: 1 0 40%;
   margin: 0;
   font-weight: 300;
   font-size: 16px;
-  line-height: 20px
+  line-height: 20px;
+  color: #1e2833
+}
+.card-product-in-recipe__title:hover {
+  color: #f15526
 }
 .card-product-in-recipe__count {
   max-width: 75%;
@@ -14513,6 +14523,8 @@ img.modal-cart__item-img {
   line-height: 32px
 }
 .recipe__ingridients {
+  position: sticky;
+  top: 16px;
   margin-bottom: 24px
 }
 .recipe__ingridients-title {
@@ -14691,6 +14703,7 @@ img.modal-cart__item-img {
     margin-bottom: 25px
   }
   .recipe__ingridients {
+    position: relative;
     margin: 0 -15px;
     padding: 18px 15px 0;
     background: #fff;
