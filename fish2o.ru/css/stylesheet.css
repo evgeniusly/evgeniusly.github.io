@@ -15031,6 +15031,136 @@ img.modal-cart__item-img {
     line-height: 20px
   }
 }
+.page-about__body {
+  margin: 16px 0 60px;
+  padding: 16px 0 32px;
+  background: #fff
+}
+.page-about__breadcrumbs {
+  margin-bottom: 28px
+}
+.page-about__side {
+  position: sticky;
+  top: 16px;
+  margin-bottom: 32px
+}
+.page-about__banner img {
+  width: 100%;
+  -webkit-box-shadow: 0 14px 26px rgba(0,0,0,.04);
+  box-shadow: 0 14px 26px rgba(0,0,0,.04);
+  border-radius: 8px;
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out
+}
+.page-about__banner img:hover {
+  -webkit-transform: translateY(-2px);
+  -ms-transform: translateY(-2px);
+  transform: translateY(-2px);
+  -webkit-box-shadow: 0 24px 36px rgba(0,0,0,.11);
+  box-shadow: 0 24px 36px rgba(0,0,0,.11)
+}
+.page-about__h1 {
+  margin: 8px 0 16px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px
+}
+.page-about__h2 {
+  margin: 60px 0 16px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px
+}
+.page-about__h3 {
+  margin: 40px 0 16px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px
+}
+.page-about__describe {
+  margin-bottom: 60px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px
+}
+.page-about__content {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px
+}
+.page-about__content p {
+  margin-bottom: 4px
+}
+.page-about__content figure {
+  margin: 24px 0;
+  text-align: center
+}
+.page-about__content img {
+  max-width: 100%
+}
+.page-about__tips {
+  margin: 32px 0
+}
+.page-about__tip {
+  position: relative;
+  padding-left: 116px
+}
+.page-about__tip:not(:last-child) {
+  margin-bottom: 32px
+}
+.page-about__tip-icon {
+  position: absolute;
+  left: 16px;
+  top: 4px;
+  width: 68px;
+  height: 68px
+}
+.page-about__tip-title {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px
+}
+@media (max-width:1199.98px) {
+  .page-about__body {
+    margin: 0 0 40px
+  }
+  .page-about__breadcrumbs {
+    margin-bottom: 0
+  }
+  .page-about__h1 {
+    margin: 0 0 16px;
+    font-size: 28px;
+    line-height: 32px
+  }
+  .page-about__h2 {
+    margin: 40px 0 16px;
+    font-size: 22px;
+    line-height: 28px
+  }
+  .page-about__h3 {
+    margin: 20px 0 16px;
+    font-size: 18px;
+    line-height: 24px
+  }
+  .page-about__describe {
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 24px
+  }
+  .page-about__tip {
+    padding-left: 88px
+  }
+  .page-about__tip-icon {
+    width: 48px;
+    height: 48px
+  }
+  .page-about__tip-title {
+    font-size: 18px;
+    line-height: 22px
+  }
+}
 .tab-reviews__header {
   padding: 24px 16px
 }
