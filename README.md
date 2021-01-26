@@ -16,3 +16,4 @@ Pages
 - [Recipe](https://evgeniusly.github.io/fish2o.ru/recipe.html)
 - [Delivery](https://evgeniusly.github.io/fish2o.ru/delivery.html)
 - [About](https://evgeniusly.github.io/fish2o.ru/about.html)
+- [404](https://evgeniusly.github.io/fish2o.ru/404.html)
