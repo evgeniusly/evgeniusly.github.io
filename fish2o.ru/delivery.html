@@ -906,6 +906,68 @@
         </div>
       </div>
     </div>
+    <div class="modal-review modal fade" id="modal-review" tabindex="-1" aria-labelledby="modal-review-label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-review-dialog">
+        <div class="modal-content modal-review__content">
+          <div class="modal-review__close" type="button" data-dismiss="modal" aria-label="Close"></div>
+          <form class="needs-validation modal-review__form" novalidate>
+            <div class="modal-review__title">Оставьте отзыв</div>
+            <div class="modal-review__body">
+              <div class="modal-review__avatar"><img class="modal-review__avatar-img" src="images/review-fisher.png" alt=""></div>
+              <div class="d-flex justify-content-between">
+                <div class="modal-review__subtitle">Оцените товар:</div>
+                <div class="modal-review__rate">
+                  <!-- if rated, add class "raiting-setter_rated-X", x = [1...5]-->
+                  <div class="raiting-setter" data-target-id="1234" data-target-type="product">
+                    <div class="raiting-setter__stars">
+                      <svg class="icon svg-star-dims raiting-setter__star">
+                        <use xlink:href="sprites/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="icon svg-star-dims raiting-setter__star">
+                        <use xlink:href="sprites/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="icon svg-star-dims raiting-setter__star">
+                        <use xlink:href="sprites/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="icon svg-star-dims raiting-setter__star">
+                        <use xlink:href="sprites/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="icon svg-star-dims raiting-setter__star">
+                        <use xlink:href="sprites/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                    <!-- will update by JS-->
+                    <input class="raiting-setter__input" type="text" hidden name="rate">
+                  </div>
+                </div>
+              </div>
+              <div class="modal-review__field">
+                <div class="input-wrap">
+                  <textarea class="form-control input__area" id="input-324" placeholder="Комментарий" value="" rows="3" required></textarea>
+                </div>
+              </div>
+              <div class="modal-review__upload">
+                <div class="form-contact__input-file-wrap">
+                  <input class="form-contact__input-file" id="customFile" type="file">
+                  <label class="form-contact__input-file-label" for="customFile"> 
+                    <svg class="icon svg-download-24-dims">
+                      <use xlink:href="sprites/sprite.svg#download-24"></use>
+                    </svg>
+                    <div class="form-contact__input-file-label-text">Загрузить файл</div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary modal-review__btn" type="submit">Отправить</button>
+          </form>
+          <div class="modal-review__result"><img class="modal-review__result-img" src="images/review-fisher.png" alt="">
+            <div class="modal-review__result-title">Спасибо, что поделились своим мнением!</div>
+            <div class="modal-review__result-text">
+               Как только отзыв пройдет модерацию, он будет опубликован на сайте</div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/vendors.min.js"></script>
     <script src="js/main.js"></script>

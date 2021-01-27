@@ -332,7 +332,7 @@
                       <div class="card-product-in-recipe__title-text">Филе семги без кожи</div></a>
                     <div class="card-product-in-recipe__count">150&nbsp;г</div>
                     <div class="card-product-in-recipe__counter">
-                      <div class="add-to-cart add-to-cart_small add-to-cart_small-btn" data-product-id="1" data-product-in-cart-count="0">
+                      <div class="add-to-cart add-to-cart_small add-to-cart_small-btn" data-product-id="0" data-product-in-cart-count="0">
                         <button class="btn btn-primary add-to-cart__btn-buy">
                           <svg class="icon svg-cart-small-dims add-to-cart__btn-buy-icon">
                             <use xlink:href="sprites/sprite.svg#cart-small"></use>
@@ -553,7 +553,7 @@
                         <div class="raiting__count">12</div>
                       </div>
                     </div>
-                    <div class="tab-reviews__comment-button col-4 text-center d-none d-lg-block"><a class="btn btn-outline-primary tab-reviews__comment-btn" href="#">Написать комментарий</a></div>
+                    <div class="tab-reviews__comment-button col-4 text-center d-none d-lg-block"><a class="btn btn-outline-primary tab-reviews__comment-btn" href="#" data-toggle="modal" data-target="#modal-review">Написать комментарий</a></div>
                     <div class="tab-reviews__sort col-6 col-lg-4 d-flex justify-content-end align-items-center">
                       <div class="dropdown navigation-sort navigation-sort_no-shadow">
                         <div class="navigation-sort__content"><a class="navigation-sort__selector" id="navigation-sort-ID" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -834,7 +834,7 @@
                                       <use xlink:href="sprites/sprite.svg#calories"></use>
                                     </svg>384 ккал
                                   </div>
-                                  <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="49">
+                                  <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="84">
                                     <use xlink:href="sprites/sprite.svg#trash-24"></use>
                                   </svg>
                                 </div>
@@ -902,7 +902,7 @@
                                     <use xlink:href="sprites/sprite.svg#calories"></use>
                                   </svg>384 ккал
                                 </div>
-                                <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="40">
+                                <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="95">
                                   <use xlink:href="sprites/sprite.svg#trash-24"></use>
                                 </svg>
                               </div>
@@ -969,7 +969,7 @@
                                     <use xlink:href="sprites/sprite.svg#calories"></use>
                                   </svg>384 ккал
                                 </div>
-                                <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="96">
+                                <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="17">
                                   <use xlink:href="sprites/sprite.svg#trash-24"></use>
                                 </svg>
                               </div>
@@ -1036,7 +1036,7 @@
                                     <use xlink:href="sprites/sprite.svg#calories"></use>
                                   </svg>384 ккал
                                 </div>
-                                <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="43">
+                                <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="62">
                                   <use xlink:href="sprites/sprite.svg#trash-24"></use>
                                 </svg>
                               </div>
@@ -1103,7 +1103,7 @@
                                     <use xlink:href="sprites/sprite.svg#calories"></use>
                                   </svg>384 ккал
                                 </div>
-                                <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="16">
+                                <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="65">
                                   <use xlink:href="sprites/sprite.svg#trash-24"></use>
                                 </svg>
                               </div>
@@ -1170,7 +1170,7 @@
                                     <use xlink:href="sprites/sprite.svg#calories"></use>
                                   </svg>384 ккал
                                 </div>
-                                <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="2">
+                                <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="39">
                                   <use xlink:href="sprites/sprite.svg#trash-24"></use>
                                 </svg>
                               </div>
@@ -1237,7 +1237,7 @@
                                     <use xlink:href="sprites/sprite.svg#calories"></use>
                                   </svg>384 ккал
                                 </div>
-                                <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="99">
+                                <svg class="icon svg-trash-24-dims card-recipe__remove favorite__recipe-remove" data-recipe-id="59">
                                   <use xlink:href="sprites/sprite.svg#trash-24"></use>
                                 </svg>
                               </div>
@@ -1742,6 +1742,68 @@
               <div class="btn btn-outline-primary modal-auth__action-change-page modal-auth__secondary-btn" data-page-target="by-password">Вход на сайт</div>
               <div class="modal-auth__info">Нажимая кнопку, вы соглашаетесь с нашей <br/><a href="#">политикой конфиденциальности</a></div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-review modal fade" id="modal-review" tabindex="-1" aria-labelledby="modal-review-label" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-review-dialog">
+        <div class="modal-content modal-review__content">
+          <div class="modal-review__close" type="button" data-dismiss="modal" aria-label="Close"></div>
+          <form class="needs-validation modal-review__form" novalidate>
+            <div class="modal-review__title">Оставьте отзыв</div>
+            <div class="modal-review__body">
+              <div class="modal-review__avatar"><img class="modal-review__avatar-img" src="images/review-fisher.png" alt=""></div>
+              <div class="d-flex justify-content-between">
+                <div class="modal-review__subtitle">Оцените товар:</div>
+                <div class="modal-review__rate">
+                  <!-- if rated, add class "raiting-setter_rated-X", x = [1...5]-->
+                  <div class="raiting-setter raiting_small" data-target-id="1234" data-target-type="product">
+                    <div class="raiting-setter__stars">
+                      <svg class="icon svg-star-dims raiting-setter__star">
+                        <use xlink:href="sprites/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="icon svg-star-dims raiting-setter__star">
+                        <use xlink:href="sprites/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="icon svg-star-dims raiting-setter__star">
+                        <use xlink:href="sprites/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="icon svg-star-dims raiting-setter__star">
+                        <use xlink:href="sprites/sprite.svg#star"></use>
+                      </svg>
+                      <svg class="icon svg-star-dims raiting-setter__star">
+                        <use xlink:href="sprites/sprite.svg#star"></use>
+                      </svg>
+                    </div>
+                    <!-- will update by JS-->
+                    <input class="raiting-setter__input" type="text" hidden name="rate">
+                  </div>
+                </div>
+              </div>
+              <div class="modal-review__field">
+                <div class="input-wrap">
+                  <textarea class="form-control input__area" id="input-682" placeholder="Комментарий" value="" rows="3" required></textarea>
+                </div>
+              </div>
+              <div class="modal-review__upload">
+                <div class="form-contact__input-file-wrap">
+                  <input class="form-contact__input-file" id="customFile" type="file">
+                  <label class="form-contact__input-file-label" for="customFile"> 
+                    <svg class="icon svg-download-24-dims">
+                      <use xlink:href="sprites/sprite.svg#download-24"></use>
+                    </svg>
+                    <div class="form-contact__input-file-label-text">Загрузить файл</div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary modal-review__btn" type="submit">Отправить</button>
+          </form>
+          <div class="modal-review__result"><img class="modal-review__result-img" src="images/review-fisher.png" alt="">
+            <div class="modal-review__result-title">Спасибо, что поделились своим мнением!</div>
+            <div class="modal-review__result-text">
+               Как только отзыв пройдет модерацию, он будет опубликован на сайте</div>
           </div>
         </div>
       </div>

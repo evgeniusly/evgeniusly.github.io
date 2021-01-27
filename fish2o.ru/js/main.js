@@ -460,6 +460,29 @@ $(function () {
   );
   
   // =================================================================
+  // MODAL-REVIEW
+  // =================================================================
+  
+  $(document)
+    // submit review form
+    .on("submit", ".modal-review__form", function (e) {
+      e.preventDefault();
+      const $block = $(this).closest(".modal-review__content");
+      const $result = $block.find(".modal-review__result");
+  
+      $(this).fadeOut(DEFAUILT_AMINATION_SPEED, function () {
+        $result.fadeIn();
+      });
+    })
+    .on("show.bs.modal", ".modal-review", function (e) {
+      const $form = $(this).find(".modal-review__form");
+      const $result = $(this).find(".modal-review__result");
+  
+      $form.show();
+      $result.hide();
+    });
+  
+  // =================================================================
   // MODAL-CART
   // =================================================================
   $(document)
@@ -823,7 +846,13 @@ $(function () {
   // FORM-CONTACT
   // =================================================================
   $(document).on("change", ".form-contact__input-file", function (e) {
-    $(this).siblings(".form-contact__input-file-data").html($(this).val());
+    const $labelText = $(this)
+      .siblings(".form-contact__input-file-label")
+      .find(".form-contact__input-file-label-text");
+    const filename = $(this).val();
+    const ext = /[^.]+$/.exec(filename);
+  
+    $labelText.html($(this).val());
   });
   
   // =================================================================
@@ -895,6 +924,27 @@ $(function () {
       $(".cart__checkout-collapsible").not($target).slideUp();
       $target.slideDown();
     });
+  
+  // =================================================================
+  // RAITING-SETTER
+  // =================================================================
+  
+  $(document).on("click", ".raiting-setter__star", function () {
+    const $block = $(this).closest(".raiting-setter");
+    const $input = $block.find(".raiting-setter__input");
+    const ID = $block.data("target-id");
+    const type = $block.data("target-type");
+    const rate = 5 - $(".raiting-setter__star").index(this);
+  
+    $block.removeClass(function (index, className) {
+      return (className.match(/(^|\s)raiting-setter_rated-\S+/g) || []).join(" ");
+    });
+  
+    $input.val(rate);
+    $block.addClass(`raiting-setter_rated-${rate}`);
+  
+    console.log("set rate", rate, "to", type, ID);
+  });
   
 
   // =================================================================
