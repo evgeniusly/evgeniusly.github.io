@@ -14929,6 +14929,37 @@ img.modal-cart__item-img {
   font-size: 32px;
   line-height: 40px
 }
+@media (max-width:1199.98px) {
+  .recipe__nutritionals {
+    -ms-flex-pack: distribute;
+    justify-content: space-around
+  }
+  .recipe__nutritional-item {
+    padding-top: 16px;
+    width: 100px;
+    height: 100px
+  }
+  .recipe__nutritional-item:not(:last-of-type) {
+    margin-right: 24px
+  }
+  .recipe__nutritional-icon {
+    width: 30px;
+    height: 30px
+  }
+  .recipe__nutritional-name {
+    font-size: 10px;
+    line-height: 10px
+  }
+  .recipe__nutritional-value {
+    font-size: 14px;
+    line-height: 14px
+  }
+  .recipe__nutritional-measure {
+    margin: 0;
+    font-size: 10px;
+    line-height: 10px
+  }
+}
 @media (max-width:849.98px) {
   .recipe__title {
     margin-bottom: 15px
@@ -14945,6 +14976,9 @@ img.modal-cart__item-img {
   }
   .recipe__slider-mobile {
     margin-bottom: 25px
+  }
+  .recipe__ingridients-list {
+    margin-bottom: 41px
   }
   .recipe__ingridients {
     position: relative;
@@ -15550,7 +15584,8 @@ img.modal-cart__item-img {
   padding: 32px 0 40px
 }
 .account-settings__avatar {
-  padding: 0 25px 0 58px
+  padding: 0 25px 0 58px;
+  text-align: center
 }
 .account-settings__avatar-img {
   margin-bottom: 14px;

@@ -396,7 +396,14 @@ $(function () {
       $input.val(val);
   
       if (isHider) {
-        $result.slideDown(DEFAUILT_AMINATION_SPEED);
+        $result.slideDown({
+          duration: DEFAUILT_AMINATION_SPEED,
+          start: function () {
+            $(this).css({
+              display: "flex",
+            });
+          },
+        });
       }
   
       // accepted address here
@@ -412,7 +419,14 @@ $(function () {
       console.log("search", val);
   
       if (isHider) {
-        $result.slideDown(DEFAUILT_AMINATION_SPEED);
+        $result.slideDown({
+          duration: DEFAUILT_AMINATION_SPEED,
+          start: function () {
+            $(this).css({
+              display: "flex",
+            });
+          },
+        });
       }
   
       // accepted address here
@@ -623,7 +637,7 @@ $(function () {
     if (action == "add") {
       // add new product to cart
       console.log("add new product to cart");
-    } else {
+    } else if (action != "take") {
       // update product in cart
       console.log("update product in cart");
     }
