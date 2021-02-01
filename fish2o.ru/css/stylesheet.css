@@ -10966,11 +10966,21 @@ a.footer-mobile__nav-secondary-link:hover {
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis
 }
-.card-product__price-old {
+.card-product__promotion {
   position: absolute;
   top: 82px;
   left: 0;
   height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+.card-product__price-old {
+  position: relative;
+  margin-right: 12px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -11099,12 +11109,22 @@ a.footer-mobile__nav-secondary-link:hover {
     line-height: 18px;
     height: 36px
   }
+  .card-product__promotion {
+    top: 62px
+  }
   .card-product__price-old {
-    top: 66px;
     font-size: 14px
   }
   .card-product__price-old::after {
     bottom: 8px
+  }
+  .card-product__promotion-flag {
+    -webkit-transform-origin: center left;
+    -ms-transform-origin: center left;
+    transform-origin: center left;
+    -webkit-transform: scale(.8);
+    -ms-transform: scale(.8);
+    transform: scale(.8)
   }
   .card-product__price {
     top: 72px
@@ -11147,11 +11167,15 @@ a.footer-mobile__nav-secondary-link:hover {
   height: 40px;
   overflow: hidden
 }
-.card-product-in-cart__price-old {
+.card-product-in-cart__promotion {
   position: absolute;
   left: 136px;
-  bottom: 44px;
+  bottom: 44px
+}
+.card-product-in-cart__price-old {
+  position: relative;
   display: inline-block;
+  margin-right: 8px;
   color: #999;
   font-weight: 300;
   font-size: 14px;
@@ -11165,6 +11189,14 @@ a.footer-mobile__nav-secondary-link:hover {
   background-color: #999;
   left: 0;
   bottom: 5px
+}
+.card-product-in-cart__promotion-flag {
+  -webkit-transform-origin: center left;
+  -ms-transform-origin: center left;
+  transform-origin: center left;
+  -webkit-transform: scale(.8);
+  -ms-transform: scale(.8);
+  transform: scale(.8)
 }
 .card-product-in-cart__price {
   position: absolute;
@@ -11228,10 +11260,15 @@ a.footer-mobile__nav-secondary-link:hover {
     font-size: 14px;
     line-height: 18px
   }
-  .card-product-in-cart__price-old {
-    left: 104px;
+  .card-product-in-cart__promotion {
     bottom: auto;
-    top: 57px
+    left: 104px;
+    top: 52px
+  }
+  .card-product-in-cart__promotion-flag {
+    -webkit-transform: scale(.6);
+    -ms-transform: scale(.6);
+    transform: scale(.6)
   }
   .card-product-in-cart__price {
     left: 104px;
