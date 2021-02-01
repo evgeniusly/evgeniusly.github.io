@@ -967,6 +967,18 @@ $(function () {
     console.log("set rate", rate, "to", type, ID);
   });
   
+  // =================================================================
+  // PAGE-404
+  // =================================================================
+  
+  lottie.loadAnimation({
+    container: $(".p404__screen-animation")[0],
+    renderer: "svg",
+    loop: true,
+    autoplay: true,
+    path: "js/page-404/404.json",
+  });
+  
 
   // =================================================================
   // COMMON
