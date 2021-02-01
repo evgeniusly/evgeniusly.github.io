@@ -255,14 +255,21 @@ $(function () {
       ? $(`.slider-gallery-thumbs[data-slider-id=${sliderGalleryID}]`)
       : false;
     let galleryThumbs = false;
+    console.log($sliderGalleryThumbs);
   
     if ($sliderGalleryThumbs.length) {
-      galleryThumbs = new Swiper(".slider-gallery-thumbs", {
-        spaceBetween: 20,
+      galleryThumbs = new Swiper($sliderGalleryThumbs[0], {
+        spaceBetween: 16,
         slidesPerView: 4,
         // freeMode: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
+  
+        breakpoints: {
+          850: {
+            spaceBetween: 20,
+          },
+        },
       });
     }
   
