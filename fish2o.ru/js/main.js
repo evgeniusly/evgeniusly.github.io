@@ -64,24 +64,24 @@ $(function () {
         }
       }
     )
-    // search on focusout
-    .on("focusout", ".header__search-form-input", function () {
-      const $block = $(this).closest(".search-block");
-      const $options = $block.find(".header__search-form-options");
-  
-      $options.slideUp(DEFAUILT_AMINATION_SPEED);
+    // search result close
+    .on("mouseup", function (e) {
+      var container = $(".header__search-form-options");
+      if (!container.is(e.target) && container.has(e.target).length === 0) {
+        container.hide();
+      }
     })
-    // search on input change
-    .on("click", ".header__search-form-option", function () {
+    // search by click
+    .on("click", ".header__search-form-btn", function () {
       const $block = $(this).closest(".search-block");
       const $options = $block.find(".header__search-form-options");
-      const $input = $block.find(".header__search-form-input");
-      const val = $(this).html();
+      const newVal = $block.find(".header__search-form-input").val();
   
-      $options.slideUp(DEFAUILT_AMINATION_SPEED);
-      $input.val(val);
-  
-      // accepted address here
+      if (newVal) {
+        $options.slideDown(DEFAUILT_AMINATION_SPEED);
+      } else {
+        $options.slideUp(DEFAUILT_AMINATION_SPEED);
+      }
     })
   
     // search mobile

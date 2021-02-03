@@ -9135,7 +9135,7 @@ blocks
   top: 100%;
   left: 0;
   margin-top: 8px;
-  padding: 11px 11px 11px 45px;
+  padding: 10px 24px 24px;
   width: 100%;
   background: #fff;
   border: 1px solid #bdd5f2;
@@ -10980,7 +10980,7 @@ a.footer-mobile__nav-secondary-link:hover {
 }
 .card-product__price-old {
   position: relative;
-  margin-right: 12px;
+  margin-right: 16px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -10998,6 +10998,14 @@ a.footer-mobile__nav-secondary-link:hover {
   background-color: #999;
   left: 0;
   bottom: 5px
+}
+.card-product__promotion-flag {
+  -webkit-transform-origin: center left;
+  -ms-transform-origin: center left;
+  transform-origin: center left;
+  -webkit-transform: scale(.8);
+  -ms-transform: scale(.8);
+  transform: scale(.8)
 }
 .card-product__price {
   position: absolute;
@@ -11119,12 +11127,9 @@ a.footer-mobile__nav-secondary-link:hover {
     bottom: 8px
   }
   .card-product__promotion-flag {
-    -webkit-transform-origin: center left;
-    -ms-transform-origin: center left;
-    transform-origin: center left;
-    -webkit-transform: scale(.8);
-    -ms-transform: scale(.8);
-    transform: scale(.8)
+    -webkit-transform: scale(.7);
+    -ms-transform: scale(.7);
+    transform: scale(.7)
   }
   .card-product__price {
     top: 72px
@@ -11296,13 +11301,15 @@ a.footer-mobile__nav-secondary-link:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 17px 0 18px;
+  padding: 9px 0 10px;
   border-bottom: 1px solid #bdd5f2
 }
 .card-product-in-recipe__img {
@@ -11321,9 +11328,10 @@ a.footer-mobile__nav-secondary-link:hover {
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-flex: 1;
-  -ms-flex: 1 0 40%;
-  flex: 1 0 40%;
-  margin: 0;
+  -ms-flex: 1 0 220px;
+  flex: 1 0 220px;
+  margin: 8px 16px 8px 0;
+  margin-right: 16px;
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
@@ -11331,6 +11339,21 @@ a.footer-mobile__nav-secondary-link:hover {
 }
 .card-product-in-recipe__title:hover {
   color: #f15526
+}
+.card-product-in-recipe__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 180px;
+  flex: 1 0 180px;
+  margin: 8px 0
 }
 .card-product-in-recipe__count {
   max-width: 75%;
@@ -11343,6 +11366,11 @@ a.footer-mobile__nav-secondary-link:hover {
   flex: 0 0 102px;
   margin-left: 16px;
   height: 32px
+}
+@media (max-width:1199.98px) {
+  .card-product-in-recipe__title-text {
+    word-break: break-word
+  }
 }
 .card-client__link {
   display: inline-block;
