@@ -10,20 +10,20 @@
   <body class="position-relative">
     <div class="wrapper d-flex flex-column min-vh-100">
       <header class="header">
-        <div class="container py-5 position-relative">
+        <div class="container pt-4 pb-5 py-md-5 position-relative">
           <div class="header__circle"></div>
-          <div class="header__waves"></div>
+          <div class="header__waves d-none d-md-block"></div>
           <div class="row align-items-center">
-            <div class="col-3"><a class="header__button" href="#" target="_blank">
+            <div class="col-md-3 col-6"><a class="header__button" href="#" target="_blank">
                 <svg class="icon svg-burger-32-dims">
                   <use xlink:href="sprites/sprite.svg#burger-32"></use>
                 </svg>Каталог</a></div>
-            <div class="col-6 text-center"><a class="header__logo" href="#" target="_blank"><img class="header__logo_img" src="images/logo.svg" alt="">
-                <div class="header__logo_text">формула вкусной рыбы</div></a></div>
-            <div class="col-3 text-right"><a class="header__button" href="#" target="_blank">
+            <div class="col-md-3 text-right col-6 order-md-3"><a class="header__button" href="#" target="_blank">
                 <svg class="icon svg-car-32-dims">
                   <use xlink:href="sprites/sprite.svg#car-32"></use>
                 </svg>Доставка</a></div>
+            <div class="col-md-6 text-center col-12"><a class="header__logo" href="#" target="_blank"><img class="header__logo_img" src="images/logo.svg" alt="">
+                <div class="header__logo_text">формула вкусной рыбы</div></a></div>
           </div>
         </div>
       </header>
@@ -31,7 +31,7 @@
         <div class="container">
           <div class="row">
             <div class="col">
-              <h1 class="h1-main">Здравствуйте!</h1>
+              <h1 class="h1-main h1-main_small-mob">Здравствуйте!</h1>
             </div>
           </div>
         </div>
@@ -49,47 +49,51 @@
         </div>
       </div>
       <footer class="footer mt-auto bg-dark pt-4">
-        <div class="container">
+        <div class="container mb-3 mb-md-0">
           <div class="row">
             <div class="col">
-              <ul class="footer__nav-list">
-                <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="/catalog.html">
-                    <svg class="icon svg-footer-cat-1-80-dims">
-                      <use xlink:href="sprites/sprite.svg#footer-cat-1-80"></use>
-                    </svg>Красная рыба</a></li>
-                <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
-                    <svg class="icon svg-footer-cat-2-80-dims">
-                      <use xlink:href="sprites/sprite.svg#footer-cat-2-80"></use>
-                    </svg>Белая рыба</a></li>
-                <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
-                    <svg class="icon svg-footer-cat-3-80-dims">
-                      <use xlink:href="sprites/sprite.svg#footer-cat-3-80"></use>
-                    </svg>Морепродукты</a></li>
-                <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
-                    <svg class="icon svg-footer-cat-4-80-dims">
-                      <use xlink:href="sprites/sprite.svg#footer-cat-4-80"></use>
-                    </svg>Слабосоленая рыба</a></li>
-                <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
-                    <svg class="icon svg-footer-cat-5-80-dims">
-                      <use xlink:href="sprites/sprite.svg#footer-cat-5-80"></use>
-                    </svg>Копченая рыба</a></li>
-                <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
-                    <svg class="icon svg-footer-cat-6-80-dims">
-                      <use xlink:href="sprites/sprite.svg#footer-cat-6-80"></use>
-                    </svg>Икра</a></li>
-                <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
-                    <svg class="icon svg-footer-cat-7-80-dims">
-                      <use xlink:href="sprites/sprite.svg#footer-cat-7-80"></use>
-                    </svg>Полуфабрикаты</a></li>
-                <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
-                    <svg class="icon svg-footer-cat-8-80-dims">
-                      <use xlink:href="sprites/sprite.svg#footer-cat-8-80"></use>
-                    </svg>Бакалея</a></li>
-                <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
-                    <svg class="icon svg-footer-cat-9-80-dims">
-                      <use xlink:href="sprites/sprite.svg#footer-cat-9-80"></use>
-                    </svg>Скидки</a></li>
-              </ul>
+              <div class="footer__nav-list-wrap">
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="/catalog.html">
+                      <svg class="icon svg-footer-cat-1-80-dims">
+                        <use xlink:href="sprites/sprite.svg#footer-cat-1-80"></use>
+                      </svg>Красная рыба</a></li>
+                  <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
+                      <svg class="icon svg-footer-cat-2-80-dims">
+                        <use xlink:href="sprites/sprite.svg#footer-cat-2-80"></use>
+                      </svg>Белая рыба</a></li>
+                  <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
+                      <svg class="icon svg-footer-cat-3-80-dims">
+                        <use xlink:href="sprites/sprite.svg#footer-cat-3-80"></use>
+                      </svg>Морепродукты</a></li>
+                  <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
+                      <svg class="icon svg-footer-cat-4-80-dims">
+                        <use xlink:href="sprites/sprite.svg#footer-cat-4-80"></use>
+                      </svg>Слабосоленая рыба</a></li>
+                  <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
+                      <svg class="icon svg-footer-cat-5-80-dims">
+                        <use xlink:href="sprites/sprite.svg#footer-cat-5-80"></use>
+                      </svg>Копченая рыба</a></li>
+                  <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
+                      <svg class="icon svg-footer-cat-6-80-dims">
+                        <use xlink:href="sprites/sprite.svg#footer-cat-6-80"></use>
+                      </svg>Икра</a></li>
+                  <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
+                      <svg class="icon svg-footer-cat-7-80-dims">
+                        <use xlink:href="sprites/sprite.svg#footer-cat-7-80"></use>
+                      </svg>Полуфабрикаты</a></li>
+                  <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
+                      <svg class="icon svg-footer-cat-8-80-dims">
+                        <use xlink:href="sprites/sprite.svg#footer-cat-8-80"></use>
+                      </svg>Бакалея</a></li>
+                  <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
+                      <svg class="icon svg-footer-cat-9-80-dims">
+                        <use xlink:href="sprites/sprite.svg#footer-cat-9-80"></use>
+                      </svg>Скидки</a></li>
+                  <!-- keep next pseudo element (flex fix) !!!-->
+                  <li class="footer__nav-list-item_pseudo"></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

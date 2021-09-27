@@ -10,20 +10,20 @@
   <body class="position-relative">
     <div class="wrapper d-flex flex-column min-vh-100">
       <header class="header">
-        <div class="container py-5 position-relative">
+        <div class="container pt-4 pb-5 py-md-5 position-relative">
           <div class="header__circle"></div>
-          <div class="header__waves"></div>
+          <div class="header__waves d-none d-md-block"></div>
           <div class="row align-items-center">
-            <div class="col-3"><a class="header__button" href="#" target="_blank">
+            <div class="col-md-3 col-6"><a class="header__button" href="#" target="_blank">
                 <svg class="icon svg-burger-32-dims">
                   <use xlink:href="sprites/sprite.svg#burger-32"></use>
                 </svg>Каталог</a></div>
-            <div class="col-6 text-center"><a class="header__logo" href="#" target="_blank"><img class="header__logo_img" src="images/logo.svg" alt="">
-                <div class="header__logo_text">формула вкусной рыбы</div></a></div>
-            <div class="col-3 text-right"><a class="header__button" href="#" target="_blank">
+            <div class="col-md-3 text-right col-6 order-md-3"><a class="header__button" href="#" target="_blank">
                 <svg class="icon svg-car-32-dims">
                   <use xlink:href="sprites/sprite.svg#car-32"></use>
                 </svg>Доставка</a></div>
+            <div class="col-md-6 text-center col-12"><a class="header__logo" href="#" target="_blank"><img class="header__logo_img" src="images/logo.svg" alt="">
+                <div class="header__logo_text">формула вкусной рыбы</div></a></div>
           </div>
         </div>
       </header>
@@ -31,14 +31,14 @@
         <div class="container">
           <div class="row">
             <div class="col">
-              <h1 class="h1-main h1-main_width">Приятно познакомиться 😌</h1>
+              <h1 class="h1-main h1-main_width h1-main_small-mob">Приятно познакомиться 😌</h1>
             </div>
           </div>
         </div>
         <div class="container mb-3">
           <div class="row">
             <div class="col">
-              <h2 class="mt-4 mb-4">Личный кабинет</h2>
+              <h2 class="mt-md-4 mb-4">Личный кабинет</h2>
               <div class="mb-4">
                 Мы создали вам личный кабинет, куда будут приходить
                 <a href="">бонусные рубли</a>
@@ -71,32 +71,34 @@
               </div>
             </div>
           </div>
-          <div class="row mb-2">
-            <div class="col-4">
+          <div class="row mb-md-2">
+            <div class="col-12 col-md-4">
               <div class="card-recipe"><a class="card-recipe__image" href="#"><img class="card-recipe__img" src="images/thumb-product-2.png" alt=""></a>
-                <h5 class="card-recipe__title"><a href="#">Сибас с лимнонным дрессингом</a></h5>
+                <h5 class="card-recipe__title"><a href="#">Сибас с лимонным<br /> дрессингом</a></h5>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-4">
               <div class="card-recipe"><a class="card-recipe__image" href="#"><img class="card-recipe__img" src="images/thumb-product-2.png" alt=""></a>
-                <h5 class="card-recipe__title"><a href="#">Сибас с лимнонным дрессингом</a></h5>
+                <h5 class="card-recipe__title"><a href="#">Сибас с лимонным<br /> дрессингом</a></h5>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-md-4">
               <div class="card-recipe"><a class="card-recipe__image" href="#"><img class="card-recipe__img" src="images/thumb-product-2.png" alt=""></a>
-                <h5 class="card-recipe__title"><a href="#">Сибас с лимнонным дрессингом</a></h5>
+                <h5 class="card-recipe__title"><a href="#">Сибас с лимонным<br /> дрессингом</a></h5>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col mb-3"><a class="button" href="#">Подобрать рецепт</a>
+            <div class="col mb-3">
+              <div class="recipes__actions"><a class="button" href="#">Подобрать рецепт</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="container mb-4">
+        <div class="container mb-md-4">
           <div class="row">
             <div class="col">
-              <h2 class="mt-2 mb-4">Рекомендации по разморозке</h2>
+              <h2 class="mt-2 mb-4">Рекомендации по&nbsp;разморозке</h2>
               <div class="mb-4">
                 Чтобы получить максимум пользы и вкуса от приготовленной
                 рыбы и морепродуктов, необходимо правильно ее разморозить.
@@ -117,15 +119,15 @@
             </div>
           </div>
         </div>
-        <div class="bg-dark pt-5 pb-2">
+        <div class="bg-dark pt-5 pb-md-2">
           <div class="container">
             <div class="row">
               <div class="col">
                 <h2 class="mb-4">Подпишитесь и&nbsp;не&nbsp;пропустите!</h2>
               </div>
             </div>
-            <div class="row">
-              <div class="col-6">
+            <div class="row justify-content-center">
+              <div class="col col-md-6 social__item">
                 <div class="mb-4"><a class="social__title" href="#"><img src="images/soc-inst-48.svg" alt="">Инстаграм</a></div>
                 <div class="mb-4"><a class="social__image" href="#"><img class="social__img" src="images/thumb-product-4.png" alt=""></a></div>
                 <div class="mb-4">
@@ -133,7 +135,7 @@
                   крутые конкурсы, все о&nbsp;нашей продукции и&nbsp;производстве
                 </div>
               </div>
-              <div class="col-6">
+              <div class="col col-md-6 social__item">
                 <div class="mb-4"><a class="social__title" href="#"><img src="images/soc-yand-48.svg" alt="">Яндекс Дзен</a></div>
                 <div class="mb-4"><a class="social__image" href="#"><img src="images/thumb-product-5.png" alt=""></a></div>
                 <div class="mb-4">
@@ -149,47 +151,51 @@
         </div>
       </div>
       <footer class="footer mt-auto bg-dark pt-4">
-        <div class="container">
+        <div class="container mb-3 mb-md-0">
           <div class="row">
             <div class="col">
-              <ul class="footer__nav-list">
-                <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="/catalog.html">
-                    <svg class="icon svg-footer-cat-1-80-dims">
-                      <use xlink:href="sprites/sprite.svg#footer-cat-1-80"></use>
-                    </svg>Красная рыба</a></li>
-                <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
-                    <svg class="icon svg-footer-cat-2-80-dims">
-                      <use xlink:href="sprites/sprite.svg#footer-cat-2-80"></use>
-                    </svg>Белая рыба</a></li>
-                <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
-                    <svg class="icon svg-footer-cat-3-80-dims">
-                      <use xlink:href="sprites/sprite.svg#footer-cat-3-80"></use>
-                    </svg>Морепродукты</a></li>
-                <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
-                    <svg class="icon svg-footer-cat-4-80-dims">
-                      <use xlink:href="sprites/sprite.svg#footer-cat-4-80"></use>
-                    </svg>Слабосоленая рыба</a></li>
-                <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
-                    <svg class="icon svg-footer-cat-5-80-dims">
-                      <use xlink:href="sprites/sprite.svg#footer-cat-5-80"></use>
-                    </svg>Копченая рыба</a></li>
-                <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
-                    <svg class="icon svg-footer-cat-6-80-dims">
-                      <use xlink:href="sprites/sprite.svg#footer-cat-6-80"></use>
-                    </svg>Икра</a></li>
-                <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
-                    <svg class="icon svg-footer-cat-7-80-dims">
-                      <use xlink:href="sprites/sprite.svg#footer-cat-7-80"></use>
-                    </svg>Полуфабрикаты</a></li>
-                <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
-                    <svg class="icon svg-footer-cat-8-80-dims">
-                      <use xlink:href="sprites/sprite.svg#footer-cat-8-80"></use>
-                    </svg>Бакалея</a></li>
-                <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
-                    <svg class="icon svg-footer-cat-9-80-dims">
-                      <use xlink:href="sprites/sprite.svg#footer-cat-9-80"></use>
-                    </svg>Скидки</a></li>
-              </ul>
+              <div class="footer__nav-list-wrap">
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="/catalog.html">
+                      <svg class="icon svg-footer-cat-1-80-dims">
+                        <use xlink:href="sprites/sprite.svg#footer-cat-1-80"></use>
+                      </svg>Красная рыба</a></li>
+                  <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
+                      <svg class="icon svg-footer-cat-2-80-dims">
+                        <use xlink:href="sprites/sprite.svg#footer-cat-2-80"></use>
+                      </svg>Белая рыба</a></li>
+                  <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
+                      <svg class="icon svg-footer-cat-3-80-dims">
+                        <use xlink:href="sprites/sprite.svg#footer-cat-3-80"></use>
+                      </svg>Морепродукты</a></li>
+                  <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
+                      <svg class="icon svg-footer-cat-4-80-dims">
+                        <use xlink:href="sprites/sprite.svg#footer-cat-4-80"></use>
+                      </svg>Слабосоленая рыба</a></li>
+                  <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
+                      <svg class="icon svg-footer-cat-5-80-dims">
+                        <use xlink:href="sprites/sprite.svg#footer-cat-5-80"></use>
+                      </svg>Копченая рыба</a></li>
+                  <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
+                      <svg class="icon svg-footer-cat-6-80-dims">
+                        <use xlink:href="sprites/sprite.svg#footer-cat-6-80"></use>
+                      </svg>Икра</a></li>
+                  <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
+                      <svg class="icon svg-footer-cat-7-80-dims">
+                        <use xlink:href="sprites/sprite.svg#footer-cat-7-80"></use>
+                      </svg>Полуфабрикаты</a></li>
+                  <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
+                      <svg class="icon svg-footer-cat-8-80-dims">
+                        <use xlink:href="sprites/sprite.svg#footer-cat-8-80"></use>
+                      </svg>Бакалея</a></li>
+                  <li class="footer__nav-list-item"><a class="footer__nav-list-link" href="#">
+                      <svg class="icon svg-footer-cat-9-80-dims">
+                        <use xlink:href="sprites/sprite.svg#footer-cat-9-80"></use>
+                      </svg>Скидки</a></li>
+                  <!-- keep next pseudo element (flex fix) !!!-->
+                  <li class="footer__nav-list-item_pseudo"></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
