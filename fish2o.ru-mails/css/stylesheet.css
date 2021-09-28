@@ -5097,6 +5097,12 @@ h6 a:hover {
 .h1-main_width {
   max-width: none
 }
+.emoji {
+  vertical-align: baseline;
+  margin-bottom: -.1em;
+  margin-top: -.1em;
+  height: 1em
+}
 option,
 select {
   -webkit-appearance: none;
@@ -5499,7 +5505,7 @@ a.footer-small__phone:hover {
   height: 1px;
   background-color: #999;
   left: 0;
-  bottom: 6px
+  bottom: 7px
 }
 .card-product__price {
   position: absolute;
